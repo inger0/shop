@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper>
-    <sql id="base_column">
+<mapper namespace="com.app.dao.ClassifyDao">
+    <sql id="Base_Column_List">
         id,classify_name
     </sql>
 
-    <select id="queryClassify" resultType="com.app.model.po.ClassifyPOs">
+    <select id="queryClassify" resultType="com.app.model.po.ClassifyPO">
         select
-        <include refid="base_column" />
-        from classify
-
+         <include refid="Base_Column_List" />
+         from classify
     </select>
 </mapper>
