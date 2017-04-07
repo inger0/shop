@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.app.dao.ShopDao">
+    <sql id="Base_Column_List">
+        id,name,status,activity_img,telephone
+
+    </sql>
+    <select id="queryShopByStatus" resultType="com.app.model.po.ShopPO">
+        select
+        <include refid="Base_Column_List" />
+        from shop
+        where status = #{status}
+    </select>
+</mapper>

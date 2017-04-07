@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.app.dao.GoodDao">
+    <sql id="Base_Column_List">
+        id,name,classify_id,classify_name,shop_id,origin_price,stock,sales_volume,max_point,min_point,max_coin,min_coin,head_img,content_img,content,status
+
+    </sql>
+
+    <select id="queryGoodById" resultType="com.app.model.po.GoodPO">
+        select
+        <include refid="Base_Column_List"/>
+        from good
+        where id=#{id}
+    </select>
+
+    <select id="queryGoodsByStatus" resultType="com.app.model.po.GoodPO">
+        select
+        <include refid="Base_Column_List" />
+        from good
+        where status = #{status}
+    </select>
+
+</mapper>

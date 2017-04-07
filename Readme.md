@@ -25,12 +25,12 @@ code有如下几种情况
 ##### 1.获取分类
 url: main/getClassify
 
-method:get
+method: get
 
 request: `{}`
 
-return:
-``` javascript
+response:
+```json
 {
   "code": 200,
   "msg": [
@@ -43,6 +43,100 @@ return:
       "classifyName": "美容产品"
     }
   ]
+}
+```
+
+---
+#####2.获取首页商品列表
+
+url: main/getMainPageGoods
+
+method: get
+
+request: `{}`
+
+response:
+```json
+{
+  "code": 200,
+  "msg": {
+    "美容产品": [
+      {
+        "id": 1,
+        "name": "test1",
+        "classifyId": 1,
+        "classifyName": "美容产品",
+        "shopId": 1,
+        "originPrice": 1000,
+        "stock": 1000,
+        "salesVolume": 1000,
+        "maxPoint": 100,
+        "minPoint": 100,
+        "maxCoin": 100,
+        "minCoin": 100,
+        "headImg": "aaaaaaa",
+        "contentImg": "aaaaaa",
+        "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "status": 0
+      },
+      {
+        "id": 2,
+        "name": "test2",
+        "classifyId": 1,
+        "classifyName": "美容产品",
+        "shopId": 1,
+        "originPrice": 1000,
+        "stock": 1000,
+        "salesVolume": 1000,
+        "maxPoint": 100,
+        "minPoint": 100,
+        "maxCoin": 100,
+        "minCoin": 100,
+        "headImg": "aaaaaaa",
+        "contentImg": "aaaaaa",
+        "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "status": 0
+      }
+    ],
+    "outstanding_shop_goods": [
+      {
+        "id": 1,
+        "name": "test1",
+        "classifyId": 1,
+        "classifyName": "美容产品",
+        "shopId": 1,
+        "originPrice": 1000,
+        "stock": 1000,
+        "salesVolume": 1000,
+        "maxPoint": 100,
+        "minPoint": 100,
+        "maxCoin": 100,
+        "minCoin": 100,
+        "headImg": "aaaaaaa",
+        "contentImg": "aaaaaa",
+        "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "status": 0
+      },
+      {
+        "id": 2,
+        "name": "test2",
+        "classifyId": 1,
+        "classifyName": "美容产品",
+        "shopId": 1,
+        "originPrice": 1000,
+        "stock": 1000,
+        "salesVolume": 1000,
+        "maxPoint": 100,
+        "minPoint": 100,
+        "maxCoin": 100,
+        "minCoin": 100,
+        "headImg": "aaaaaaa",
+        "contentImg": "aaaaaa",
+        "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "status": 0
+      }
+    ]
+  }
 }
 ```
 
