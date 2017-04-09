@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.app.dao.UserDao">
+    <sql id="Base_Column_List">
+        id,user_name,pay_password,telephone,coin,point,diamond,status,inviter_id,invitation_code
+    </sql>
+
+    <select id="queryUserById" resultType="com.app.model.po.UserPO">
+        select
+        id,user_name,coin,point,diamond
+        from user
+        where id = #{userId}
+    </select>
+</mapper>

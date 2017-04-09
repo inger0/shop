@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
@@ -38,6 +39,16 @@ public class MainPageController {
             return WebUtil.error("get goods failure");
         }
 
+    }
+    @RequestMapping(value = "getUserInfo",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getUserInfo(HttpSession session){
+        try {
+            Integer userId = (Integer) session.getAttribute("userId");
+            return WebUtil.result(mainPageService.getUserInfo(userId));
+        }catch (Exception e){
+            e.printStackTrace();
+            return WebUtil.error("get userInfo failure");
+        }
     }
 
 

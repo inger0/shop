@@ -15,6 +15,8 @@ public class GoodPO {
     Integer originPrice;
     Integer stock;
     Integer salesVolume;
+    Integer minPrice;
+    Integer newPrice;
     Integer maxPoint;
     Integer minPoint;
     Integer maxCoin;

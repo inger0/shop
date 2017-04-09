@@ -3,9 +3,11 @@ package com.app.service.impl;
 import com.app.dao.ClassifyDao;
 import com.app.dao.GoodDao;
 import com.app.dao.ShopDao;
+import com.app.dao.UserDao;
 import com.app.model.po.ClassifyPO;
 import com.app.model.po.GoodPO;
 import com.app.model.po.ShopPO;
+import com.app.model.po.UserPO;
 import com.app.service.MainPageService;
 
 import java.util.ArrayList;
@@ -17,6 +19,8 @@ import com.app.utils.Constants;
 import com.app.utils.enums.GoodStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by yujingyang on 2017/3/30.
@@ -32,6 +36,9 @@ public class MainPageServiceImpl implements MainPageService {
 
     @Autowired
     private ShopDao shopDao;
+
+    @Autowired
+    private UserDao userDao;
 
     public List<ClassifyPO> getClassify(){
         return classifyDao.queryClassify();
@@ -59,4 +66,22 @@ public class MainPageServiceImpl implements MainPageService {
         }
         return result;
     }
+
+    @Override
+    public Map<String, Object> getUserInfo(Integer userId) {
+        Map<String,Object> result = new HashMap();
+        if(userId == null){
+            return null;
+        }
+        UserPO userPO = userDao.queryUserById(userId);
+        //TODO 以后再写比率 这里先使用暂时的比率
+        if(userPO==null)
+            return null;
+        result.put("coin",userPO.getCoin());
+        result.put("point",userPO.getPoint());
+        result.put("price",Math.floor(userPO.getPoint()*0.3+userPO.getCoin()*0.4));
+        return result;
+    }
+
+
 }

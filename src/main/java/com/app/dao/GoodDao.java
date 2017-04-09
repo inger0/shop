@@ -16,4 +16,7 @@ public interface GoodDao {
 
     GoodPO queryGoodById(@Param("id") int id);
 
+    List<GoodPO> queryGoodsByStatusAndClassifyId(@Param("classifyId")int classifyId,@Param("status") int status);
+
+    List<GoodPO> queryGoodsByClassifyId(int classifyId);
 }
