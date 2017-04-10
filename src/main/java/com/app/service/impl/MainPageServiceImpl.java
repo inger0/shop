@@ -58,6 +58,7 @@ public class MainPageServiceImpl implements MainPageService {
             if(result.get(goodClassify) == null){
                 result.put(goodClassify,new ArrayList<GoodPO>());
             }
+            //TODO 优品牌商品是否有特殊状态
             if(po.getShopId() == shopPO.getId()){
                 result.get("outstanding_shop_goods").add(po);
             }

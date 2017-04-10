@@ -11,4 +11,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ShopDao {
     List<ShopPO> queryShopByStatus(@Param("status")int status);
+
+    ShopPO queryShopById(int shopId);
 }

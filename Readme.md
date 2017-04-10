@@ -191,7 +191,7 @@ method: get
 request:
 ```json
 {
-  "classifyId":1
+  "classifyId":1 //0表示优品牌
 }
 ```
 
@@ -243,5 +243,173 @@ response:
   ]
 }
 ```
+---
 
+店铺部分
 
+---
+#####1.获取店铺中所有商品
+
+url: shop/getAll
+
+method: get
+
+request
+```json
+{
+  "shopId":1
+}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg": [
+    {
+      "id": 1,
+      "name": "test1",
+      "classifyId": 1,
+      "classifyName": "美容产品",
+      "shopId": 1,
+      "originPrice": 1000,
+      "stock": 1000,
+      "salesVolume": 1000,
+      "minPrice": 100,
+      "newPrice": 170,
+      "maxPoint": 100,
+      "minPoint": 100,
+      "maxCoin": 100,
+      "minCoin": 100,
+      "headImg": "aaaaaaa",
+      "contentImg": "aaaaaa",
+      "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "name": "test2",
+      "classifyId": 1,
+      "classifyName": "美容产品",
+      "shopId": 1,
+      "originPrice": 1000,
+      "stock": 1000,
+      "salesVolume": 1000,
+      "minPrice": 100,
+      "newPrice": 170,
+      "maxPoint": 100,
+      "minPoint": 100,
+      "maxCoin": 100,
+      "minCoin": 100,
+      "headImg": "aaaaaaa",
+      "contentImg": "aaaaaa",
+      "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+      "status": 0
+    }
+  ]
+}
+```
+---
+#####2.获取热销商品
+
+url: shop/getHotSale
+
+method: get
+
+request
+```json
+{
+  "shopId":1
+}
+```
+
+response: 同上一个接口
+
+---
+#####3.获取店铺首页内容
+
+url: shop/getShopMainPage
+
+method: get
+
+request
+```json
+{
+  "shopId":1
+}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg": {
+    "headImgUrl": "头图地址1",
+    "goods": [
+      {
+        "id": 1,
+        "name": "test1",
+        "classifyId": 1,
+        "classifyName": "美容产品",
+        "shopId": 1,
+        "originPrice": 1000,
+        "stock": 1000,
+        "salesVolume": 1000,
+        "minPrice": 100,
+        "newPrice": 170,
+        "maxPoint": 100,
+        "minPoint": 100,
+        "maxCoin": 100,
+        "minCoin": 100,
+        "headImg": "aaaaaaa",
+        "contentImg": "aaaaaa",
+        "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "status": 1
+      }
+    ],
+    "mainImgUrl": "主页图片地址1"
+  }
+}
+```
+---
+#####4.获取店铺活动图片
+
+url: shop/getActivityImgUrl
+
+method: get
+
+request
+```json
+{
+  "shopId":1
+}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg": "图片地址1"
+}
+```
+---
+#####4.获取店铺客服电话
+
+url: shop/getTelephone
+
+method: get
+
+request
+```json
+{
+  "shopId":1
+}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg": "客服电话"
+}
+```

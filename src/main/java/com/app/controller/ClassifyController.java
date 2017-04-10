@@ -21,7 +21,7 @@ public class ClassifyController {
     ClassifyService classifyService;
 
     @RequestMapping(value = "getGoods",method = RequestMethod.GET)
-    public ResponseEntity<Map<String,Object>> getGoods(int classifyId){
+    public ResponseEntity<Map<String,Object>> getGoods(Integer classifyId){
         try {
             return WebUtil.result(classifyService.getGoods(classifyId));
         }catch (Exception e){

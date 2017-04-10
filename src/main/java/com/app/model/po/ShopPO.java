@@ -11,5 +11,7 @@ public class ShopPO {
     String name;
     Integer status;
     String activityImg;
+    String headImg;
+    String mainImg;
     String telephone;
 }

@@ -34,5 +34,20 @@
         where classify_id = #{classifyId}
     </select>
 
+    <select id="queryGoodsByShopId" resultType="com.app.model.po.GoodPO">
+        select
+        <include refid="Base_Column_List" />
+        from good
+        where shop_id = #{shopId}
+    </select>
+
+    <select id="queryGoodsByShopIdAndStatus" resultType="com.app.model.po.GoodPO">
+        select
+        <include refid="Base_Column_List" />
+        from good
+        where shop_id = #{shopId}
+        and status = #{status}
+    </select>
+
 
 </mapper>

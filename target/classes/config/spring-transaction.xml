@@ -16,8 +16,14 @@
     <!-- 定义事务策略 -->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
-            <!--所有以query开头的方法都是只读的 -->
-            <tx:method name="query*" read-only="true" />
+            <!--所有以get开头的方法都是只读的 -->
+            <tx:method name="get*" read-only="true" />
+            <!--所有与插入修改相关的事务策略都应该是REQUIRED-->
+            <tx:method name="save*" propagation="REQUIRED" />
+            <tx:method name="create*" propagation="REQUIRED" />
+            <tx:method name="update*" propagation="REQUIRED" />
+            <tx:method name="merge*" propagation="REQUIRED" />
+            <tx:method name="del*" propagation="REQUIRED" />
             <!--其他方法使用默认事务策略 -->
             <tx:method name="*" />
         </tx:attributes>
