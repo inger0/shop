@@ -6,4 +6,7 @@ package com.app.utils;
 public  interface Constants {
     int SHOP_OUTSTANDING = 1;
     int SHOP_DEFAULT = 0;
+
+    int SUCCESS = 1;
+    int FAILURE = -1;
 }

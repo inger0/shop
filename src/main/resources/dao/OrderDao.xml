@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.app.dao.OrderDao">
+    <sql id="Base_Column_List">
+    id,good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,status
+    </sql>
+    <sql id="Column_List_Without_Key">
+        good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,status
+    </sql>
+    <select id="queryOrderByUserIdAndStatus" resultType="com.app.model.po.OrderPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `order`
+        where status = #{status}
+        and user_id = #{userId}
+
+    </select>
+
+    <insert id="saveOrder" parameterType="com.app.model.po.OrderPO" useGeneratedKeys="true" keyProperty="po.id">
+        insert into `order` (<include refid="Column_List_Without_Key" />)
+        VALUES
+    </insert>
+</mapper>

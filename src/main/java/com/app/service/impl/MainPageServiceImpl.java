@@ -54,9 +54,9 @@ public class MainPageServiceImpl implements MainPageService {
         Map<String,List<GoodPO>> result = new HashMap();
         result.put("outstanding_shop_goods",new ArrayList<GoodPO>());
         for(GoodPO po : goodPOs){
-            String goodClassify = po.getClassifyName();
+            Integer goodClassify = po.getClassifyId();
             if(result.get(goodClassify) == null){
-                result.put(goodClassify,new ArrayList<GoodPO>());
+                result.put(String.valueOf(goodClassify),new ArrayList<GoodPO>());
             }
             //TODO 优品牌商品是否有特殊状态
             if(po.getShopId() == shopPO.getId()){

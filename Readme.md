@@ -60,7 +60,7 @@ response:
 {
   "code": 200,
   "msg": {
-    "美容产品": [
+    "1": [
       {
         "id": 1,
         "name": "test1",
@@ -250,15 +250,13 @@ response:
 ---
 #####1.获取店铺中所有商品
 
-url: shop/getAll
+url: shop/getAll/:shopId
 
 method: get
 
 request
 ```json
-{
-  "shopId":1
-}
+{}
 ```
 
 response:
@@ -312,15 +310,13 @@ response:
 ---
 #####2.获取热销商品
 
-url: shop/getHotSale
+url: shop/getHotSale/:shopId
 
 method: get
 
 request
 ```json
-{
-  "shopId":1
-}
+{}
 ```
 
 response: 同上一个接口
@@ -328,15 +324,13 @@ response: 同上一个接口
 ---
 #####3.获取店铺首页内容
 
-url: shop/getShopMainPage
+url: shop/getShopMainPage/:shopId
 
 method: get
 
 request
 ```json
-{
-  "shopId":1
-}
+{}
 ```
 
 response:
@@ -374,15 +368,13 @@ response:
 ---
 #####4.获取店铺活动图片
 
-url: shop/getActivityImgUrl
+url: shop/getActivityImgUrl/:shopId
 
 method: get
 
 request
 ```json
-{
-  "shopId":1
-}
+{}
 ```
 
 response:
@@ -395,15 +387,13 @@ response:
 ---
 #####4.获取店铺客服电话
 
-url: shop/getTelephone
+url: shop/getTelephone/:shopId
 
 method: get
 
 request
 ```json
-{
-  "shopId":1
-}
+{}
 ```
 
 response:
