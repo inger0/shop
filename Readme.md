@@ -102,6 +102,10 @@ response:
         "status": 0
       }
     ],
+    "outstanding_shop_info": {
+      "outstanding_shop_id": "1",
+      "outstanding_shop_name": "测试商店1"
+    },
     "outstanding_shop_goods": [
       {
         "id": 1,
@@ -143,8 +147,7 @@ response:
         "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
         "status": 0
       }
-    ],
-    "outstanding_shop_name": "测试商店1"
+    ]
   }
 }
 ```

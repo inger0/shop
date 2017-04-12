@@ -65,7 +65,10 @@ public class MainPageServiceImpl implements MainPageService {
             List<GoodPO> poList = (List<GoodPO>) result.get(String.valueOf(goodClassify));
             poList.add(po);
         }
-        result.put("outstanding_shop_name",shopPO.getName());
+        Map<String, String> mapMap = new HashMap();
+        mapMap.put("outstanding_shop_name",shopPO.getName());
+        mapMap.put("outstanding_shop_id",String.valueOf(shopPO.getId()));
+        result.put("outstanding_shop_info",mapMap);
         return result;
     }
 
