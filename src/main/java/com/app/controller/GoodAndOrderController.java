@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
@@ -32,9 +33,11 @@ public class GoodAndOrderController {
     }
 
     @RequestMapping(value = "addGoodToCart",method = RequestMethod.POST)
-    public ResponseEntity<Map<String,Object>> addGoodToCart(Integer goodId){
-
-        return null;
+    public ResponseEntity<Map<String,Object>> addGoodToCart(Integer goodId, HttpSession session) throws Exception {
+        Integer userId = (Integer) session.getAttribute("userId");
+        System.out.println(goodService);
+        goodService.addGoodToCast(goodId,userId);
+        return WebUtil.result("");
     }
 
 

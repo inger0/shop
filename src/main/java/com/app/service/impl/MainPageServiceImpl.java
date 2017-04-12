@@ -20,8 +20,6 @@ import com.app.utils.enums.GoodStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.servlet.http.HttpSession;
-
 /**
  * Created by yujingyang on 2017/3/30.
  */
@@ -45,26 +43,29 @@ public class MainPageServiceImpl implements MainPageService {
     }
 
     @Override
-    public Map<String, List<GoodPO>> getMainPageGood() {
+    public Map<String, Object> getMainPageGood() {
         List<GoodPO> goodPOs= goodDao.queryGoodsByStatus(GoodStatus.MAIN_PAGE_GOOD);
         //添加优品牌
         ShopPO shopPO = shopDao.queryShopByStatus(Constants.SHOP_OUTSTANDING).get(0);
 
         //按分类添加热门商品
-        Map<String,List<GoodPO>> result = new HashMap();
+        Map<String,Object> result = new HashMap();
         result.put("outstanding_shop_goods",new ArrayList<GoodPO>());
         for(GoodPO po : goodPOs){
             Integer goodClassify = po.getClassifyId();
-            if(result.get(goodClassify) == null){
+            if(result.get(String.valueOf(goodClassify)) == null){
                 result.put(String.valueOf(goodClassify),new ArrayList<GoodPO>());
             }
             //TODO 优品牌商品是否有特殊状态
             if(po.getShopId() == shopPO.getId()){
-                result.get("outstanding_shop_goods").add(po);
+                ((ArrayList<GoodPO>)result.get("outstanding_shop_goods")).add(po);
             }
-            List<GoodPO> poList = result.get(goodClassify);
+
+
+            List<GoodPO> poList = (List<GoodPO>) result.get(String.valueOf(goodClassify));
             poList.add(po);
         }
+        result.put("outstanding_shop_name",shopPO.getName());
         return result;
     }
 

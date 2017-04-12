@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.app.dao.AddressDao">
+    <sql id="Base_Column_List">
+        id,user_id,reciver,address,reciver_telephone,mail_number,status
+    </sql>
+
+
+
+</mapper>

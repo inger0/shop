@@ -1,9 +1,7 @@
 package com.app.service;
 
 import com.app.model.po.ClassifyPO;
-import com.app.model.po.GoodPO;
 
-import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -12,7 +10,7 @@ import java.util.Map;
  */
 public interface MainPageService {
     List<ClassifyPO> getClassify();
-    Map<String, List<GoodPO>> getMainPageGood();
+    Map<String, Object> getMainPageGood();
 
     Map<String, Object> getUserInfo(Integer userId);
 }

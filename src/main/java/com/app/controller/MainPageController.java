@@ -34,8 +34,10 @@ public class MainPageController {
     @RequestMapping(value = "getMainPageGoods",method = RequestMethod.GET)
     public ResponseEntity<Map<String,Object>> getGoods(){
         try {
+
             return WebUtil.result(mainPageService.getMainPageGood());
         }catch (Exception e){
+            e.printStackTrace();
             return WebUtil.error("get goods failure");
         }
 

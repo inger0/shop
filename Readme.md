@@ -70,8 +70,8 @@ response:
         "originPrice": 1000,
         "stock": 1000,
         "salesVolume": 1000,
-        "minPrice": 100,//最低实付价
-        "newPrice": 170,//唐僧价
+        "minPrice": 100,
+        "newPrice": 170,
         "maxPoint": 100,
         "minPoint": 100,
         "maxCoin": 100,
@@ -143,7 +143,8 @@ response:
         "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
         "status": 0
       }
-    ]
+    ],
+    "outstanding_shop_name": "测试商店1"
   }
 }
 ```

@@ -11,7 +11,12 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface OrderDao {
-    OrderPO queryOrderByUserIdAndStatus(@Param("status")int status,@Param("userId") int userId);
+    OrderPO queryOrderByUserIdAndStatusAndGoodId(@Param("status")int status,@Param("userId") int userId,@Param("goodId")int goodId);
+
 
     //TODO 明天继续 完成OrderDao的编写
+
+    int updateOrderCountById(@Param("orderId")int orderId);
+
+    int saveOrder(OrderPO orderPO);
 }
