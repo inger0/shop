@@ -389,7 +389,7 @@ response:
 }
 ```
 ---
-#####4.获取店铺客服电话
+#####5.获取店铺客服电话
 
 url: shop/getTelephone/:shopId
 
@@ -407,3 +407,66 @@ response:
   "msg": "客服电话"
 }
 ```
+----
+订单与购物车部分
+
+----
+
+#####1.获取商品详情
+
+url: good/getGoodContent/:goodId
+
+method: post
+
+request: ``{}``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": {
+    "id": 1,
+    "name": "test1",
+    "classifyId": 1,
+    "classifyName": "美容产品",
+    "shopId": 1,
+    "originPrice": 1000,
+    "stock": 1000,
+    "salesVolume": 1000,
+    "minPrice": 100,
+    "newPrice": 170,
+    "maxPoint": 100,
+    "minPoint": 100,
+    "maxCoin": 100,
+    "minCoin": 100,
+    "headImg": "aaaaaaa",
+    "contentImg": "aaaaaa",
+    "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+    "status": 0
+  }
+}
+```
+
+----
+#####2.将商品添加至购物车
+
+url: shop/addGoodToCart
+
+method: post
+
+request:
+```json
+{
+  "goodId":1
+}
+```
+
+response:
+```json
+{
+  "code":200,
+  "msg": []
+}
+```
+
+

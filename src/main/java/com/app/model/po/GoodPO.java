@@ -12,11 +12,11 @@ public class GoodPO {
     Integer classifyId;
     String classifyName;
     Integer shopId;
-    Integer originPrice;
+    Integer originPrice;//原价
     Integer stock;
     Integer salesVolume;
-    Integer minPrice;
-    Integer newPrice;
+    Integer minPrice;//最低实付
+    Integer newPrice;//唐僧价
     Integer maxPoint;
     Integer minPoint;
     Integer maxCoin;
