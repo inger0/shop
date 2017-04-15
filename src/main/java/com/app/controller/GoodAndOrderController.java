@@ -151,7 +151,7 @@ public class GoodAndOrderController {
                 return WebUtil.error("wrong status");
         }
         try {
-            return WebUtil.result(goodService.getOrderInfo(queryStatus, (Integer) session.getAttribute("userId")));
+            return WebUtil.result(goodService.getOrderInfo((Integer) session.getAttribute("userId"),queryStatus));
         } catch (IllegalAccessException e) {
             e.printStackTrace();
             return WebUtil.error("get order info error");
