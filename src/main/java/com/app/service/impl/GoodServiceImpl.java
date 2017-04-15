@@ -99,12 +99,13 @@ public class GoodServiceImpl implements GoodService {
     @Override
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     public List<OrderAndGoodDTO> getOrderInfo(int userId, int status) throws IllegalAccessException {
+
         List<OrderPO> orderPOs = orderDao.queryOrderByUserId(userId);
         List<OrderAndGoodDTO> results = new ArrayList();
         MapperPO2DTO<OrderAndGoodDTO , OrderPO, GoodPO> mapper = new MapperPO2DTO();
 
         for(OrderPO orderPO : orderPOs){
-            if(orderPO.getStatus() == status){
+            if(orderPO.getStatus() == status || status == -1){
                 GoodPO goodPO = goodDao.queryGoodById(orderPO.getGoodId());
                 OrderAndGoodDTO orderAndGoodDTO = mapper.mapper(new OrderAndGoodDTO(),orderPO,goodPO);
                 results.add(orderAndGoodDTO);

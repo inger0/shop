@@ -413,6 +413,7 @@ response:
 ----
 
 #####1.获取商品详情
+(获取以下信息需要先登录 调用 account/login)
 
 url: good/getGoodContent/:goodId
 
@@ -468,5 +469,165 @@ response:
   "msg": []
 }
 ```
+---
 
+#####3.获取购物车中订单和商品信息
+
+url: good/getOrdersInCart
+
+request: ``{}``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": [
+    {
+      "goodId": 1,
+      "goodCount": 2,
+      "userId": 1,
+      "usedCoin": null,
+      "usedPoint": null,
+      "transportWay": null,
+      "addressId": null,
+      "amountPrice": null,
+      "name": "test1",
+      "classifyId": 1,
+      "classifyName": "美容产品",
+      "shopId": 1,
+      "originPrice": 1000,
+      "stock": 1000,
+      "salesVolume": 1000,
+      "minPrice": 100,
+      "newPrice": 170,
+      "maxPoint": 100,
+      "minPoint": 100,
+      "maxCoin": 100,
+      "minCoin": 100,
+      "describeStatus": null
+    }
+  ]
+}
+```
+----
+
+#####4.删除购物车中商品
+
+url: good/deleteGoodFromCart
+
+method: post
+
+request:
+```json
+{
+  "orderId":1
+}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg":[]
+}
+```
+---
+#####5.改变购物车中商品数量
+
+url: good/changeOrderCount/:orderId
+
+method: post
+
+request:
+```json
+{
+  "count":5
+}
+```
+
+response:
+```json
+{
+  "code":"200",
+  "msg":{
+    "count":5
+  }
+}
+```
+
+----
+#####6.放弃订单付款
+
+url: good/abandonOrder
+
+method: post
+
+request:
+```json
+{
+  "orderIds":[1,2,3,4,5,6,7]
+}
+```
+
+response:
+```json
+{
+  "code":200,
+  "msg":[]
+}
+```
+----
+#####7.订单付款回调
+
+url: good/payedOrder
+
+method: post
+
+request:
+```json
+{
+  "orderIds":[1,2,3,4,5,6,7]
+}
+```
+
+response:
+```json
+{
+  "code":200,
+  "msg":[]
+}
+```
+----
+#####8.获取部落币 部落分比率
+
+url: good/getRate
+
+method: get
+
+request: ``{}``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": {
+    "pointRate": 0.3,
+    "coinRate": 0.3
+  }
+}
+```
+-----
+#####9.获取订单管理信息
+url: getOrderInfo/:status
+
+status有三种: All wait4pay wait4receive
+
+method: get
+
+request: ``{}``
+
+response:
+```json
+
+```
 

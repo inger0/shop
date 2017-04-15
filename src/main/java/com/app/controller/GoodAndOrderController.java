@@ -35,6 +35,8 @@ public class GoodAndOrderController {
         }
     }
 
+
+
     @RequestMapping(value = "addGoodToCart", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> addGoodToCart(Integer goodId, HttpSession session) throws Exception {
         try {
@@ -46,6 +48,15 @@ public class GoodAndOrderController {
             return WebUtil.error("addGoodToCart failure");
         }
 
+    }
+
+    @RequestMapping(value = "getOrdersInCart", method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getOrdersInCart(HttpSession session) throws IllegalAccessException {
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId == null)
+            return WebUtil.error("please login");
+        else
+            return WebUtil.result(goodService.getOrderInfo(userId,OrderStatus.GOOD_IN_CART));
     }
 
     //TODO 设置成只有登录的用户才可以删除 且只能删除自己的
@@ -99,7 +110,7 @@ public class GoodAndOrderController {
             return WebUtil.result("");
         }
         catch (Exception e){
-            return WebUtil.error("commit order failure");
+            return WebUtil.error("abandon order failure");
         }
     }
 
@@ -115,7 +126,7 @@ public class GoodAndOrderController {
         }
     }
 
-    @RequestMapping(value = "getRate",method = RequestMethod.POST)
+    @RequestMapping(value = "getRate",method = RequestMethod.GET)
     public ResponseEntity<Map<String,Object>> changeOrderInfo(){
         Map<String,Double> map = new HashMap();
         map.put("coinRate",0.3);
@@ -125,7 +136,7 @@ public class GoodAndOrderController {
 
     @RequestMapping(value = "getOrderInfo/{status}",method = RequestMethod.GET)
     public ResponseEntity<Map<String,Object>> getOrderInfo(@PathVariable("status") String status, HttpSession session){
-        int queryStatus = 0;
+        int queryStatus;
         switch (status){
             case "all":
                 queryStatus = -1;
