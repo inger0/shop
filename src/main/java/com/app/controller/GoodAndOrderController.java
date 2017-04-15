@@ -1,6 +1,11 @@
 package com.app.controller;
 
+import com.app.dao.ShopDao;
+import com.app.model.po.GoodPO;
+import com.app.model.po.ShopPO;
 import com.app.service.GoodService;
+import com.app.utils.MapperPO2DTO;
+import com.app.utils.PO2MapUtil;
 import com.app.utils.WebUtil;
 import com.app.utils.enums.OrderStatus;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +29,16 @@ public class GoodAndOrderController {
 
     @Autowired
     GoodService goodService;
+    @Autowired
+    ShopDao shopDao;
 
     @RequestMapping(value = "getGoodContent/{goodId}", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> getGoodContent(@PathVariable("goodId") Integer goodId) {
         try {
-            return WebUtil.result(goodService.getGoodById(goodId));
+            GoodPO goodPO = goodService.getGoodById(goodId);
+            Map<String,Object>  map = (new PO2MapUtil<GoodPO>()).mapper(goodPO);
+            map.put("telephone",shopDao.queryShopById(goodPO.getShopId()).getTelephone());
+            return WebUtil.result(map);
         } catch (Exception e) {
             e.printStackTrace();
             return WebUtil.error("get good failure");
@@ -42,8 +52,8 @@ public class GoodAndOrderController {
         try {
             Integer userId = (Integer) session.getAttribute("userId");
             System.out.println(goodService);
-            goodService.addGoodToCast(goodId, userId);
-            return WebUtil.result("");
+            int count = goodService.addGoodToCast(goodId, userId);
+            return WebUtil.result(count);
         } catch (Exception e) {
             return WebUtil.error("addGoodToCart failure");
         }
@@ -157,12 +167,5 @@ public class GoodAndOrderController {
             return WebUtil.error("get order info error");
         }
     }
-
-
-
-
-
-
-
 
 }

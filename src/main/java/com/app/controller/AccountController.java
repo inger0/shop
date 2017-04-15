@@ -20,7 +20,7 @@ public class AccountController {
     @RequestMapping(value = "login")
     public ResponseEntity<Map<String, Object>> login(HttpServletResponse response, HttpSession session) {
         session.setAttribute("userName", "tmp");
-        session.setAttribute("userId",1);
+        session.setAttribute("userId","1");
         Cookie userName = new Cookie("userName", "tmp");
         Cookie loginCode = new Cookie("loginCode", "tmpCode");
         response.addCookie(userName);

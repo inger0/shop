@@ -54,10 +54,11 @@ public class GoodServiceImpl implements GoodService {
             order4save.setUserId(userId);
             order4save.setStatus(OrderStatus.GOOD_IN_CART);
             orderDao.saveOrder(order4save);
-            return Constants.SUCCESS;
+            return order4save.getGoodCount();
         } else {
             orderDao.updateOrderCountById(orderPO.getId());
-            return Constants.SUCCESS;
+            return orderPO.getGoodCount();
+
         }
     }
 
