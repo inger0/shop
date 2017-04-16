@@ -2,6 +2,7 @@ package com.app.service.impl;
 
 import com.app.dao.GoodDao;
 import com.app.dao.OrderDao;
+import com.app.dao.ShopDao;
 import com.app.model.dto.OrderAndGoodDTO;
 import com.app.model.po.GoodPO;
 import com.app.model.po.OrderPO;
@@ -9,6 +10,8 @@ import com.app.service.GoodService;
 import com.app.utils.Constants;
 import com.app.utils.MapperPO2DTO;
 import com.app.utils.enums.OrderStatus;
+
+import java.util.HashMap;
 import java.util.List;
 import org.apache.ibatis.transaction.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
  * Created by yujingyang on 2017/4/10.
@@ -32,6 +36,10 @@ public class GoodServiceImpl implements GoodService {
 
     @Autowired
     OrderDao orderDao;
+
+    @Autowired
+    private ShopDao shopDao;
+
 
     @Override
     public GoodPO getGoodById(Integer goodId) {
@@ -103,12 +111,14 @@ public class GoodServiceImpl implements GoodService {
 
         List<OrderPO> orderPOs = orderDao.queryOrderByUserId(userId);
         List<OrderAndGoodDTO> results = new ArrayList();
+
         MapperPO2DTO<OrderAndGoodDTO , OrderPO, GoodPO> mapper = new MapperPO2DTO();
 
         for(OrderPO orderPO : orderPOs){
             if(orderPO.getStatus() == status || status == -1){
                 GoodPO goodPO = goodDao.queryGoodById(orderPO.getGoodId());
                 OrderAndGoodDTO orderAndGoodDTO = mapper.mapper(new OrderAndGoodDTO(),orderPO,goodPO);
+                orderAndGoodDTO.setShopName(shopDao.queryShopById(goodPO.getShopId()).getName());
                 results.add(orderAndGoodDTO);
             }
         }

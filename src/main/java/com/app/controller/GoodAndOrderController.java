@@ -63,10 +63,13 @@ public class GoodAndOrderController {
     @RequestMapping(value = "getOrdersInCart", method = RequestMethod.GET)
     public ResponseEntity<Map<String,Object>> getOrdersInCart(HttpSession session) throws IllegalAccessException {
         Integer userId = (Integer) session.getAttribute("userId");
+
         if(userId == null)
             return WebUtil.error("please login");
-        else
+        else{
+
             return WebUtil.result(goodService.getOrderInfo(userId,OrderStatus.GOOD_IN_CART));
+        }
     }
 
     //TODO 设置成只有登录的用户才可以删除 且只能删除自己的

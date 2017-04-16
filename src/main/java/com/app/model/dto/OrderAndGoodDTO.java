@@ -20,6 +20,7 @@ public class OrderAndGoodDTO {
     Integer classifyId;
     String classifyName;
     Integer shopId;
+    String shopName;
     Integer originPrice;
     Integer stock;
     Integer salesVolume;

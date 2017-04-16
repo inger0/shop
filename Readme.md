@@ -444,7 +444,7 @@ response:
     "contentImg": "aaaaaa",
     "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
     "status": 0,
-    "telephone":123456789
+    "telephone":"1234567890"
   }
 }
 ```
@@ -467,7 +467,8 @@ response:
 ```json
 {
   "code":200,
-  "msg": []
+  "msg": {
+    "count":3  }
 }
 ```
 ---
@@ -496,6 +497,7 @@ response:
       "classifyId": 1,
       "classifyName": "美容产品",
       "shopId": 1,
+      "shopName":"店铺名1",
       "originPrice": 1000,
       "stock": 1000,
       "salesVolume": 1000,
@@ -645,6 +647,7 @@ response:
       "classifyId": 1,
       "classifyName": "美容产品",
       "shopId": 1,
+      "shopName":"店铺名1",
       "originPrice": 1000,
       "stock": 1000,
       "salesVolume": 1000,
