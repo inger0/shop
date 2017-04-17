@@ -14,6 +14,7 @@ public class UserPO {
     int coin;
     int point;
     int diamond;
+    String HeadImg;
     int status;
     int inviterId;
     String invitationCode;

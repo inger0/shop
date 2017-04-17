@@ -17,6 +17,7 @@ public class OrderAndGoodDTO {
     Integer addressId;
     Integer amountPrice;
     String name;
+    String headImg;
     Integer classifyId;
     String classifyName;
     Integer shopId;

@@ -1,5 +1,6 @@
 package com.app.controller;
 
+import com.app.model.po.AddressPO;
 import com.app.utils.WebUtil;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -27,4 +28,10 @@ public class AccountController {
         response.addCookie(loginCode);
         return WebUtil.result("success");
     }
+
+    @RequestMapping(value = "addAddress",method = RequestMethod.POST)
+    public ResponseEntity<Map<String,Object>> addAddress(AddressPO addressPO){
+        return null;
+    }
+
 }

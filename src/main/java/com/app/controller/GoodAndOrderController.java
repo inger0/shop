@@ -67,7 +67,6 @@ public class GoodAndOrderController {
         if(userId == null)
             return WebUtil.error("please login");
         else{
-
             return WebUtil.result(goodService.getOrderInfo(userId,OrderStatus.GOOD_IN_CART));
         }
     }

@@ -494,6 +494,7 @@ response:
       "addressId": null,
       "amountPrice": null,
       "name": "test1",
+      "headImg":"/img/xxx.png",
       "classifyId": 1,
       "classifyName": "美容产品",
       "shopId": 1,
