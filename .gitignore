@@ -3,3 +3,4 @@
 .gitignore
 *.iml
 target
+/src/main/resources/static

@@ -3,12 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>唐僧商城</title>
-    <link href="/css/common.css" type="text/css" rel="stylesheet">
-    <link href="/css/slider.css" type="text/css" rel="stylesheet">
+    <title>测试页面</title>
 </head>
 <body>
 <div id="app"></div>
-<script src="http://121.250.222.17:3001/result.js"></script>
+<script src="http://localhost:3001/static/result.js"></script>
 </body>
 </html>

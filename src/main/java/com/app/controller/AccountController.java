@@ -6,14 +6,14 @@ import com.app.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -63,6 +63,22 @@ public class AccountController {
     public ResponseEntity<Map<String,Object>> getOneAddress(@PathVariable("addressId") Integer addressId){
         return WebUtil.result(accountService.getAddressById(addressId));
     }
+
+    @RequestMapping(value = "uploadHeadImg",method = RequestMethod.POST)
+    public ResponseEntity<Map<String,Object>> uploadHeadImg(@RequestParam("file") CommonsMultipartFile file,HttpSession session){
+        File newFile = new File("/Users/yujingyang/codes/shop/src/main/resources/static/"+System.currentTimeMillis()+"_"+file.getOriginalFilename());
+        try {
+            if(!newFile.exists())
+                newFile.createNewFile();
+            file.transferTo(newFile);
+            return WebUtil.result("");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return WebUtil.error("upload Head Img error");
+        }
+
+    }
+
 
 
 
