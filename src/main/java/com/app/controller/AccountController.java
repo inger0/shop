@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.*;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 /**
@@ -79,7 +78,7 @@ public class AccountController {
             if (!(fileTypeHex.toUpperCase().startsWith("FFD8FF") || fileTypeHex.toUpperCase().startsWith("89504E47") || fileTypeHex.toUpperCase().startsWith("47494638") || fileTypeHex.toUpperCase().startsWith("424D"))) {
                 return WebUtil.error("file type error");
             }
-            String newFileName = System.currentTimeMillis() + "_" + messageDigest.digest(file.getOriginalFilename().getBytes("utf-8"))+type;
+            String newFileName = System.currentTimeMillis() + "_" + messageDigest.digest(file.getOriginalFilename().getBytes("utf-8")) + type;
             System.out.println(newFileName);
 
 
@@ -100,6 +99,43 @@ public class AccountController {
             return WebUtil.error("upload Head Img error");
         }
 
+    }
+
+    @RequestMapping(value = "changePayPassword", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> changePayPassword(String originalPassword, String newPassword, HttpSession session) {
+        Integer userId = (Integer) session.getAttribute("userId");
+        try {
+            if(userId == null)
+                return WebUtil.error("please login");
+            accountService.changePayPassword(originalPassword,newPassword,userId);
+            return WebUtil.result("");
+        }
+        catch (Exception e){
+            return WebUtil.error("change pay password error");
+        }
+    }
+
+    @RequestMapping(value = "getOriginalTelephone",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getOriginalTelephone(HttpSession session){
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId == null)
+            return WebUtil.error("please login");
+        return WebUtil.result(accountService.getOriginalTelephone(userId));
+    }
+
+    @RequestMapping(value = "changeTelephone",method = RequestMethod.POST)
+    public ResponseEntity<Map<String,Object>> changeTelephone(String telephone,HttpSession session){
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId == null){
+            return WebUtil.error("please login");
+        }
+        try {
+            accountService.changeTelephone(telephone,userId);
+            return WebUtil.result("");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return WebUtil.error("change telephone error");
+        }
     }
 
     private static String bytesToHexString(byte[] src) {

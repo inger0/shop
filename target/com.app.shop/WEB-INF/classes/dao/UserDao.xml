@@ -7,7 +7,7 @@
 
     <select id="queryUserById" resultType="com.app.model.po.UserPO">
         select
-        id,user_name,coin,point,diamond
+        <include refid="Base_Column_List" />
         from `user`
         where id = #{userId}
     </select>
@@ -15,6 +15,17 @@
         update `user`
         set head_img = #{headImg}
         where id = #{userId}
+    </update>
+    
+    <update id="updatePayPassword">
+        update `user`
+        set pay_password = #{payPassword}
+        where id = #{userId}
+    </update>
 
+    <update id="updateTelephone">
+        update `user`
+        set telephone = #{telephone}
+        where id = #{userId}
     </update>
 </mapper>

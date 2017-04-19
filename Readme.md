@@ -777,3 +777,69 @@ response:
 }
 ```
 
+-----
+
+#####5.更改支付密码
+
+url: account/changePayPassword
+
+method: post
+
+request:
+```json
+{
+  "originalPassword":"123456",
+  "newPassword":"12345678"
+}
+```
+
+response:
+```json
+{
+  "code":200,
+  "msg":[]
+}
+```
+
+------
+
+#####6.获取原手机号
+
+method: get
+
+request:``{}``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": "18502158803"
+}
+```
+
+------
+
+#####7.更新手机号
+
+url: account/changeTelephone
+
+method: post
+
+request:
+```json
+{
+  "telephone":"1234567890"
+}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg": []
+}
+```
+
+
+
+
