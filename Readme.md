@@ -731,5 +731,49 @@ response:
   }
 }
 ```
+#####4.上传用户头像
 
+url: account/uploadHeadImg
+
+method: post
+
+Content-Type: multipart/form-data
+
+request 代码示例:
+```JavaScript
+import React from 'react'
+import {connect} from 'react-redux'
+import FileUpload from 'react-fileupload'
+
+class MyFileUpload extends React.Component {
+
+    componentWillMount() {
+
+    }
+
+    render() {
+        const options = {
+            baseUrl: 'http://localhost:8080/account/uploadHeadImg',
+            fileFieldName: "file"
+        }
+        console.log(options)
+        return (
+
+            <FileUpload options={options}>
+                <button ref="chooseBtn">choose</button>
+                <button ref="uploadBtn">upload</button>
+            </FileUpload>
+        )
+
+    }
+}
+```
+
+response:
+```json
+{
+    "code":200,
+    "msg":""
+}
+```
 

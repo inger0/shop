@@ -8,7 +8,13 @@
     <select id="queryUserById" resultType="com.app.model.po.UserPO">
         select
         id,user_name,coin,point,diamond
-        from user
+        from `user`
         where id = #{userId}
     </select>
+    <update id="updateHeadImgById" parameterType="com.app.model.po.UserPO">
+        update `user`
+        set head_img = #{headImg}
+        where id = #{userId}
+
+    </update>
 </mapper>

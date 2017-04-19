@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserDao {
     UserPO queryUserById(@Param("userId") Integer userId);
+
+    int updateHeadImgById(@Param("headImg")String headImg,@Param("userId")int userId);
 }

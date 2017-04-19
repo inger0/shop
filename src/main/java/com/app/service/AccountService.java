@@ -13,4 +13,6 @@ public interface AccountService {
     List<AddressPO> getAddress(Integer userId);
 
     AddressPO getAddressById(Integer id);
+
+    int changeUserHeadImg(String filePath, Integer userId);
 }
