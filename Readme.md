@@ -552,7 +552,7 @@ request:
 response:
 ```json
 {
-  "code":"200",
+  "code":200,
   "msg":{
     "count":5
   }
@@ -663,4 +663,73 @@ response:
   ]
 }
 ```
+
+-----
+
+用户管理部分
+
+-----
+#####1.获取某用户所有地址
+
+url: account/getAddress
+
+method: get
+
+request:``{}``
+
+response:
+```json
+
+```
+
+#####2.添加地址
+
+url: account/addAddress
+
+method: post
+
+request:
+```json
+{
+	"reciever":"于景洋",
+	"address":"山东省济南市历下区舜华路1500号",
+	"recieverTelephone":"17621181235",
+	"mailNumber":"lovesyxfuffy@gmail.com",
+	"status":"0"
+}
+```
+
+response:
+```json
+{
+  "code":200,
+  "msg":[]
+}
+```
+-----
+
+#####3.获取某个地址的详细信息
+
+url:  account/getOneAddress/:addressId
+
+method: get
+
+request: ``{}``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": {
+    "id": 1,
+    "userId": 1,
+    "reciever": "于景洋",
+    "address": "山东省济南市历下区舜华路1500号",
+    "recieverTelephone": "17621181235",
+    "mailNumber": "lovesyxfuffy@gmail.com",
+    "status": 0
+  }
+}
+```
+
 

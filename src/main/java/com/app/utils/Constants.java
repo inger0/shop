@@ -10,4 +10,7 @@ public  interface Constants {
     int SUCCESS = 1;
     int FAILURE = -1;
 
+    int ADDRESS_IS_DEFAULT = 1;
+    int ADDRESS_NOT_DEFAULT = 0;
+
 }

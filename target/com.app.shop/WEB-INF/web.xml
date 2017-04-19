@@ -43,6 +43,7 @@
     <param-value>10000</param-value>
   </context-param>
 
+
   <!-- 加载Spring框架中的log4j监听器Log4jConfigListener -->
   <listener>
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
@@ -54,4 +55,16 @@
     <param-value>shop.root</param-value>
   </context-param>
 
+  <filter>
+    <filter-name>Character Encoding</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>Character Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>

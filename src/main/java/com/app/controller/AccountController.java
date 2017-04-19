@@ -1,9 +1,13 @@
 package com.app.controller;
 
 import com.app.model.po.AddressPO;
+import com.app.service.AccountService;
 import com.app.utils.WebUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -18,10 +22,13 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "account")
 public class AccountController {
+    @Autowired
+    AccountService accountService;
+
     @RequestMapping(value = "login")
     public ResponseEntity<Map<String, Object>> login(HttpServletResponse response, HttpSession session) {
         session.setAttribute("userName", "tmp");
-        session.setAttribute("userId","1");
+        session.setAttribute("userId",1);
         Cookie userName = new Cookie("userName", "tmp");
         Cookie loginCode = new Cookie("loginCode", "tmpCode");
         response.addCookie(userName);
@@ -30,8 +37,38 @@ public class AccountController {
     }
 
     @RequestMapping(value = "addAddress",method = RequestMethod.POST)
-    public ResponseEntity<Map<String,Object>> addAddress(AddressPO addressPO){
-        return null;
+    public ResponseEntity<Map<String,Object>> addAddress(@RequestBody AddressPO addressPO,HttpSession session){
+        Integer userId = (Integer) session.getAttribute("userId");
+        addressPO.setUserId(userId);
+        int result = accountService.saveAddress(addressPO);
+
+        if(result == -1){
+            WebUtil.error("add Address failue");
+        }
+
+        return WebUtil.result("");
     }
+
+    @RequestMapping(value = "getAddress",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getAddress(HttpSession session){
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId==null){
+            return WebUtil.result("");
+        }
+        return WebUtil.result(accountService.getAddress(userId));
+    }
+
+    //TODO 需要登录 需要userId?
+    @RequestMapping(value = "getOneAddress/{addressId}", method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getOneAddress(@PathVariable("addressId") Integer addressId){
+        return WebUtil.result(accountService.getAddressById(addressId));
+    }
+
+
+
+
+
+
+
 
 }
