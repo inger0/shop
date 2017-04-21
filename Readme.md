@@ -695,7 +695,7 @@ request:
 	"address":"山东省济南市历下区舜华路1500号",
 	"recieverTelephone":"17621181235",
 	"mailNumber":"lovesyxfuffy@gmail.com",
-	"status":"0"
+	"status":"0"//1表示设为默认地址 0表示没有设为默认地址
 }
 ```
 
@@ -839,6 +839,113 @@ response:
   "msg": []
 }
 ```
+------
+#####8.发送短信
+
+url: account/getMessage
+
+method: post
+
+request:
+```json
+{
+  "telephone":"17621181235"
+}
+```
+
+response:
+```json
+{
+    "code":200,
+    "msg":[]
+}
+```
+
+-----
+#####9.获取原手机号(修改验证手机用)
+url: account/getOriginalTelephone
+
+method: get
+
+request: ``{}``
+
+response:
+```json
+{
+  "code":200,
+  "msg":"17821161235"
+}
+
+```
+-----
+#####10.更改验证手机
+url: account/changeTelephone
+
+method: post
+
+request:
+```json
+{
+  "newTelephone":"17621181235"
+}
+```
+
+-----
+
+#####11.注册接口(先调用发短信接口)
+
+url: account/register
+
+method: post
+
+request:
+```json
+{
+  "telephone":"17621181235",
+  "checkCode":"123456",
+  "invitationCode":"333666"
+
+}
+```
+
+response:
+```json
+{
+    "code":200,
+    "msg":[]
+}
+```
+
+-----
+
+#####12.登录接口(先调用发短信接口)
+
+url: account/login
+
+method: post
+
+request:
+```json
+{
+  "telephone":"17621181235",
+  "checkCode":"123456"
+
+}
+```
+
+response:
+```json
+{
+    "code":200,
+    "msg":[]
+}
+```
+
+-----
+
+还欠一个搜索接口 和 支付部分
+
+
 
 
 

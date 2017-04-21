@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.*;
 import java.security.MessageDigest;
+import java.security.SecureRandom;
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -22,20 +24,69 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "account")
 public class AccountController {
+
     @Autowired
     AccountService accountService;
 
+    //TODO 缺少获得管理员邀请码接口
 
-    @RequestMapping(value = "login")
-    public ResponseEntity<Map<String, Object>> login(HttpServletResponse response, HttpSession session) {
-        session.setAttribute("userName", "tmp");
+    //TODO 上线后删除此接口!
+    @RequestMapping(value = "loginTest")
+    public ResponseEntity<Map<String, Object>> loginTest(HttpServletResponse response, HttpSession session) {
         session.setAttribute("userId", 1);
-        Cookie userName = new Cookie("userName", "tmp");
-        Cookie loginCode = new Cookie("loginCode", "tmpCode");
-        response.addCookie(userName);
-        response.addCookie(loginCode);
         return WebUtil.result("success");
     }
+
+    @RequestMapping(value = "register", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> register(String telephone, String checkCode, String invitationCode, HttpSession session) {
+        try {
+            String checkCodeInSession = (String) session.getAttribute("checkCode");
+            session.setAttribute("checkCode", null);//使用后立刻销毁
+            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
+                return WebUtil.error("failure register");
+            }
+            accountService.register(telephone,invitationCode);
+            return WebUtil.result("");
+        }catch (Exception e){
+            return WebUtil.error("failure register");
+        }
+
+    }
+
+
+    @RequestMapping(value = "login", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> login(String telephone, String checkCode, HttpSession session) {
+        try {
+            String checkCodeInSession = (String) session.getAttribute("checkCode");
+            session.setAttribute("checkCode", null);//使用后立刻销毁
+            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
+                return WebUtil.error("failure register");
+            }
+            //TODO 调用login
+            return WebUtil.result("");
+        }catch (Exception e){
+            return WebUtil.error("failure register");
+        }
+    }
+
+    @RequestMapping(value = "getMessage", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> getMessage(String telephone, HttpSession session) {
+        try {
+            StringBuilder stringBuilder = new StringBuilder();
+            for (int i = 0; i < 6; i++) {
+                SecureRandom random = new SecureRandom(
+                        String.valueOf(new Date().getTime()).getBytes()
+                );
+                stringBuilder.append(String.valueOf(random.nextInt(10)));
+            }
+            accountService.sendMessage(stringBuilder.toString(), telephone);
+            session.setAttribute("checkCode", stringBuilder.toString());
+            return WebUtil.result("");
+        } catch (Exception e) {
+            return WebUtil.error("failure sendMessage");
+        }
+    }
+
 
     @RequestMapping(value = "addAddress", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> addAddress(@RequestBody AddressPO addressPO, HttpSession session) {
@@ -105,32 +156,31 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> changePayPassword(String originalPassword, String newPassword, HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         try {
-            if(userId == null)
+            if (userId == null)
                 return WebUtil.error("please login");
-            accountService.changePayPassword(originalPassword,newPassword,userId);
+            accountService.changePayPassword(originalPassword, newPassword, userId);
             return WebUtil.result("");
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             return WebUtil.error("change pay password error");
         }
     }
 
-    @RequestMapping(value = "getOriginalTelephone",method = RequestMethod.GET)
-    public ResponseEntity<Map<String,Object>> getOriginalTelephone(HttpSession session){
+    @RequestMapping(value = "getOriginalTelephone", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> getOriginalTelephone(HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
-        if(userId == null)
+        if (userId == null)
             return WebUtil.error("please login");
         return WebUtil.result(accountService.getOriginalTelephone(userId));
     }
 
-    @RequestMapping(value = "changeTelephone",method = RequestMethod.POST)
-    public ResponseEntity<Map<String,Object>> changeTelephone(String telephone,HttpSession session){
+    @RequestMapping(value = "changeTelephone", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> changeTelephone(String newTelephone, HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
-        if(userId == null){
+        if (userId == null) {
             return WebUtil.error("please login");
         }
         try {
-            accountService.changeTelephone(telephone,userId);
+            accountService.changeTelephone(newTelephone, userId);
             return WebUtil.result("");
         } catch (Exception e) {
             e.printStackTrace();

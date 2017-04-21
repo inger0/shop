@@ -1,6 +1,7 @@
 package com.app.service;
 
 import com.app.model.po.AddressPO;
+import com.taobao.api.ApiException;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,4 +26,9 @@ public interface AccountService {
     String getOriginalTelephone(Integer userId);
 
     void changeTelephone(String nowTelephone, Integer userId) throws Exception;
+
+    void sendMessage(String code, String telephone) throws ApiException;
+
+    @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    void register(String inviterCode, String telephone) throws Exception;
 }

@@ -5,9 +5,13 @@
         id,user_name,pay_password,telephone,coin,point,diamond,head_img,status,inviter_id,invitation_code
     </sql>
 
+    <insert id="saveUser">
+        insert into `user` (telephone, inviter_id) VALUES (#{telephone},#{inviterId})
+    </insert>
+
     <select id="queryUserById" resultType="com.app.model.po.UserPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from `user`
         where id = #{userId}
     </select>
@@ -16,7 +20,7 @@
         set head_img = #{headImg}
         where id = #{userId}
     </update>
-    
+
     <update id="updatePayPassword">
         update `user`
         set pay_password = #{payPassword}
