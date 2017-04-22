@@ -40,4 +40,7 @@ public interface GoodService {
     List<GiftPO> getGifts();
 
     GiftPO getGiftById(Integer giftId);
+
+    @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    void exchangeGift(Integer giftId, Integer userId) throws Exception;
 }

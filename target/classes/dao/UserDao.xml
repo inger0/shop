@@ -40,4 +40,14 @@
         set telephone = #{telephone}
         where id = #{userId}
     </update>
+
+    <update id="updatePO" parameterType="com.common.model.po.UserPO">
+        update user
+        set user_name=#{userName},login_code=#{loginCode},
+        pay_password=#{payPassword},telephone=#{telephone},coin=#{coin},
+        point=#{point},diamond=#{diamond},head_img=#{headImg},status=#{status},
+        inviter_id=#{inviterId},invitation_code=#{invitationCode}
+        where id = #{id}
+
+    </update>
 </mapper>

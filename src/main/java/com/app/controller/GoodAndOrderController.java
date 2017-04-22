@@ -200,6 +200,22 @@ public class GoodAndOrderController {
         }
     }
 
+    @RequestMapping(value = "exchangeGift/{giftId}",method = RequestMethod.POST)
+    public ResponseEntity<Map<String,Object>> exchangeGift(HttpSession session, @PathVariable("giftId") Integer giftId){
+        if(giftId == null)
+            return WebUtil.error("giftId is null");
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId == null)
+            return WebUtil.error("please login");
+        try {
+            goodService.exchangeGift(giftId,userId);
+            return WebUtil.result("");
+        }catch (Exception e){
+            e.printStackTrace();
+            return WebUtil.error("failure exchange");
+        }
+    }
+
 
 
 

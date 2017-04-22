@@ -120,6 +120,36 @@ public class MapperCreator {
         }
     }
 
+    public static String createUpdate(String tableName){
+        Connection conn = getConn();
+        String sql = "select COLUMN_NAME from information_schema.COLUMNS where table_name = \""+tableName+"\""+" and TABLE_SCHEMA=\"shop\"";
+        PreparedStatement pstmt;
+        try {
+            pstmt = (PreparedStatement) conn.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+            List<String> list = new ArrayList<>();
+
+            while (rs.next()){
+                list.add(rs.getString(1));
+            }
+            StringBuilder sql1 = new StringBuilder("update "+tableName+" set ");
+            for(String str : list){
+                sql1.append(str+"="+"#{"+underlineToCamel(str)+"},");
+            }
+            sql1.deleteCharAt(sql1.length()-1);
+            sql1.append(" where id = #{id} ");
+            rs.close();
+            pstmt.close();
+            conn.close();
+            return sql1.toString();
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
     private static String convertClass(String cloumnType){
         switch (cloumnType){
             case "int":
@@ -173,7 +203,7 @@ public class MapperCreator {
 
 
     public static void main(String[] args) {
-        System.out.println(createInsert("gift"));
+        System.out.println(createUpdate("user"));
     }
     
 }

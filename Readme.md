@@ -729,7 +729,6 @@ response:
 }
 ```
 
-
 -----
 
 用户管理部分
@@ -1027,6 +1026,89 @@ response:
 -----
 
 #####1.获取礼包商城全部商品
+
+url: good/getGifts
+
+method: get
+
+request:
+```json
+{}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg": [
+    {
+      "id": 1,
+      "thumbnail": "imgthumb1",//小图
+      "name": "礼包商城商品1",
+      "headImg": "head",
+      "content": "礼包商城商品测试内容",
+      "cost": 1,
+      "pointValue": 1000,
+      "coinValue": 1000,
+      "telephone": "123456789"
+    },
+    {
+      "id": 2,
+      "thumbnail": "imgthumb2",
+      "name": "礼包商城商品2",
+      "headImg": "head",
+      "content": "礼包商城商品测试内容2",
+      "cost": 1,
+      "pointValue": 1200,
+      "coinValue": 1300,
+      "telephone": "1234567891"
+    }
+  ]
+}
+```
+
+-----
+#####2.获取某个礼包的详细信息
+
+url: good/getGift/:giftId
+
+method: get
+
+request:``{}``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": {
+    "id": 1,
+    "thumbnail": "imgthumb1",
+    "name": "礼包商城商品1",
+    "headImg": "head",
+    "content": "礼包商城商品测试内容",
+    "cost": 1,
+    "pointValue": 1000,
+    "coinValue": 1000,
+    "telephone": "123456789"
+  }
+}
+```
+-----
+#####3.兑换礼包
+
+url: good/exchangeGift/:giftId
+
+method: post
+
+request:``{}``
+
+response:
+```json
+{
+  "code":200,
+  "msg":[]
+}
+```
 
 
 

@@ -1,14 +1,12 @@
 package com.app.service.impl;
 
-import com.common.dao.GiftDao;
-import com.common.dao.GoodDao;
-import com.common.dao.OrderDao;
-import com.common.dao.ShopDao;
+import com.common.dao.*;
 import com.common.model.dto.OrderAndGoodDTO;
 import com.common.model.po.GiftPO;
 import com.common.model.po.GoodPO;
 import com.common.model.po.OrderPO;
 import com.app.service.GoodService;
+import com.common.model.po.UserPO;
 import com.common.utils.MapperPO2DTO;
 import com.common.utils.enums.OrderStatus;
 
@@ -39,6 +37,9 @@ public class GoodServiceImpl implements GoodService {
 
     @Autowired
     private GiftDao giftDao;
+
+    @Autowired
+    private UserDao userDao;
 
 
     @Override
@@ -146,6 +147,19 @@ public class GoodServiceImpl implements GoodService {
     @Override
     public GiftPO getGiftById(Integer giftId){
         return giftDao.queryGiftById(giftId);
+    }
+
+    @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    @Override
+    public void exchangeGift(Integer giftId, Integer userId) throws Exception {
+        UserPO userPO = userDao.queryUserById(userId);
+        GiftPO giftPO = giftDao.queryGiftById(giftId);
+        if(userPO.getDiamond() - giftPO.getCost() <0)
+            throw new Exception();
+        userPO.setCoin(userPO.getCoin()+giftPO.getCoinValue());
+        userPO.setPoint(userPO.getPoint()+giftPO.getPointValue());
+        userPO.setDiamond(userPO.getDiamond()-giftPO.getCost());
+        userDao.updatePO(userPO);
     }
 
 }
