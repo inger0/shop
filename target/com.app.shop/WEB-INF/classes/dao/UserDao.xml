@@ -15,6 +15,14 @@
         from `user`
         where id = #{userId}
     </select>
+
+    <select id="queryUserByInvitationCode" resultType="com.app.model.po.UserPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `user`
+        where invitation_code = #{invitationCode}
+    </select>
+
     <update id="updateHeadImgById" parameterType="com.app.model.po.UserPO">
         update `user`
         set head_img = #{headImg}

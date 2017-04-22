@@ -119,6 +119,7 @@ public class GoodServiceImpl implements GoodService {
                 GoodPO goodPO = goodDao.queryGoodById(orderPO.getGoodId());
                 OrderAndGoodDTO orderAndGoodDTO = mapper.mapper(new OrderAndGoodDTO(),orderPO,goodPO);
                 orderAndGoodDTO.setShopName(shopDao.queryShopById(goodPO.getShopId()).getName());
+                orderAndGoodDTO.setOrderId(orderPO.getId());
                 results.add(orderAndGoodDTO);
             }
         }

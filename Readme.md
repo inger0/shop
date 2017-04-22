@@ -485,6 +485,7 @@ response:
   "code": 200,
   "msg": [
     {
+      "orderId": 1,
       "goodId": 1,
       "goodCount": 2,
       "userId": 1,
@@ -494,11 +495,11 @@ response:
       "addressId": null,
       "amountPrice": null,
       "name": "test1",
-      "headImg":"/img/xxx.png",
+      "headImg": "aaaaaaa",
       "classifyId": 1,
       "classifyName": "美容产品",
       "shopId": 1,
-      "shopName":"店铺名1",
+      "shopName": "测试商店1",
       "originPrice": 1000,
       "stock": 1000,
       "salesVolume": 1000,
@@ -679,7 +680,20 @@ request:``{}``
 
 response:
 ```json
-
+{
+  "code": 200,
+  "msg": [
+    {
+      "id": 1,
+      "userId": 1,
+      "reciever": "于景洋",
+      "address": "山东省济南市历下区舜华路1500号",
+      "recieverTelephone": "17621181235",
+      "mailNumber": "lovesyxfuffy@gmail.com",
+      "status": 0
+    }
+  ]
+}
 ```
 
 #####2.添加地址

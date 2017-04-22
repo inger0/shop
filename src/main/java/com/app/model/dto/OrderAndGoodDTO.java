@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 public class OrderAndGoodDTO {
 
+    Integer orderId;
     Integer goodId;
     Integer goodCount;
     Integer userId;
