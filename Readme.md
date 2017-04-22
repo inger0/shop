@@ -417,7 +417,7 @@ response:
 
 url: good/getGoodContent/:goodId
 
-method: post
+method: get
 
 request: ``{}``
 

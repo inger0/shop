@@ -45,6 +45,8 @@
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:19.0" />
           <element id="library" level="project" name="Maven: org.mindrot:jbcrypt:0.3m" />
+          <element id="library" level="project" name="Maven: Pingplusplus:pingpp-java:2.2.3" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.6.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

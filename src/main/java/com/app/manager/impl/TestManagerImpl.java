@@ -1,6 +1,6 @@
-package com.common.manager.impl;
+package com.app.manager.impl;
 
-import com.common.manager.TestManager;
+import com.app.manager.TestManager;
 import org.springframework.stereotype.Component;
 
 /**

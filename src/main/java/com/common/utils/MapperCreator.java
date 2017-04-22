@@ -173,7 +173,7 @@ public class MapperCreator {
 
 
     public static void main(String[] args) {
-        System.out.println(createPO("shop"));
+        System.out.println(createInsert("gift"));
     }
     
 }

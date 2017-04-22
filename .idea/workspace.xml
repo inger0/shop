@@ -2,157 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbba1b99-93c5-493c-a2bb-b679eda2363b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/dao/AddressDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/dao/ClassifyDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/dao/GoodDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/dao/ShopDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/dao/TestDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/interceptor/LoginInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/interceptor/StaticInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/manager/TestManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/manager/impl/TestManagerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/dto/OrderAndGoodDTO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/po/AddressPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/po/ClassifyPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/po/GoodPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/po/OrderPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/po/ShopPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/po/TestPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/model/po/UserPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/utils/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/utils/MapperPO2DTO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/utils/PO2MapUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/utils/WebUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/utils/enums/GoodClassify.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/utils/enums/GoodStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/app/utils/enums/OrderStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/dao/AddressDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/dao/ClassifyDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/dao/GoodDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/dao/ShopDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/dao/TestDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/interceptor/LoginInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/interceptor/StaticInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/manager/TestManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/manager/impl/TestManagerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/dto/OrderAndGoodDTO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/po/AddressPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/po/ClassifyPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/po/GoodPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/po/OrderPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/po/ShopPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/po/TestPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/model/po/UserPO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/utils/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/utils/MapperPO2DTO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/utils/PO2MapUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/utils/WebUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/utils/enums/GoodClassify.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/utils/enums/GoodStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/utils/enums/OrderStatus.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/dao/AddressDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/AddressDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/dao/ClassifyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/ClassifyDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/dao/GoodDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/GoodDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/dao/OrderDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/OrderDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/dao/ShopDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/ShopDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/dao/TestDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/TestDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/interceptor/LoginInterceptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/interceptor/SessionSecurityInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/interceptor/SessionSecurityInterceptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/interceptor/StaticInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/interceptor/StaticInterceptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/manager/TestManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/manager/TestManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/manager/impl/TestManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/manager/impl/TestManagerImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/dto/OrderAndGoodDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/dto/OrderAndGoodDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/po/AddressPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/AddressPO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/po/ClassifyPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/ClassifyPO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/po/GoodPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/GoodPO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/po/OrderPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/OrderPO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/po/ShopPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/ShopPO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/po/TestPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/TestPO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/model/po/UserPO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/UserPO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/Constants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/MapperCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/MapperPO2DTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperPO2DTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/PO2MapUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/PO2MapUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/WebUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/WebUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/enums/GoodClassify.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/enums/GoodClassify.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/enums/GoodStatus.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/enums/GoodStatus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/enums/OrderStatus.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/enums/OrderStatus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/app/utils/enums/UserStatus.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/enums/UserStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/controller/AccountController.class" afterPath="$PROJECT_DIR$/target/classes/com/app/controller/AccountController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/controller/ClassifyController.class" afterPath="$PROJECT_DIR$/target/classes/com/app/controller/ClassifyController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/GiftDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/po/GiftPO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/dao/GiftDao.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/common/manager/TestManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/manager/TestManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/common/manager/impl/TestManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/manager/impl/TestManagerImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/controller/GoodAndOrderController.class" afterPath="$PROJECT_DIR$/target/classes/com/app/controller/GoodAndOrderController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/controller/MainPageController.class" afterPath="$PROJECT_DIR$/target/classes/com/app/controller/MainPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/controller/ShopController.class" afterPath="$PROJECT_DIR$/target/classes/com/app/controller/ShopController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/ClassifyService.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/ClassifyService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/GoodService.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/GoodService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/MainPageService.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/MainPageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/ShopService.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/ShopService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/impl/ClassifyServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/impl/ClassifyServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/impl/GoodServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/impl/GoodServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/impl/MainPageServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/impl/MainPageServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/impl/ShopServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/impl/ShopServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/app/service/impl/TestServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/app/service/impl/TestServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/AccountController.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/AccountController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/ClassifyController.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/ClassifyController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/GoodAndOrderController.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/GoodAndOrderController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/MainPageController.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/MainPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/ShopController.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/controller/ShopController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/ClassifyService.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/ClassifyService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/GoodService.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/GoodService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/MainPageService.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/MainPageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/ShopService.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/ShopService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/ClassifyServiceImpl.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/ClassifyServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/GoodServiceImpl.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/GoodServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/MainPageServiceImpl.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/MainPageServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/ShopServiceImpl.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/ShopServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/TestServiceImpl.class" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/com/app/service/impl/TestServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/com_app_shop_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/com_app_shop_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/ClassifyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/ClassifyController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.app.shop.iml" afterPath="$PROJECT_DIR$/com.app.shop.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/ClassifyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/ClassifyService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/MainPageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/MainPageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/ShopService.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/ShopService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/ClassifyServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/ClassifyServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/MainPageServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/MainPageServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/ShopServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/ShopServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/TestServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/TestServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/common/interceptor/StaticInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/interceptor/StaticInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/AddressDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/AddressDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/ClassifyDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/ClassifyDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/GoodDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/GoodDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/OrderDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/OrderDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/ShopDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/ShopDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/TestDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/TestDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/UserDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/spring-mybatis.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/spring-mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/mvc.xml" afterPath="$PROJECT_DIR$/target/classes/config/mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/AddressDao.xml" afterPath="$PROJECT_DIR$/target/classes/dao/AddressDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/ClassifyDao.xml" afterPath="$PROJECT_DIR$/target/classes/dao/ClassifyDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/GoodDao.xml" afterPath="$PROJECT_DIR$/target/classes/dao/GoodDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/OrderDao.xml" afterPath="$PROJECT_DIR$/target/classes/dao/OrderDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/ShopDao.xml" afterPath="$PROJECT_DIR$/target/classes/dao/ShopDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/TestDao.xml" afterPath="$PROJECT_DIR$/target/classes/dao/TestDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.xml" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/spring-mybatis.xml" afterPath="$PROJECT_DIR$/target/classes/config/spring-mybatis.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/mvc.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/AddressDao.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/AddressDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/ClassifyDao.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/ClassifyDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/GoodDao.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/GoodDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/OrderDao.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/OrderDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/ShopDao.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/ShopDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/TestDao.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/TestDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/UserDao.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/dao/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/spring-mybatis.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/spring-mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/index.jsp" afterPath="$PROJECT_DIR$/target/com.app.shop/index.jsp" />
     </list>
     <ignored path="com.app.shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -185,100 +63,100 @@
               <entry file="file://$PROJECT_DIR$/Readme.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="545">
-                      <caret line="1028" column="7" selection-start-line="1028" selection-start-column="7" selection-end-line="1028" selection-end-column="7" />
+                    <first_editor relative-caret-position="301">
+                      <caret line="417" column="32" selection-start-line="417" selection-start-column="26" selection-end-line="417" selection-end-column="32" />
                       <folding>
-                        <marker date="1492845909000" expanded="true" signature="272:417" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="298:415" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="304:354" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="360:411" ph="{&quot;id&quot;: 2...}" />
-                        <marker date="1492845909000" expanded="true" signature="518:2688" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="544:2686" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="555:1547" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="563:1048" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="1056:1541" ph="{&quot;id&quot;: 2...}" />
-                        <marker date="1492845909000" expanded="true" signature="1578:1658" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
-                        <marker date="1492845909000" expanded="true" signature="1690:2682" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="1698:2183" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="2191:2676" ph="{&quot;id&quot;: 2...}" />
-                        <marker date="1492845909000" expanded="true" signature="2792:2885" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="2818:2883" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="2905:2937" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="3030:3059" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="3083:4021" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="3109:4019" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="3115:3562" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="3568:4015" ph="{&quot;id&quot;: 2...}" />
-                        <marker date="1492845909000" expanded="true" signature="4114:4116" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="4140:5078" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="4166:5076" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="4172:4619" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="4625:5072" ph="{&quot;id&quot;: 2...}" />
-                        <marker date="1492845909000" expanded="true" signature="5161:5163" ph="{&quot;shopId&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="5272:5274" ph="{&quot;shopId&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="5298:5900" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="5324:5898" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
-                        <marker date="1492845909000" expanded="true" signature="5366:5865" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="5374:5859" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="5992:5993" ph="{&quot;shopId&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="5992:5994" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="6018:6053" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="6140:6142" ph="{&quot;shopId&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="6166:6200" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="6355:6822" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="6381:6820" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="6907:6923" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="6947:6992" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="6972:6990" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="7086:7730" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="7112:7728" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="7118:7724" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-                        <marker date="1492845909000" expanded="true" signature="7819:7836" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="7860:7889" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="7985:8000" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="8024:8069" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="8048:8067" ph="{&quot;count&quot;: 5...}" />
-                        <marker date="1492845909000" expanded="true" signature="8150:8182" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="8206:8234" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="8312:8344" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="8368:8396" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="8493:8568" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="8519:8566" ph="{&quot;pointRate&quot;: 0.3...}" />
-                        <marker date="1492845909000" expanded="true" signature="8708:9321" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="8734:9319" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="8740:9315" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-                        <marker date="1492845909000" expanded="true" signature="9398:9420" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="9444:10382" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="9470:10380" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="9476:9923" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="9929:10376" ph="{&quot;id&quot;: 2...}" />
-                        <marker date="1492845909000" expanded="true" signature="10500:10748" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="10526:10746" ph="[...]" />
-                        <marker date="1492845909000" expanded="true" signature="10532:10742" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="10823:10990" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
-                        <marker date="1492845909000" expanded="true" signature="11014:11042" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="11162:11384" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="11188:11382" ph="{&quot;id&quot;: 1...}" />
-                        <marker date="1492845909000" expanded="true" signature="11516:11612" ph="..." />
-                        <marker date="1492845909000" expanded="true" signature="11657:12094" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="11685:11693" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="11708:12092" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="11734:11847" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
-                        <marker date="1492845909000" expanded="true" signature="11907:12075" ph="&lt;xml/&gt;" />
-                        <marker date="1492845909000" expanded="true" signature="12118:12150" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="12241:12302" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="12326:12354" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="12430:12471" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="12560:12590" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="12614:12644" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="12725:12756" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="12780:12812" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="12930:12969" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="13057:13091" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-                        <marker date="1492845909000" expanded="true" signature="13182:13267" ph="{...}" />
-                        <marker date="1492845909000" expanded="true" signature="13291:13323" ph="{&quot;code&quot;: 200...}" />
-                        <marker date="1492845909000" expanded="true" signature="13411:13467" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-                        <marker date="1492845909000" expanded="true" signature="13491:13523" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="272:417" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="298:415" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="304:354" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="360:411" ph="{&quot;id&quot;: 2...}" />
+                        <marker date="1492852300000" expanded="true" signature="518:2688" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="544:2686" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="555:1547" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="563:1048" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="1056:1541" ph="{&quot;id&quot;: 2...}" />
+                        <marker date="1492852300000" expanded="true" signature="1578:1658" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
+                        <marker date="1492852300000" expanded="true" signature="1690:2682" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="1698:2183" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="2191:2676" ph="{&quot;id&quot;: 2...}" />
+                        <marker date="1492852300000" expanded="true" signature="2792:2885" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="2818:2883" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="2905:2937" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="3030:3059" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="3083:4021" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="3109:4019" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="3115:3562" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="3568:4015" ph="{&quot;id&quot;: 2...}" />
+                        <marker date="1492852300000" expanded="true" signature="4114:4116" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="4140:5078" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="4166:5076" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="4172:4619" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="4625:5072" ph="{&quot;id&quot;: 2...}" />
+                        <marker date="1492852300000" expanded="true" signature="5161:5163" ph="{&quot;shopId&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="5272:5274" ph="{&quot;shopId&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="5298:5900" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="5324:5898" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
+                        <marker date="1492852300000" expanded="true" signature="5366:5865" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="5374:5859" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="5992:5993" ph="{&quot;shopId&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="5992:5994" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="6018:6053" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="6140:6142" ph="{&quot;shopId&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="6166:6200" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="6354:6821" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="6380:6819" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="6906:6922" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="6946:6991" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="6971:6989" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="7085:7729" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="7111:7727" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="7117:7723" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+                        <marker date="1492852300000" expanded="true" signature="7818:7835" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="7859:7888" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="7984:7999" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="8023:8068" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="8047:8066" ph="{&quot;count&quot;: 5...}" />
+                        <marker date="1492852300000" expanded="true" signature="8149:8181" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="8205:8233" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="8311:8343" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="8367:8395" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="8492:8567" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="8518:8565" ph="{&quot;pointRate&quot;: 0.3...}" />
+                        <marker date="1492852300000" expanded="true" signature="8707:9320" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="8733:9318" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="8739:9314" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+                        <marker date="1492852300000" expanded="true" signature="9397:9419" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="9443:10381" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="9469:10379" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="9475:9922" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="9928:10375" ph="{&quot;id&quot;: 2...}" />
+                        <marker date="1492852300000" expanded="true" signature="10499:10747" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="10525:10745" ph="[...]" />
+                        <marker date="1492852300000" expanded="true" signature="10531:10741" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="10822:10989" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
+                        <marker date="1492852300000" expanded="true" signature="11013:11041" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="11161:11383" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="11187:11381" ph="{&quot;id&quot;: 1...}" />
+                        <marker date="1492852300000" expanded="true" signature="11515:11611" ph="..." />
+                        <marker date="1492852300000" expanded="true" signature="11656:12093" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="11684:11692" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="11707:12091" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="11733:11846" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
+                        <marker date="1492852300000" expanded="true" signature="11906:12074" ph="&lt;xml/&gt;" />
+                        <marker date="1492852300000" expanded="true" signature="12117:12149" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="12240:12301" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="12325:12353" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="12429:12470" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="12559:12589" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="12613:12643" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="12724:12755" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="12779:12811" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="12929:12968" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="13056:13090" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+                        <marker date="1492852300000" expanded="true" signature="13181:13266" ph="{...}" />
+                        <marker date="1492852300000" expanded="true" signature="13290:13322" ph="{&quot;code&quot;: 200...}" />
+                        <marker date="1492852300000" expanded="true" signature="13410:13466" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+                        <marker date="1492852300000" expanded="true" signature="13490:13522" ph="{&quot;code&quot;: 200...}" />
                       </folding>
                     </first_editor>
                     <second_editor />
@@ -297,11 +175,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java">
+      <file leaf-file-name="GoodAndOrderController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="190" column="58" selection-start-line="190" selection-start-column="58" selection-end-line="190" selection-end-column="58" />
+            <state relative-caret-position="263">
+              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-264">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionSecurityInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/SessionSecurityInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/StaticInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="974">
+              <caret line="218" column="17" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+              <folding>
+                <element signature="e#4676#4677#0" expanded="true" />
+                <element signature="e#4719#4720#0" expanded="true" />
+                <element signature="e#4781#4782#0" expanded="true" />
+                <element signature="e#4833#4834#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GiftPO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/common/model/po/GiftPO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GiftDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/common/dao/GiftDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -331,13 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/ClassifyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/ShopServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/model/po/OrderPO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/model/po/AddressPO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config/spring-transaction.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java" />
@@ -356,20 +326,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/app/model/po/ShopPO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/dao/AddressDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/AddressDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/SaltDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/dao/SaltDao.java" />
         <option value="$PROJECT_DIR$/src/main/Test/Test.java" />
         <option value="$PROJECT_DIR$/src/main/Test/WebTestBase.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/Test/test/WebTestBase.java" />
         <option value="$PROJECT_DIR$/src/main/Test/test/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/utils/enums/UserStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/interceptor/SessionSecurityInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/dao/UserDao.java" />
@@ -377,11 +344,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/model/dto/OrderAndGoodDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/dao/GoodDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/GoodDao.xml" />
-        <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/GoodDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dao/GiftDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/dao/GiftDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/dao/ShopDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/model/po/GiftPO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/interceptor/StaticInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -439,6 +416,9 @@
             <id>Android Lint for Kotlin</id>
           </State>
           <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
             <id>Compiler issuesJava</id>
           </State>
           <State>
@@ -490,9 +470,17 @@
             <id>Spring BootSpring</id>
           </State>
           <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
             <id>Thymeleaf</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaAutowiringInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -540,56 +528,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.app.shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.app.shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.app.shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.app.shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -827,6 +765,108 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -900,7 +940,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pingpp-java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.6.0/bin/node" />
@@ -908,7 +948,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="gooddao&#9;PSI&#9;JAVA://com.app.dao.GoodDao&#10;gooddap&#9;null&#9;null&#10;userda&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/dao/UserDao.java&#10;userpo&#9;PSI&#9;JAVA://com.app.model.po.UserPO&#10;userdao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/dao/UserDao.java&#10;UserDa&#9;PSI&#9;JAVA://com.app.dao.UserDao&#10;UserDA&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;MessageDigest&#9;PSI&#9;JAVA://java.security.MessageDigest&#10;FileSystemXmlApp&#9;PSI&#9;JAVA://org.springframework.context.support.FileSystemXmlApplicationContext&#10;SpringBeanFac&#9;PSI&#9;JAVA://org.springframework.scheduling.quartz.SpringBeanJobFactory&#10;BeanFac&#9;PSI&#9;JAVA://org.springframework.beans.factory.BeanFactory&#10;ApplicationList&#9;PSI&#9;JAVA://org.springframework.context.ApplicationListener&#10;TODO&#9;ACTION&#9;ActivateTODOToolWindow&#10;Ob&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/src.zip!/java/lang/Object.java&#10;O&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/src.zip!/java/lang/Object.java&#10;Clone&#9;PSI&#9;JAVA://java.lang.Cloneable&#10;Object&#9;PSI&#9;JAVA://java.lang.Object&#10;sqlsession&#9;PSI&#9;JAVA://org.apache.ibatis.session.SqlSessionFactory&#10;trans&#9;PSI&#9;JAVA://org.apache.ibatis.transaction.Transaction&#10;Iso&#9;FILE&#9;jar:///Users/yujingyang/.m2/repository/org/springframework/spring-tx/4.3.3.RELEASE/spring-tx-4.3.3.RELEASE.jar!/org/springframework/transaction/annotation/Isolation.class&#10;Isolation&#9;PSI&#9;JAVA://org.springframework.transaction.annotation.Isolation" />
+    <property name="SearchEverywhereHistoryKey" value="GiftPO&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/model/po/GiftPO.java&#10;gooddao&#9;PSI&#9;JAVA://com.app.dao.GoodDao&#10;gooddap&#9;null&#9;null&#10;userda&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/dao/UserDao.java&#10;userpo&#9;PSI&#9;JAVA://com.app.model.po.UserPO&#10;userdao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/dao/UserDao.java&#10;UserDa&#9;PSI&#9;JAVA://com.app.dao.UserDao&#10;UserDA&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;MessageDigest&#9;PSI&#9;JAVA://java.security.MessageDigest&#10;FileSystemXmlApp&#9;PSI&#9;JAVA://org.springframework.context.support.FileSystemXmlApplicationContext&#10;SpringBeanFac&#9;PSI&#9;JAVA://org.springframework.scheduling.quartz.SpringBeanJobFactory&#10;BeanFac&#9;PSI&#9;JAVA://org.springframework.beans.factory.BeanFactory&#10;ApplicationList&#9;PSI&#9;JAVA://org.springframework.context.ApplicationListener&#10;TODO&#9;ACTION&#9;ActivateTODOToolWindow&#10;Ob&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/src.zip!/java/lang/Object.java&#10;O&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/src.zip!/java/lang/Object.java&#10;Clone&#9;PSI&#9;JAVA://java.lang.Cloneable&#10;Object&#9;PSI&#9;JAVA://java.lang.Object&#10;sqlsession&#9;PSI&#9;JAVA://org.apache.ibatis.session.SqlSessionFactory&#10;trans&#9;PSI&#9;JAVA://org.apache.ibatis.transaction.Transaction&#10;Iso&#9;FILE&#9;jar:///Users/yujingyang/.m2/repository/org/springframework/spring-tx/4.3.3.RELEASE/spring-tx-4.3.3.RELEASE.jar!/org/springframework/transaction/annotation/Isolation.class&#10;Isolation&#9;PSI&#9;JAVA://org.springframework.transaction.annotation.Isolation" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
@@ -923,27 +963,7 @@
       <recent name="com.app.model.po" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
-    <configuration default="false" name="MapperPO2DTO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.app.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.app.utils.MapperPO2DTO" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="com.app.shop" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.MapperCreator (1)">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Test" />
@@ -1013,6 +1033,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="test.MainTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="com.app.shop" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MapperCreator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.common.utils.MapperCreator" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1559,19 +1599,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MapperPO2DTO" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MapperCreator" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.testMessage" />
-      <item index="5" class="java.lang.String" itemvalue="Application.MainTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MapperCreator" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.testMessage" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MainTest" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MapperCreator (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MainTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.testMessage" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MapperCreator" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MapperPO2DTO" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MapperCreator (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest.testMessage" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MapperCreator" />
       </list>
     </recent_temporary>
   </component>
@@ -1599,7 +1639,7 @@
       <workItem from="1490884169526" duration="2084000" />
       <workItem from="1491461412645" duration="98077000" />
       <workItem from="1492412580221" duration="32791000" />
-      <workItem from="1492695935750" duration="18882000" />
+      <workItem from="1492695935750" duration="23406000" />
     </task>
     <servers />
   </component>
@@ -1624,7 +1664,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154710000" />
+    <option name="totallyTimeSpent" value="159234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1640,7 +1680,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32440057" sideWeight="0.54005724" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1653,16 +1693,16 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4174894" sideWeight="0.76537913" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4174894" sideWeight="0.76108724" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994187" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440057" sideWeight="0.3962804" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440057" sideWeight="0.48569384" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440057" sideWeight="0.48855507" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440057" sideWeight="0.46280402" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32440057" sideWeight="0.4599428" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31616595" sideWeight="0.55114824" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20600858" sideWeight="0.50877196" order="2" side_tool="true" content_ui="tabs" />
@@ -1692,7 +1732,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java</url>
-          <line>51</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -1701,18 +1741,6 @@
           <line>16</line>
           <properties />
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java</url>
-          <line>174</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="30" />
@@ -1724,84 +1752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar!/org/mindrot/jbcrypt/BCrypt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="308" column="32" selection-start-line="308" selection-start-column="25" selection-end-line="308" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m-sources.jar!/org/mindrot/jbcrypt/BCrypt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7176">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding>
-            <element signature="e#30451#30452#0" expanded="false" />
-            <element signature="e#30513#30514#0" expanded="false" />
-            <element signature="e#30755#30756#0" expanded="false" />
-            <element signature="e#30814#30815#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/ClassifyDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1492846773000" expanded="true" signature="350:425" ph="select from classify" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/model/po/AddressPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/MapperPO2DTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/ClassifyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/AddressDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1492846773000" expanded="true" signature="398:417" ph="insert into address... " />
-            <marker date="1492846773000" expanded="true" signature="398:573" ph="insert into address... " />
-            <marker date="1492846773000" expanded="true" signature="398:574" ph="insert into address... " />
-            <marker date="1492846773000" expanded="true" signature="680:778" ph="SELECT from address" />
-            <marker date="1492846773000" expanded="true" signature="880:969" ph="SELECT from address" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Test/test/WebTestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1819,14 +1769,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1854,54 +1796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-transaction.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -1914,14 +1808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2023,14 +1909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.3.RELEASE/spring-aop-4.3.3.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -2061,25 +1939,6 @@
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <element signature="e#2022#2023#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2116,31 +1975,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/StaticInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/SessionSecurityInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2156,10 +1991,208 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="201" column="9" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/WebUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/PO2MapUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/ClassifyDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1492846773000" expanded="true" signature="350:425" ph="select from classify" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="175" column="40" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
+          <folding>
+            <element signature="e#5562#5563#0" expanded="true" />
+            <element signature="e#5618#5619#0" expanded="true" />
+            <marker date="1492848098000" expanded="true" signature="2837:2924" ph="select COLUM... COLUMNS" />
+            <marker date="1492848098000" expanded="true" signature="4556:4653" ph="select COLUM... COLUMNS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/common/dao/GoodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/GiftDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <marker date="1492848219000" expanded="true" signature="391:435" ph="SELECT ?... " />
+            <marker date="1492848219000" expanded="true" signature="391:455" ph="SELECT from gift" />
+            <marker date="1492848219000" expanded="true" signature="551:640" ph="SELECT from gift" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/dao/ShopDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-transaction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/model/po/GiftPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/dao/GiftDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+          <folding>
+            <element signature="e#4676#4677#0" expanded="true" />
+            <element signature="e#4719#4720#0" expanded="true" />
+            <element signature="e#4781#4782#0" expanded="true" />
+            <element signature="e#4833#4834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="218" column="17" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/StaticInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/SessionSecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -2169,206 +2202,206 @@
         <state relative-caret-position="168">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1492845909000" expanded="true" signature="272:417" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="298:415" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="304:354" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="360:411" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1492845909000" expanded="true" signature="518:2688" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="544:2686" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="555:1547" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="563:1048" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="1056:1541" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1492845909000" expanded="true" signature="1578:1658" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
-            <marker date="1492845909000" expanded="true" signature="1690:2682" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="1698:2183" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="2191:2676" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1492845909000" expanded="true" signature="2792:2885" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="2818:2883" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="2905:2937" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="3030:3059" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="3083:4021" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="3109:4019" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="3115:3562" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="3568:4015" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1492845909000" expanded="true" signature="4114:4116" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="4140:5078" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="4166:5076" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="4172:4619" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="4625:5072" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1492845909000" expanded="true" signature="5161:5163" ph="{&quot;shopId&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="5272:5274" ph="{&quot;shopId&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="5298:5900" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="5324:5898" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
-            <marker date="1492845909000" expanded="true" signature="5366:5865" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="5374:5859" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="5992:5993" ph="{&quot;shopId&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="5992:5994" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="6018:6053" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="6140:6142" ph="{&quot;shopId&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="6166:6200" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="6355:6822" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="6381:6820" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="6907:6923" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="6947:6992" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="6972:6990" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="7086:7730" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="7112:7728" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="7118:7724" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-            <marker date="1492845909000" expanded="true" signature="7819:7836" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="7860:7889" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="7985:8000" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="8024:8069" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="8048:8067" ph="{&quot;count&quot;: 5...}" />
-            <marker date="1492845909000" expanded="true" signature="8150:8182" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="8206:8234" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="8312:8344" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="8368:8396" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="8493:8568" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="8519:8566" ph="{&quot;pointRate&quot;: 0.3...}" />
-            <marker date="1492845909000" expanded="true" signature="8708:9321" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="8734:9319" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="8740:9315" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-            <marker date="1492845909000" expanded="true" signature="9398:9420" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="9444:10382" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="9470:10380" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="9476:9923" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="9929:10376" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1492845909000" expanded="true" signature="10500:10748" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="10526:10746" ph="[...]" />
-            <marker date="1492845909000" expanded="true" signature="10532:10742" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="10823:10990" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
-            <marker date="1492845909000" expanded="true" signature="11014:11042" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="11162:11384" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="11188:11382" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1492845909000" expanded="true" signature="11516:11612" ph="..." />
-            <marker date="1492845909000" expanded="true" signature="11657:12094" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="11685:11693" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="11708:12092" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="11734:11847" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
-            <marker date="1492845909000" expanded="true" signature="11907:12075" ph="&lt;xml/&gt;" />
-            <marker date="1492845909000" expanded="true" signature="12118:12150" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="12241:12302" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="12326:12354" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="12430:12471" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="12560:12590" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="12614:12644" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="12725:12756" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="12780:12812" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="12930:12969" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="13057:13091" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-            <marker date="1492845909000" expanded="true" signature="13182:13267" ph="{...}" />
-            <marker date="1492845909000" expanded="true" signature="13291:13323" ph="{&quot;code&quot;: 200...}" />
-            <marker date="1492845909000" expanded="true" signature="13411:13467" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-            <marker date="1492845909000" expanded="true" signature="13491:13523" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="272:417" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="298:415" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="304:354" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="360:411" ph="{&quot;id&quot;: 2...}" />
+            <marker date="1492852300000" expanded="true" signature="518:2688" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="544:2686" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="555:1547" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="563:1048" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="1056:1541" ph="{&quot;id&quot;: 2...}" />
+            <marker date="1492852300000" expanded="true" signature="1578:1658" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
+            <marker date="1492852300000" expanded="true" signature="1690:2682" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="1698:2183" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="2191:2676" ph="{&quot;id&quot;: 2...}" />
+            <marker date="1492852300000" expanded="true" signature="2792:2885" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="2818:2883" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="2905:2937" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="3030:3059" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="3083:4021" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="3109:4019" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="3115:3562" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="3568:4015" ph="{&quot;id&quot;: 2...}" />
+            <marker date="1492852300000" expanded="true" signature="4114:4116" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="4140:5078" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="4166:5076" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="4172:4619" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="4625:5072" ph="{&quot;id&quot;: 2...}" />
+            <marker date="1492852300000" expanded="true" signature="5161:5163" ph="{&quot;shopId&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="5272:5274" ph="{&quot;shopId&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="5298:5900" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="5324:5898" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
+            <marker date="1492852300000" expanded="true" signature="5366:5865" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="5374:5859" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="5992:5993" ph="{&quot;shopId&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="5992:5994" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="6018:6053" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="6140:6142" ph="{&quot;shopId&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="6166:6200" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="6354:6821" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="6380:6819" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="6906:6922" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="6946:6991" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="6971:6989" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="7085:7729" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="7111:7727" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="7117:7723" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+            <marker date="1492852300000" expanded="true" signature="7818:7835" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="7859:7888" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="7984:7999" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="8023:8068" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="8047:8066" ph="{&quot;count&quot;: 5...}" />
+            <marker date="1492852300000" expanded="true" signature="8149:8181" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="8205:8233" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="8311:8343" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="8367:8395" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="8492:8567" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="8518:8565" ph="{&quot;pointRate&quot;: 0.3...}" />
+            <marker date="1492852300000" expanded="true" signature="8707:9320" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="8733:9318" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="8739:9314" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+            <marker date="1492852300000" expanded="true" signature="9397:9419" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="9443:10381" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="9469:10379" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="9475:9922" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="9928:10375" ph="{&quot;id&quot;: 2...}" />
+            <marker date="1492852300000" expanded="true" signature="10499:10747" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="10525:10745" ph="[...]" />
+            <marker date="1492852300000" expanded="true" signature="10531:10741" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="10822:10989" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
+            <marker date="1492852300000" expanded="true" signature="11013:11041" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="11161:11383" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="11187:11381" ph="{&quot;id&quot;: 1...}" />
+            <marker date="1492852300000" expanded="true" signature="11515:11611" ph="..." />
+            <marker date="1492852300000" expanded="true" signature="11656:12093" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="11684:11692" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="11707:12091" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="11733:11846" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
+            <marker date="1492852300000" expanded="true" signature="11906:12074" ph="&lt;xml/&gt;" />
+            <marker date="1492852300000" expanded="true" signature="12117:12149" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="12240:12301" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="12325:12353" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="12429:12470" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="12559:12589" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="12613:12643" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="12724:12755" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="12779:12811" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="12929:12968" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="13056:13090" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+            <marker date="1492852300000" expanded="true" signature="13181:13266" ph="{...}" />
+            <marker date="1492852300000" expanded="true" signature="13290:13322" ph="{&quot;code&quot;: 200...}" />
+            <marker date="1492852300000" expanded="true" signature="13410:13466" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+            <marker date="1492852300000" expanded="true" signature="13490:13522" ph="{&quot;code&quot;: 200...}" />
           </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="545">
-            <caret line="1028" column="7" selection-start-line="1028" selection-start-column="7" selection-end-line="1028" selection-end-column="7" />
+          <first_editor relative-caret-position="301">
+            <caret line="417" column="32" selection-start-line="417" selection-start-column="26" selection-end-line="417" selection-end-column="32" />
             <folding>
-              <marker date="1492845909000" expanded="true" signature="272:417" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="298:415" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="304:354" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="360:411" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1492845909000" expanded="true" signature="518:2688" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="544:2686" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="555:1547" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="563:1048" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="1056:1541" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1492845909000" expanded="true" signature="1578:1658" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
-              <marker date="1492845909000" expanded="true" signature="1690:2682" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="1698:2183" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="2191:2676" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1492845909000" expanded="true" signature="2792:2885" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="2818:2883" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="2905:2937" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="3030:3059" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="3083:4021" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="3109:4019" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="3115:3562" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="3568:4015" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1492845909000" expanded="true" signature="4114:4116" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="4140:5078" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="4166:5076" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="4172:4619" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="4625:5072" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1492845909000" expanded="true" signature="5161:5163" ph="{&quot;shopId&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="5272:5274" ph="{&quot;shopId&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="5298:5900" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="5324:5898" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
-              <marker date="1492845909000" expanded="true" signature="5366:5865" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="5374:5859" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="5992:5993" ph="{&quot;shopId&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="5992:5994" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="6018:6053" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="6140:6142" ph="{&quot;shopId&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="6166:6200" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="6355:6822" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="6381:6820" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="6907:6923" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="6947:6992" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="6972:6990" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="7086:7730" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="7112:7728" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="7118:7724" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-              <marker date="1492845909000" expanded="true" signature="7819:7836" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="7860:7889" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="7985:8000" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="8024:8069" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="8048:8067" ph="{&quot;count&quot;: 5...}" />
-              <marker date="1492845909000" expanded="true" signature="8150:8182" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="8206:8234" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="8312:8344" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="8368:8396" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="8493:8568" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="8519:8566" ph="{&quot;pointRate&quot;: 0.3...}" />
-              <marker date="1492845909000" expanded="true" signature="8708:9321" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="8734:9319" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="8740:9315" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-              <marker date="1492845909000" expanded="true" signature="9398:9420" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="9444:10382" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="9470:10380" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="9476:9923" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="9929:10376" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1492845909000" expanded="true" signature="10500:10748" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="10526:10746" ph="[...]" />
-              <marker date="1492845909000" expanded="true" signature="10532:10742" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="10823:10990" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
-              <marker date="1492845909000" expanded="true" signature="11014:11042" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="11162:11384" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="11188:11382" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1492845909000" expanded="true" signature="11516:11612" ph="..." />
-              <marker date="1492845909000" expanded="true" signature="11657:12094" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="11685:11693" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="11708:12092" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="11734:11847" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
-              <marker date="1492845909000" expanded="true" signature="11907:12075" ph="&lt;xml/&gt;" />
-              <marker date="1492845909000" expanded="true" signature="12118:12150" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="12241:12302" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="12326:12354" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="12430:12471" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="12560:12590" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="12614:12644" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="12725:12756" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="12780:12812" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="12930:12969" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="13057:13091" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-              <marker date="1492845909000" expanded="true" signature="13182:13267" ph="{...}" />
-              <marker date="1492845909000" expanded="true" signature="13291:13323" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1492845909000" expanded="true" signature="13411:13467" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-              <marker date="1492845909000" expanded="true" signature="13491:13523" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="272:417" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="298:415" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="304:354" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="360:411" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1492852300000" expanded="true" signature="518:2688" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="544:2686" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="555:1547" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="563:1048" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="1056:1541" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1492852300000" expanded="true" signature="1578:1658" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
+              <marker date="1492852300000" expanded="true" signature="1690:2682" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="1698:2183" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="2191:2676" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1492852300000" expanded="true" signature="2792:2885" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="2818:2883" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="2905:2937" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="3030:3059" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="3083:4021" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="3109:4019" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="3115:3562" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="3568:4015" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1492852300000" expanded="true" signature="4114:4116" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="4140:5078" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="4166:5076" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="4172:4619" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="4625:5072" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1492852300000" expanded="true" signature="5161:5163" ph="{&quot;shopId&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="5272:5274" ph="{&quot;shopId&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="5298:5900" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="5324:5898" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
+              <marker date="1492852300000" expanded="true" signature="5366:5865" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="5374:5859" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="5992:5993" ph="{&quot;shopId&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="5992:5994" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="6018:6053" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="6140:6142" ph="{&quot;shopId&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="6166:6200" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="6354:6821" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="6380:6819" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="6906:6922" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="6946:6991" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="6971:6989" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="7085:7729" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="7111:7727" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="7117:7723" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+              <marker date="1492852300000" expanded="true" signature="7818:7835" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="7859:7888" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="7984:7999" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="8023:8068" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="8047:8066" ph="{&quot;count&quot;: 5...}" />
+              <marker date="1492852300000" expanded="true" signature="8149:8181" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="8205:8233" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="8311:8343" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="8367:8395" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="8492:8567" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="8518:8565" ph="{&quot;pointRate&quot;: 0.3...}" />
+              <marker date="1492852300000" expanded="true" signature="8707:9320" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="8733:9318" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="8739:9314" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+              <marker date="1492852300000" expanded="true" signature="9397:9419" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="9443:10381" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="9469:10379" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="9475:9922" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="9928:10375" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1492852300000" expanded="true" signature="10499:10747" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="10525:10745" ph="[...]" />
+              <marker date="1492852300000" expanded="true" signature="10531:10741" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="10822:10989" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
+              <marker date="1492852300000" expanded="true" signature="11013:11041" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="11161:11383" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="11187:11381" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1492852300000" expanded="true" signature="11515:11611" ph="..." />
+              <marker date="1492852300000" expanded="true" signature="11656:12093" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="11684:11692" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="11707:12091" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="11733:11846" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
+              <marker date="1492852300000" expanded="true" signature="11906:12074" ph="&lt;xml/&gt;" />
+              <marker date="1492852300000" expanded="true" signature="12117:12149" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="12240:12301" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="12325:12353" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="12429:12470" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="12559:12589" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="12613:12643" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="12724:12755" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="12779:12811" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="12929:12968" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="13056:13090" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+              <marker date="1492852300000" expanded="true" signature="13181:13266" ph="{...}" />
+              <marker date="1492852300000" expanded="true" signature="13290:13322" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1492852300000" expanded="true" signature="13410:13466" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+              <marker date="1492852300000" expanded="true" signature="13490:13522" ph="{&quot;code&quot;: 200...}" />
             </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="190" column="58" selection-start-line="190" selection-start-column="58" selection-end-line="190" selection-end-column="58" />
+        <state relative-caret-position="263">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

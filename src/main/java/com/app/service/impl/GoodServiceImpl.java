@@ -1,9 +1,11 @@
 package com.app.service.impl;
 
+import com.common.dao.GiftDao;
 import com.common.dao.GoodDao;
 import com.common.dao.OrderDao;
 import com.common.dao.ShopDao;
 import com.common.model.dto.OrderAndGoodDTO;
+import com.common.model.po.GiftPO;
 import com.common.model.po.GoodPO;
 import com.common.model.po.OrderPO;
 import com.app.service.GoodService;
@@ -34,6 +36,9 @@ public class GoodServiceImpl implements GoodService {
 
     @Autowired
     private ShopDao shopDao;
+
+    @Autowired
+    private GiftDao giftDao;
 
 
     @Override
@@ -131,6 +136,16 @@ public class GoodServiceImpl implements GoodService {
         }
         List<GoodPO> goodPOs = goodDao.queryGoodRegexp(regexp);
         return goodPOs;
+    }
+
+    @Override
+    public List<GiftPO> getGifts(){
+        return giftDao.queryGifts();
+    }
+
+    @Override
+    public GiftPO getGiftById(Integer giftId){
+        return giftDao.queryGiftById(giftId);
     }
 
 }

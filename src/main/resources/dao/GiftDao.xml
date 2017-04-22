@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.common.dao.GiftDao">
+    <sql id="Base_Columns">
+        id,thumbnail,name,head_img,content,cost,point_value,coin_value,telephone
+    </sql>
+
+    <select id="queryGifts" resultType="com.common.model.po.GiftPO">
+        SELECT
+        <include refid="Base_Columns"/>
+        from gift
+    </select>
+
+    <select id="queryGiftById" resultType="com.common.model.po.GiftPO">
+        SELECT
+        <include refid="Base_Columns"/>
+        from gift
+        where id = #{id}
+    </select>
+</mapper>

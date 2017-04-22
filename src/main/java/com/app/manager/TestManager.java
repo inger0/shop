@@ -1,4 +1,4 @@
-package com.common.manager;
+package com.app.manager;
 
 /**
  * Created by yujingyang on 2017/3/27.

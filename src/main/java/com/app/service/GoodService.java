@@ -1,6 +1,7 @@
 package com.app.service;
 
 import com.common.model.dto.OrderAndGoodDTO;
+import com.common.model.po.GiftPO;
 import com.common.model.po.GoodPO;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -35,4 +36,8 @@ public interface GoodService {
     List<OrderAndGoodDTO> getOrderInfo(int userId, int status) throws IllegalAccessException;
 
     List<GoodPO> search(String goodName);
+
+    List<GiftPO> getGifts();
+
+    GiftPO getGiftById(Integer giftId);
 }

@@ -27,6 +27,7 @@ public class GoodAndOrderController {
 
     @Autowired
     GoodService goodService;
+
     @Autowired
     ShopDao shopDao;
 
@@ -178,5 +179,28 @@ public class GoodAndOrderController {
             return WebUtil.error("failure search");
         }
     }
+
+    @RequestMapping(value = "getGifts",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getGifts(){
+        try {
+            return WebUtil.result(goodService.getGifts());
+        }catch (Exception e){
+            return WebUtil.error("failure getGifts");
+        }
+    }
+
+    @RequestMapping(value = "getGift/{giftId}",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getGiftById(@PathVariable("giftId") Integer giftId){
+        if(giftId == null)
+            return WebUtil.error("wrong giftId");
+        try {
+            return WebUtil.result(goodService.getGiftById(giftId));
+        }catch (Exception e){
+            return WebUtil.error("failure getGift");
+        }
+    }
+
+
+
 
 }
