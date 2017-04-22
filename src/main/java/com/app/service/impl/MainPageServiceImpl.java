@@ -1,13 +1,13 @@
 package com.app.service.impl;
 
-import com.app.dao.ClassifyDao;
-import com.app.dao.GoodDao;
-import com.app.dao.ShopDao;
-import com.app.dao.UserDao;
-import com.app.model.po.ClassifyPO;
-import com.app.model.po.GoodPO;
-import com.app.model.po.ShopPO;
-import com.app.model.po.UserPO;
+import com.common.dao.ClassifyDao;
+import com.common.dao.GoodDao;
+import com.common.dao.ShopDao;
+import com.common.dao.UserDao;
+import com.common.model.po.ClassifyPO;
+import com.common.model.po.GoodPO;
+import com.common.model.po.ShopPO;
+import com.common.model.po.UserPO;
 import com.app.service.MainPageService;
 
 import java.util.ArrayList;
@@ -15,8 +15,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.app.utils.Constants;
-import com.app.utils.enums.GoodStatus;
+import com.common.utils.Constants;
+import com.common.utils.enums.GoodStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

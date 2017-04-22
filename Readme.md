@@ -667,6 +667,70 @@ response:
 ```
 
 -----
+#####10.商品搜索接口
+
+url: good/search
+
+method: post
+
+request:
+```json
+{
+  "goodName":"测试",
+}
+```
+
+response:
+```json
+{
+  "code": 200,
+  "msg": [
+    {
+      "id": 1,
+      "name": "测试商品1",
+      "classifyId": 1,
+      "classifyName": "美容产品",
+      "shopId": 1,
+      "originPrice": 1000,
+      "stock": 1000,
+      "salesVolume": 1000,
+      "minPrice": 100,
+      "newPrice": 170,
+      "maxPoint": 100,
+      "minPoint": 100,
+      "maxCoin": 100,
+      "minCoin": 100,
+      "headImg": "aaaaaaa",
+      "contentImg": "aaaaaa",
+      "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "name": "测试商品2",
+      "classifyId": 1,
+      "classifyName": "美容产品",
+      "shopId": 1,
+      "originPrice": 1000,
+      "stock": 1000,
+      "salesVolume": 1000,
+      "minPrice": 100,
+      "newPrice": 170,
+      "maxPoint": 100,
+      "minPoint": 100,
+      "maxCoin": 100,
+      "minCoin": 100,
+      "headImg": "aaaaaaa",
+      "contentImg": "aaaaaa",
+      "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+      "status": 0
+    }
+  ]
+}
+```
+
+
+-----
 
 用户管理部分
 
@@ -958,7 +1022,13 @@ response:
 
 -----
 
-还欠一个搜索接口 和 支付部分
+礼包商城部分
+
+-----
+
+#####1.获取礼包商城全部商品
+
+
 
 
 

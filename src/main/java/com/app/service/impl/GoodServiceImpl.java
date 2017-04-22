@@ -1,29 +1,24 @@
 package com.app.service.impl;
 
-import com.app.dao.GoodDao;
-import com.app.dao.OrderDao;
-import com.app.dao.ShopDao;
-import com.app.model.dto.OrderAndGoodDTO;
-import com.app.model.po.GoodPO;
-import com.app.model.po.OrderPO;
+import com.common.dao.GoodDao;
+import com.common.dao.OrderDao;
+import com.common.dao.ShopDao;
+import com.common.model.dto.OrderAndGoodDTO;
+import com.common.model.po.GoodPO;
+import com.common.model.po.OrderPO;
 import com.app.service.GoodService;
-import com.app.utils.Constants;
-import com.app.utils.MapperPO2DTO;
-import com.app.utils.enums.OrderStatus;
+import com.common.utils.MapperPO2DTO;
+import com.common.utils.enums.OrderStatus;
 
-import java.util.HashMap;
 import java.util.List;
-import org.apache.ibatis.transaction.Transaction;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
-import java.util.Map;
 
 /**
  * Created by yujingyang on 2017/4/10.
@@ -126,4 +121,16 @@ public class GoodServiceImpl implements GoodService {
         return results;
 
     }
+
+    @Override
+    public List<GoodPO> search(String goodName){
+        char[] chars = goodName.toCharArray();
+        String regexp = ".*";
+        for(char c : chars){
+            regexp = regexp+c+".*";
+        }
+        List<GoodPO> goodPOs = goodDao.queryGoodRegexp(regexp);
+        return goodPOs;
+    }
+
 }

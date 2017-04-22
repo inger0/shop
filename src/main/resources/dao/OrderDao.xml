@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.app.dao.OrderDao">
+<mapper namespace="com.common.dao.OrderDao">
     <sql id="Base_Column_List">
     id,good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,status
     </sql>
     <sql id="Column_List_Without_Key">
         good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,status
     </sql>
-    <select id="queryOrderByUserIdAndStatusAndGoodId" resultType="com.app.model.po.OrderPO">
+    <select id="queryOrderByUserIdAndStatusAndGoodId" resultType="com.common.model.po.OrderPO">
         select
         <include refid="Base_Column_List"/>
         from `order`
@@ -17,7 +17,7 @@
 
     </select>
 
-    <select id="queryOrderById" resultType="com.app.model.po.OrderPO">
+    <select id="queryOrderById" resultType="com.common.model.po.OrderPO">
         select
         <include refid="Base_Column_List"/>
         from `order`
@@ -26,7 +26,7 @@
 
     </select>
 
-    <select id="queryOrderByUserId" resultType="com.app.model.po.OrderPO">
+    <select id="queryOrderByUserId" resultType="com.common.model.po.OrderPO">
         select
         <include refid="Base_Column_List"/>
         from `order`
@@ -34,7 +34,7 @@
 
     </select>
 
-    <insert id="saveOrder" parameterType="com.app.model.po.OrderPO" useGeneratedKeys="true" keyProperty="po.id">
+    <insert id="saveOrder" parameterType="com.common.model.po.OrderPO" useGeneratedKeys="true" keyProperty="po.id">
         insert into `order` (<include refid="Column_List_Without_Key"/>)
         VALUES
         (#{goodId},#{goodCount},#{userId},#{usedCoin},#{usedPoint},#{transportWay},#{addressId},#{amountPrice},#{status})

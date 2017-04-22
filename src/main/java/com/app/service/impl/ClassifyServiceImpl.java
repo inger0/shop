@@ -1,14 +1,13 @@
 package com.app.service.impl;
 
-import com.app.dao.GoodDao;
-import com.app.dao.ShopDao;
-import com.app.model.po.GoodPO;
-import com.app.model.po.ShopPO;
+import com.common.dao.GoodDao;
+import com.common.dao.ShopDao;
+import com.common.model.po.GoodPO;
+import com.common.model.po.ShopPO;
 import com.app.service.ClassifyService;
 import java.util.List;
 
-import com.app.utils.Constants;
-import com.app.utils.enums.GoodStatus;
+import com.common.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

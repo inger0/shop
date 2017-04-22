@@ -1,6 +1,6 @@
 package com.app.service;
 
-import com.app.model.po.GoodPO;
+import com.common.model.po.GoodPO;
 
 import java.util.List;
 

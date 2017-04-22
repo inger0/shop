@@ -1,47 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.app.dao.GoodDao">
+<mapper namespace="com.common.dao.GoodDao">
     <sql id="Base_Column_List">
-        id,name,classify_id,classify_name,shop_id,origin_price,stock,sales_volume,new_price,min_price,max_point,min_point,max_coin,min_coin,head_img,content_img,content,status
+        id,`name`,classify_id,classify_name,shop_id,origin_price,stock,sales_volume,new_price,min_price,max_point,min_point,max_coin,min_coin,head_img,content_img,content,status
 
     </sql>
 
-    <select id="queryGoodById" resultType="com.app.model.po.GoodPO">
+    <select id="queryGoodById" resultType="com.common.model.po.GoodPO">
         select
         <include refid="Base_Column_List"/>
         from good
         where id=#{id}
     </select>
 
-    <select id="queryGoodsByStatus" resultType="com.app.model.po.GoodPO">
+    <select id="queryGoodRegexp" resultType="com.common.model.po.GoodPO">
+        SELECT
+        <include refid="Base_Column_List" />
+        from good
+        where `name` regexp #{regexp}
+    </select>
+
+    <select id="queryGoodsByStatus" resultType="com.common.model.po.GoodPO">
         select
         <include refid="Base_Column_List" />
         from good
         where status = #{status}
     </select>
 
-    <select id="queryGoodsByStatusAndClassifyId" resultType="com.app.model.po.GoodPO">
+    <select id="queryGoodsByStatusAndClassifyId" resultType="com.common.model.po.GoodPO">
         select
         <include refid="Base_Column_List" />
         from good
         where status = #{status}
         and classify_id = #{classifyId}
     </select>
-    <select id="queryGoodsByClassifyId" resultType="com.app.model.po.GoodPO">
+    <select id="queryGoodsByClassifyId" resultType="com.common.model.po.GoodPO">
         select
         <include refid="Base_Column_List" />
         from good
         where classify_id = #{classifyId}
     </select>
 
-    <select id="queryGoodsByShopId" resultType="com.app.model.po.GoodPO">
+    <select id="queryGoodsByShopId" resultType="com.common.model.po.GoodPO">
         select
         <include refid="Base_Column_List" />
         from good
         where shop_id = #{shopId}
     </select>
 
-    <select id="queryGoodsByShopIdAndStatus" resultType="com.app.model.po.GoodPO">
+    <select id="queryGoodsByShopIdAndStatus" resultType="com.common.model.po.GoodPO">
         select
         <include refid="Base_Column_List" />
         from good

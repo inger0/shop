@@ -1,11 +1,11 @@
 package com.app.service.impl;
 
-import com.app.dao.AddressDao;
-import com.app.dao.UserDao;
-import com.app.model.po.AddressPO;
-import com.app.model.po.UserPO;
+import com.common.dao.AddressDao;
+import com.common.dao.UserDao;
+import com.common.model.po.AddressPO;
+import com.common.model.po.UserPO;
 import com.app.service.AccountService;
-import com.app.utils.Constants;
+import com.common.utils.Constants;
 import com.taobao.api.ApiException;
 import com.taobao.api.DefaultTaobaoClient;
 import com.taobao.api.TaobaoClient;

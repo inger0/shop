@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.app.dao.UserDao">
+<mapper namespace="com.common.dao.UserDao">
     <sql id="Base_Column_List">
         id,user_name,pay_password,telephone,coin,point,diamond,head_img,status,inviter_id,invitation_code
     </sql>
@@ -9,21 +9,21 @@
         insert into `user` (telephone, inviter_id) VALUES (#{telephone},#{inviterId})
     </insert>
 
-    <select id="queryUserById" resultType="com.app.model.po.UserPO">
+    <select id="queryUserById" resultType="com.common.model.po.UserPO">
         select
         <include refid="Base_Column_List"/>
         from `user`
         where id = #{userId}
     </select>
 
-    <select id="queryUserByInvitationCode" resultType="com.app.model.po.UserPO">
+    <select id="queryUserByInvitationCode" resultType="com.common.model.po.UserPO">
         select
         <include refid="Base_Column_List"/>
         from `user`
         where invitation_code = #{invitationCode}
     </select>
 
-    <update id="updateHeadImgById" parameterType="com.app.model.po.UserPO">
+    <update id="updateHeadImgById" parameterType="com.common.model.po.UserPO">
         update `user`
         set head_img = #{headImg}
         where id = #{userId}

@@ -1,13 +1,11 @@
 package com.app.service.impl;
 
-import com.app.dao.TestDao;
-import com.app.model.po.TestPO;
+import com.common.dao.TestDao;
+import com.common.model.po.TestPO;
 import com.app.service.TestService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * Created by yujingyang on 2017/3/27.

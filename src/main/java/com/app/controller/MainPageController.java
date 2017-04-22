@@ -1,7 +1,7 @@
 package com.app.controller;
 
 import com.app.service.MainPageService;
-import com.app.utils.WebUtil;
+import com.common.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

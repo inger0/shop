@@ -1,19 +1,18 @@
 package com.app.service.impl;
 
-import com.app.dao.GoodDao;
-import com.app.dao.ShopDao;
-import com.app.model.po.GoodPO;
-import com.app.model.po.ShopPO;
+import com.common.dao.GoodDao;
+import com.common.dao.ShopDao;
+import com.common.model.po.GoodPO;
+import com.common.model.po.ShopPO;
 import com.app.service.ShopService;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.app.utils.enums.GoodStatus;
+import com.common.utils.enums.GoodStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
 
 /**
  * Created by yujingyang on 2017/4/10.

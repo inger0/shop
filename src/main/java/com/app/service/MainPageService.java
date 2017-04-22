@@ -1,6 +1,6 @@
 package com.app.service;
 
-import com.app.model.po.ClassifyPO;
+import com.common.model.po.ClassifyPO;
 
 import java.util.List;
 import java.util.Map;

@@ -1,13 +1,11 @@
 package com.app.controller;
 
-import com.app.dao.ShopDao;
-import com.app.model.po.GoodPO;
-import com.app.model.po.ShopPO;
+import com.common.dao.ShopDao;
+import com.common.model.po.GoodPO;
 import com.app.service.GoodService;
-import com.app.utils.MapperPO2DTO;
-import com.app.utils.PO2MapUtil;
-import com.app.utils.WebUtil;
-import com.app.utils.enums.OrderStatus;
+import com.common.utils.PO2MapUtil;
+import com.common.utils.WebUtil;
+import com.common.utils.enums.OrderStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -167,6 +165,17 @@ public class GoodAndOrderController {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
             return WebUtil.error("get order info error");
+        }
+    }
+
+    @RequestMapping(value = "search",method = RequestMethod.POST)
+    public ResponseEntity<Map<String,Object>> search(String goodName){
+        try {
+
+            return WebUtil.result(goodService.search(goodName));
+        }catch (Exception e){
+            e.printStackTrace();
+            return WebUtil.error("failure search");
         }
     }
 

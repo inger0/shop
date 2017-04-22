@@ -1,7 +1,7 @@
 package com.app.service;
 
-import com.app.model.dto.OrderAndGoodDTO;
-import com.app.model.po.GoodPO;
+import com.common.model.dto.OrderAndGoodDTO;
+import com.common.model.po.GoodPO;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,4 +33,6 @@ public interface GoodService {
 
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     List<OrderAndGoodDTO> getOrderInfo(int userId, int status) throws IllegalAccessException;
+
+    List<GoodPO> search(String goodName);
 }

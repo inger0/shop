@@ -1,6 +1,6 @@
 package com.app.service;
 
-import com.app.model.po.AddressPO;
+import com.common.model.po.AddressPO;
 import com.taobao.api.ApiException;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;

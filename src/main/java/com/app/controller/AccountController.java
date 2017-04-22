@@ -1,15 +1,14 @@
 package com.app.controller;
 
-import com.app.model.po.AddressPO;
+import com.common.model.po.AddressPO;
 import com.app.service.AccountService;
-import com.app.utils.WebUtil;
+import com.common.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.*;

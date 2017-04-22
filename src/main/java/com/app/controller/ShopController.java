@@ -1,7 +1,7 @@
 package com.app.controller;
 
 import com.app.service.ShopService;
-import com.app.utils.WebUtil;
+import com.common.utils.WebUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
