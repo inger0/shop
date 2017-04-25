@@ -22,7 +22,7 @@ code有如下几种情况
 
 -------
 
-##### 1.获取分类
+#####  1.获取分类
 url: main/getClassify
 
 method: get
@@ -49,7 +49,7 @@ response:
 ```
 
 ---
-#####2.获取首页商品列表
+##### 2.获取首页商品列表
 
 url: main/getMainPageGoods
 
@@ -539,7 +539,7 @@ response:
 ```
 
 ---
-#####3.首页获取用户信息
+##### 3.首页获取用户信息
 url: /main/getUserInfo
 
 method: get
@@ -573,7 +573,7 @@ response:
 分类部分
 
 ---
-#####1.获取某分类下商品:
+##### 1.获取某分类下商品:
 
 url: classify/getGoods
 
@@ -639,7 +639,7 @@ response:
 店铺部分
 
 ---
-#####1.获取店铺中所有商品
+##### 1.获取店铺中所有商品
 
 url: shop/getAll/:shopId
 
@@ -699,7 +699,7 @@ response:
 }
 ```
 ---
-#####2.获取热销商品
+##### 2.获取热销商品
 
 url: shop/getHotSale/:shopId
 
@@ -713,7 +713,7 @@ request
 response: 同上一个接口
 
 ---
-#####3.获取店铺首页内容
+##### 3.获取店铺首页内容
 
 url: shop/getShopMainPage/:shopId
 
@@ -757,7 +757,7 @@ response:
 }
 ```
 ---
-#####4.获取店铺活动图片
+##### 4.获取店铺活动图片
 
 url: shop/getActivityImgUrl/:shopId
 
@@ -776,7 +776,7 @@ response:
 }
 ```
 ---
-#####5.获取店铺客服电话
+##### 5.获取店铺客服电话
 
 url: shop/getTelephone/:shopId
 
@@ -799,7 +799,7 @@ response:
 
 ----
 
-#####1.获取商品详情
+##### 1.获取商品详情
 (获取以下信息需要先登录 调用 account/login)
 
 url: good/getGoodContent/:goodId
@@ -837,7 +837,7 @@ response:
 ```
 
 ----
-#####2.将商品添加至购物车
+##### 2.将商品添加至购物车
 
 url: good/addGoodToCart
 
@@ -860,7 +860,7 @@ response:
 ```
 ---
 
-#####3.获取购物车中订单和商品信息
+##### 3.获取购物车中订单和商品信息
 
 url: good/getOrdersInCart
 
@@ -903,7 +903,7 @@ response:
 ```
 ----
 
-#####4.删除购物车中商品
+##### 4.删除购物车中商品
 
 url: good/deleteGoodFromCart
 
@@ -924,7 +924,7 @@ response:
 }
 ```
 ---
-#####5.改变购物车中商品数量
+##### 5.改变购物车中商品数量
 
 url: good/changeOrderCount/:orderId
 
@@ -948,7 +948,7 @@ response:
 ```
 
 ----
-#####6.放弃订单付款
+##### 6.放弃订单付款
 
 url: good/abandonOrder
 
@@ -969,7 +969,7 @@ response:
 }
 ```
 ----
-#####7.订单付款回调
+##### 7.订单付款回调
 
 url: good/payedOrder
 
@@ -990,7 +990,7 @@ response:
 }
 ```
 ----
-#####8.获取部落币 部落分比率
+##### 8.获取部落币 部落分比率
 
 url: good/getRate
 
@@ -1009,7 +1009,7 @@ response:
 }
 ```
 -----
-#####9.获取订单管理信息
+##### 9.获取订单管理信息
 url: getOrderInfo/:status
 
 status有三种: All wait4pay wait4receive
@@ -1054,7 +1054,7 @@ response:
 ```
 
 -----
-#####10.商品搜索接口
+##### 10.商品搜索接口
 
 url: good/search
 
@@ -1121,7 +1121,7 @@ response:
 用户管理部分
 
 -----
-#####1.获取某用户所有地址
+##### 1.获取某用户所有地址
 
 url: account/getAddress
 
@@ -1147,7 +1147,7 @@ response:
 }
 ```
 
-#####2.添加地址
+##### 2.添加地址
 
 url: account/addAddress
 
@@ -1173,7 +1173,7 @@ response:
 ```
 -----
 
-#####3.获取某个地址的详细信息
+##### 3.获取某个地址的详细信息
 
 url:  account/getOneAddress/:addressId
 
@@ -1196,7 +1196,7 @@ response:
   }
 }
 ```
-#####4.上传用户头像
+##### 4.上传用户头像
 
 url: account/uploadHeadImg
 
@@ -1244,7 +1244,7 @@ response:
 
 -----
 
-#####5.更改支付密码
+##### 5.更改支付密码
 
 url: account/changePayPassword
 
@@ -1268,7 +1268,7 @@ response:
 
 ------
 
-#####6.获取原手机号
+##### 6.获取原手机号
 
 method: get
 
@@ -1284,7 +1284,7 @@ response:
 
 ------
 
-#####7.更新手机号
+##### 7.更新手机号
 
 url: account/changeTelephone
 
@@ -1305,7 +1305,7 @@ response:
 }
 ```
 ------
-#####8.发送短信
+##### 8.发送短信
 
 url: account/getMessage
 
@@ -1327,7 +1327,7 @@ response:
 ```
 
 -----
-#####9.获取原手机号(修改验证手机用)
+##### 9.获取原手机号(修改验证手机用)
 url: account/getOriginalTelephone
 
 method: get
@@ -1343,7 +1343,7 @@ response:
 
 ```
 -----
-#####10.更改验证手机
+##### 10.更改验证手机
 url: account/changeTelephone
 
 method: post
@@ -1357,7 +1357,7 @@ request:
 
 -----
 
-#####11.注册接口(先调用发短信接口)
+##### 11.注册接口(先调用发短信接口)
 
 url: account/register
 
@@ -1383,7 +1383,7 @@ response:
 
 -----
 
-#####12.登录接口(先调用发短信接口)
+##### 12.登录接口(先调用发短信接口)
 
 url: account/login
 
@@ -1407,12 +1407,27 @@ response:
 ```
 
 -----
+##### 13.获取管理员验证码
 
+url: /account/getAdminCode
+
+method: get
+
+request: ``get``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": "334862"
+}
+```
+-----
 礼包商城部分
 
 -----
 
-#####1.获取礼包商城全部商品
+##### 1.获取礼包商城全部商品
 
 url: good/getGifts
 
@@ -1455,7 +1470,7 @@ response:
 ```
 
 -----
-#####2.获取某个礼包的详细信息
+##### 2.获取某个礼包的详细信息
 
 url: good/getGift/:giftId
 
@@ -1481,7 +1496,7 @@ response:
 }
 ```
 -----
-#####3.兑换礼包
+##### 3.兑换礼包
 
 url: good/exchangeGift/:giftId
 

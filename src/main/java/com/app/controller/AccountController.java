@@ -44,9 +44,9 @@ public class AccountController {
             if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
                 return WebUtil.error("failure register");
             }
-            accountService.register(telephone,invitationCode);
+            accountService.register(telephone, invitationCode);
             return WebUtil.result("");
-        }catch (Exception e){
+        } catch (Exception e) {
             return WebUtil.error("failure register");
         }
 
@@ -63,13 +63,13 @@ public class AccountController {
             }
             //TODO 调用login
             return WebUtil.result("");
-        }catch (Exception e){
+        } catch (Exception e) {
             return WebUtil.error("failure register");
         }
     }
 
     @RequestMapping(value = "getMessage", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> getMessage(@RequestBody Map<String,String> params, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> getMessage(@RequestBody Map<String, String> params, HttpSession session) {
         try {
             String telephone = params.get("params");
             StringBuilder stringBuilder = new StringBuilder();
@@ -153,7 +153,7 @@ public class AccountController {
     }
 
     @RequestMapping(value = "changePayPassword", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> changePayPassword(@RequestBody Map<String,String> params, String newPassword, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> changePayPassword(@RequestBody Map<String, String> params, String newPassword, HttpSession session) {
         String originalPassword = params.get("originalPassword");
         Integer userId = (Integer) session.getAttribute("userId");
         try {
@@ -175,7 +175,7 @@ public class AccountController {
     }
 
     @RequestMapping(value = "changeTelephone", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> changeTelephone(@RequestBody Map<String,String> param, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> changeTelephone(@RequestBody Map<String, String> param, HttpSession session) {
         String newTelephone = param.get("newTelephone");
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null) {
@@ -188,6 +188,11 @@ public class AccountController {
             e.printStackTrace();
             return WebUtil.error("change telephone error");
         }
+    }
+
+    @RequestMapping(value = "getAdminCode", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> getAdminCode() {
+        return WebUtil.result(accountService.getAdminCode());
     }
 
     private static String bytesToHexString(byte[] src) {

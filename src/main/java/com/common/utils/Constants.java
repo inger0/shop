@@ -13,6 +13,8 @@ public  interface Constants {
     int ADDRESS_IS_DEFAULT = 1;
     int ADDRESS_NOT_DEFAULT = 0;
 
+    int USER_ADMIN = 1;
+
     String MESSAGE_API = "http://gw.api.taobao.com/router/rest";
 
 }

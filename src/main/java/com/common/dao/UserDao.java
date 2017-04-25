@@ -21,5 +21,7 @@ public interface UserDao {
 
     int saveUser(@Param("telephone")String telephone, @Param("inviterId")int InviterId);
 
+    UserPO queryUserByStatus(@Param("status") Integer status);
+
     int updatePO(UserPO userPO);
 }

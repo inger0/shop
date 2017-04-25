@@ -16,6 +16,12 @@
         where id = #{userId}
     </select>
 
+    <select id="queryUserByStatus" resultType="com.common.model.po.UserPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `user`
+        where status = #{status}
+    </select>
     <select id="queryUserByInvitationCode" resultType="com.common.model.po.UserPO">
         select
         <include refid="Base_Column_List"/>

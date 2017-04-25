@@ -94,17 +94,23 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public void register(String inviterCode, String telephone) throws Exception {
         UserPO userPO = userDao.queryUserByInvitationCode(inviterCode);
-        if(userPO == null)
+        if (userPO == null)
             throw new Exception();
-        userDao.saveUser(telephone,userPO.getInviterId());
+        userDao.saveUser(telephone, userPO.getInviterId());
 
     }
 
-    public int login(String telephone){
+    @Override
+    public String getAdminCode() {
+        UserPO userPO = userDao.queryUserByStatus(1);
+        return userDao.queryUserByStatus(Constants.USER_ADMIN).getInvitationCode();
+    }
+
+
+    public int login(String telephone) {
         //TODO 返回userPO id
-       return 1;
+        return 1;
     }
-
 
 
 }
