@@ -36,11 +36,13 @@ response:
   "msg": [
     {
       "id": 1,
-      "classifyName": "保健品"
+      "classifyName": "保健品",
+      "classifyImg":"/img/cc1.png"
     },
     {
       "id": 2,
-      "classifyName": "美容产品"
+      "classifyName": "美容产品",
+      "classifyImg":"/img/cc1.png"
     }
   ]
 }
