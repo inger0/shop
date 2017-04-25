@@ -24,10 +24,11 @@ public class StaticInterceptor implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         String path = ((HttpServletRequest) servletRequest).getServletPath();
         if(path.contains("imgs") || path.contains("css")){
-            ((HttpServletResponse)servletResponse).sendRedirect("http://121.250.222.19:3001"+path);
+            ((HttpServletResponse)servletResponse).sendRedirect("http://localhost:3001"+path);
             return;
         }
         filterChain.doFilter(servletRequest,servletResponse);
+        ((HttpServletResponse)servletResponse).setStatus(200);
 
     }
 

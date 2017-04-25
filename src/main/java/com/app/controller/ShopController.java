@@ -27,8 +27,8 @@ public class ShopController {
     ShopService shopService;
 
 
-    @RequestMapping(value = "getAll",method = RequestMethod.GET)
-    public ResponseEntity<Map<String,Object>> getAll(Integer shopId){
+    @RequestMapping(value = "getAll/{shopId}",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getAll(@PathVariable("shopId") Integer shopId){
         try {
             return WebUtil.result(shopService.getAll(shopId));
         }catch (Exception e){
@@ -67,8 +67,8 @@ public class ShopController {
         }
     }
 
-    @RequestMapping(value = "getTelephone", method = RequestMethod.GET)
-    public ResponseEntity<Map<String,Object>> getTelephone(int shopId){
+    @RequestMapping(value = "getTelephone/{shopId}", method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getTelephone(@PathVariable("shopId") Integer shopId){
         try {
             return WebUtil.result(shopService.getTelephone(shopId));
         }catch (Exception e){

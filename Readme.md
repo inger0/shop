@@ -167,6 +167,7 @@ response:
 {
   "code": 200,
   "msg": {
+    "headImg":"/img/1492605839775_[B@4b3a50f7.png",
     "point": 100,
     "price": 70,//可当xx元使用
     "coin": 100
@@ -452,7 +453,7 @@ response:
 ----
 #####2.将商品添加至购物车
 
-url: shop/addGoodToCart
+url: good/addGoodToCart
 
 method: post
 
@@ -676,7 +677,7 @@ method: post
 request:
 ```json
 {
-  "goodName":"测试",
+  "goodName":"测试"
 }
 ```
 

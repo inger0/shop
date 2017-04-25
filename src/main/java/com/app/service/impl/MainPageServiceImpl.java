@@ -82,6 +82,7 @@ public class MainPageServiceImpl implements MainPageService {
         //TODO 以后再写比率 这里先使用暂时的比率
         if(userPO==null)
             return null;
+        result.put("headImg",userPO.getHeadImg());
         result.put("coin",userPO.getCoin());
         result.put("point",userPO.getPoint());
         result.put("price",Math.floor(userPO.getPoint()*0.3+userPO.getCoin()*0.4));

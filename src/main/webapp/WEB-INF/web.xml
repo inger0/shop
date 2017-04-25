@@ -4,6 +4,11 @@
           xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/shop.jsp</location>
+    </error-page>
+
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:config/spring-*.xml</param-value>
@@ -42,6 +47,8 @@
     <param-name>log4jRefreshInterval</param-name>
     <param-value>10000</param-value>
   </context-param>
+
+
 
 
   <!-- 加载Spring框架中的log4j监听器Log4jConfigListener -->

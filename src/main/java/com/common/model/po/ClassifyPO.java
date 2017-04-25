@@ -9,4 +9,5 @@ import lombok.Data;
 public class ClassifyPO {
     Integer id;
     String classifyName;
+    String classifyImg;
 }

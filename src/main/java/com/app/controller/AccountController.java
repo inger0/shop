@@ -69,8 +69,9 @@ public class AccountController {
     }
 
     @RequestMapping(value = "getMessage", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> getMessage(String telephone, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> getMessage(@RequestBody Map<String,String> params, HttpSession session) {
         try {
+            String telephone = params.get("params");
             StringBuilder stringBuilder = new StringBuilder();
             for (int i = 0; i < 6; i++) {
                 SecureRandom random = new SecureRandom(
@@ -152,7 +153,8 @@ public class AccountController {
     }
 
     @RequestMapping(value = "changePayPassword", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> changePayPassword(String originalPassword, String newPassword, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> changePayPassword(@RequestBody Map<String,String> params, String newPassword, HttpSession session) {
+        String originalPassword = params.get("originalPassword");
         Integer userId = (Integer) session.getAttribute("userId");
         try {
             if (userId == null)
@@ -173,7 +175,8 @@ public class AccountController {
     }
 
     @RequestMapping(value = "changeTelephone", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> changeTelephone(String newTelephone, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> changeTelephone(@RequestBody Map<String,String> param, HttpSession session) {
+        String newTelephone = param.get("newTelephone");
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null) {
             return WebUtil.error("please login");
