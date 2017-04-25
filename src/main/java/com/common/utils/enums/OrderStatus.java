@@ -4,6 +4,7 @@ package com.common.utils.enums;
  * Created by yujingyang on 2017/4/10.
  */
 public interface OrderStatus {
+    int GOOD_DEFAULT = 0;
     int GOOD_IN_CART = -1;//购物车中
     int GOOD_WAITFOR_PAY = -2;//待付款
     int GOOD_IS_SETTLED = 1;//已结算待付款

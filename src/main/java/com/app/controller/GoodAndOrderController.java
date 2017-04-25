@@ -87,18 +87,23 @@ public class GoodAndOrderController {
 
     @RequestMapping(value = "changeOrderCount/{orderId}", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> changeOrderCount(@PathVariable("orderId") Integer orderId, @RequestBody Map<String, Integer> params, HttpSession session) {
-        Integer userId = (Integer) session.getAttribute("userId");
-        if (userId == null) {
-            return WebUtil.error("please login");
+        try {
+            Integer userId = (Integer) session.getAttribute("userId");
+            if (userId == null) {
+                return WebUtil.error("please login");
+            }
+            Integer count = params.get("count");
+            int result = goodService.changeOrderCount(count, orderId, userId);
+            if (result < 0) {
+                return WebUtil.error("change Order Count failure");
+            }
+            Map<String, Integer> returnData = new HashMap();
+            returnData.put("count", result);
+            return WebUtil.result(returnData);
+        }catch (Exception e){
+            e.printStackTrace();
+            return WebUtil.error("failure changeOrderCount");
         }
-        Integer count = params.get("count");
-        int result = goodService.changeOrderCount(count, orderId, userId);
-        if (result < 0) {
-            return WebUtil.error("change Order Count failure");
-        }
-        Map<String, Integer> returnData = new HashMap();
-        returnData.put("count", result);
-        return WebUtil.result(returnData);
     }
 
     @RequestMapping(value = "commitOrder", method = RequestMethod.POST)

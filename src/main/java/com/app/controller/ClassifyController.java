@@ -25,6 +25,7 @@ public class ClassifyController {
         try {
             return WebUtil.result(classifyService.getGoods(classifyId));
         }catch (Exception e){
+            e.printStackTrace();
             return WebUtil.error("getGoods failure");
         }
 

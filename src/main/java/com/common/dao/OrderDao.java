@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 public interface OrderDao {
     OrderPO queryOrderByUserIdAndStatusAndGoodId(@Param("status")int status, @Param("userId") int userId, @Param("goodId")int goodId);
 
-    int updateOrderCountById(@Param("orderId")Integer orderId);
+    int updateOrderCountById(@Param("orderId")Integer orderId,@Param("count")Integer count);
 
     int  deleteOrderById(@Param("orderId")Integer orderId,@Param("userId")Integer userId);
 

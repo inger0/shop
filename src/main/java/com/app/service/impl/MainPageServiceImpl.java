@@ -45,12 +45,15 @@ public class MainPageServiceImpl implements MainPageService {
     @Override
     public Map<String, Object> getMainPageGood() {
         List<GoodPO> goodPOs= goodDao.queryGoodsByStatus(GoodStatus.MAIN_PAGE_GOOD);
+        List<GoodPO> goodPOs1 = goodDao.queryGoodsByStatus(GoodStatus.IS_ADDVER);
         //添加优品牌
         ShopPO shopPO = shopDao.queryShopByStatus(Constants.SHOP_OUTSTANDING).get(0);
+
 
         //按分类添加热门商品
         Map<String,Object> result = new HashMap();
         result.put("outstanding_shop_goods",new ArrayList<GoodPO>());
+        result.put("advertisement",goodPOs1);
         for(GoodPO po : goodPOs){
             Integer goodClassify = po.getClassifyId();
             if(result.get(String.valueOf(goodClassify)) == null){
@@ -60,6 +63,7 @@ public class MainPageServiceImpl implements MainPageService {
             if(po.getShopId() == shopPO.getId()){
                 ((ArrayList<GoodPO>)result.get("outstanding_shop_goods")).add(po);
             }
+
 
 
             List<GoodPO> poList = (List<GoodPO>) result.get(String.valueOf(goodClassify));

@@ -65,8 +65,8 @@ public class GoodServiceImpl implements GoodService {
             orderDao.saveOrder(order4save);
             return order4save.getGoodCount();
         } else {
-            orderDao.updateOrderCountById(orderPO.getId());
-            return orderPO.getGoodCount();
+            orderDao.updateOrderCountById(orderPO.getId(),orderPO.getGoodCount()+1);
+            return orderPO.getGoodCount()+1;
 
         }
     }
@@ -78,16 +78,16 @@ public class GoodServiceImpl implements GoodService {
 
     @Override
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
-    public int changeOrderCount(int count, int orderId, int userId) {
+    public int changeOrderCount(int count, int orderId, int userId) throws Exception {
         OrderPO orderPO = orderDao.queryOrderById(orderId, userId);
+
         GoodPO goodPO = goodDao.queryGoodById(orderPO.getGoodId());
-        if (orderPO == null || count <= 0) {//防止前端提交错误数据
-            return -1;
+        if (orderPO == null || count <= 0 || goodPO == null) {//防止前端提交错误数据
+            throw new Exception();
         }
-        orderPO.setGoodCount(count);
         //TODO 注意库存
-        orderDao.saveOrder(orderPO);
-        return orderPO.getGoodCount();
+        orderDao.updateOrderCountById(orderPO.getId(),count);
+        return count;
     }
 
     @Override

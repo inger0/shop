@@ -203,7 +203,7 @@ public class MapperCreator {
 
 
     public static void main(String[] args) {
-        System.out.println(createUpdate("user"));
+        System.out.println(createUpdate(""));
     }
     
 }

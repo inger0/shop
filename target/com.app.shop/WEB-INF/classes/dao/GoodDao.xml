@@ -24,14 +24,14 @@
         select
         <include refid="Base_Column_List" />
         from good
-        where status = #{status}
+        where status &amp; #{status} = #{status}
     </select>
 
     <select id="queryGoodsByStatusAndClassifyId" resultType="com.common.model.po.GoodPO">
         select
         <include refid="Base_Column_List" />
         from good
-        where status = #{status}
+        where status  &amp; #{status} = #{status}
         and classify_id = #{classifyId}
     </select>
     <select id="queryGoodsByClassifyId" resultType="com.common.model.po.GoodPO">
@@ -53,7 +53,7 @@
         <include refid="Base_Column_List" />
         from good
         where shop_id = #{shopId}
-        and status = #{status}
+        and status  &amp; #{status} = #{status}
     </select>
 
 

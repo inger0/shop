@@ -22,7 +22,7 @@ public interface GoodService {
     int deleteGoodFromCart(int orderId, int useId);
 
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
-    int  changeOrderCount(int count, int orderId, int userId);
+    int  changeOrderCount(int count, int orderId, int userId) throws Exception;
 
 
 
