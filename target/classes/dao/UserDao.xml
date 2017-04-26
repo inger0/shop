@@ -29,6 +29,13 @@
         where invitation_code = #{invitationCode}
     </select>
 
+    <select id="queryUserByTelephone" resultType="com.common.model.po.UserPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `user`
+        where telephone = #{telephone}
+    </select>
+
     <update id="updateHeadImgById" parameterType="com.common.model.po.UserPO">
         update `user`
         set head_img = #{headImg}

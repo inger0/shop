@@ -554,6 +554,7 @@ response:
   "code": 200,
   "msg": {
     "headImg":"/img/1492605839775_[B@4b3a50f7.png",
+    "userName":"test",
     "point": 100,
     "price": 70,//可当xx元使用
     "coin": 100
@@ -1422,6 +1423,33 @@ response:
   "msg": "334862"
 }
 ```
+-----
+##### 14.获取默认地址
+
+url: account/getDefaultAddress
+
+method: get
+
+request:``{}``
+
+response:
+```json
+{
+  "code": 200,
+  "msg": [
+    {
+      "id": 1,
+      "userId": 1,
+      "reciever": "于景洋",
+      "address": "山东省济南市历下区舜华路1500号",
+      "recieverTelephone": "17621181235",
+      "mailNumber": "lovesyxfuffy@gmail.com",
+      "status": 0
+    }
+  ]
+}
+```
+
 -----
 礼包商城部分
 

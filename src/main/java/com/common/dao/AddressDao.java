@@ -14,8 +14,11 @@ public interface AddressDao {
 
     int saveAddress(AddressPO addressPO);
 
-    List<AddressPO> queryAddressByUserId(@Param("userId")Integer userId);
+    List<AddressPO> queryAddressByUserId(@Param("userId") Integer userId);
 
-    AddressPO queryAddressById(@Param("id")Integer id);
+    AddressPO queryAddressById(@Param("id") Integer id);
+
+    AddressPO queryAddressByStatus(@Param("status") Integer status, @Param("userId") Integer userId);
+
 
 }

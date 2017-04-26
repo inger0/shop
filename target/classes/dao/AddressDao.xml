@@ -7,9 +7,9 @@
 
     <insert id="saveAddress" parameterType="com.common.model.po.AddressPO">
         insert into address
-        (<include refid="Base_Column_List" />)
+        (user_id,reciever,address,reciever_telephone,mail_number,status)
         values
-        (#{id},#{userId},#{reciever},#{address},#{recieverTelephone},#{mailNumber},#{status})
+        (#{userId},#{reciever},#{address},#{recieverTelephone},#{mailNumber},#{status})
 
     </insert>
 
@@ -25,4 +25,9 @@
         where id = #{id}
     </select>
 
+    <select id="queryAddressByStatus" resultType="com.common.model.po.AddressPO">
+        SELECT <include refid="Base_Column_List" />
+        from address
+        where  user_id = #{userId} and status = #{status}
+    </select>
 </mapper>

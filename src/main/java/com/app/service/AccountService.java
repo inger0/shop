@@ -32,5 +32,10 @@ public interface AccountService {
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     void register(String inviterCode, String telephone) throws Exception;
 
+    Integer login(String telephone) throws Exception;
+
+
     String getAdminCode();
+
+    AddressPO getDefaultAddress(Integer userId);
 }

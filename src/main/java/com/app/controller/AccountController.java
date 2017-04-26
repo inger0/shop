@@ -54,24 +54,31 @@ public class AccountController {
 
 
     @RequestMapping(value = "login", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> login(String telephone, String checkCode, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> login(@RequestBody Map<String, String> params, HttpSession session) {
         try {
+            String telephone = params.get("telephone");
+            String checkCode = params.get("checkCode");
             String checkCodeInSession = (String) session.getAttribute("checkCode");
             session.setAttribute("checkCode", null);//使用后立刻销毁
             if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
-                return WebUtil.error("failure register");
+                return WebUtil.error("failure login");
             }
             //TODO 调用login
+            Integer userId = accountService.login(telephone);
+            if (userId == null)
+                return WebUtil.error("failure login");
+            session.setAttribute("userId", userId);
             return WebUtil.result("");
         } catch (Exception e) {
-            return WebUtil.error("failure register");
+            e.printStackTrace();
+            return WebUtil.error("failure login");
         }
     }
 
     @RequestMapping(value = "getMessage", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> getMessage(@RequestBody Map<String, String> params, HttpSession session) {
         try {
-            String telephone = params.get("params");
+            String telephone = params.get("telephone");
             StringBuilder stringBuilder = new StringBuilder();
             for (int i = 0; i < 6; i++) {
                 SecureRandom random = new SecureRandom(
@@ -115,6 +122,15 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> getOneAddress(@PathVariable("addressId") Integer addressId) {
         return WebUtil.result(accountService.getAddressById(addressId));
     }
+
+    @RequestMapping(value = "getDefaultAddress", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> getDefaultAddress(HttpSession session) {
+        Integer userId = (Integer) session.getAttribute("userId");
+        if (userId == null)
+            return WebUtil.error("please login");
+        return WebUtil.result(accountService.getDefaultAddress(userId));
+    }
+
 
     @RequestMapping(value = "uploadHeadImg", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> uploadHeadImg(@RequestParam("file") CommonsMultipartFile file, HttpSession session) {
@@ -193,6 +209,12 @@ public class AccountController {
     @RequestMapping(value = "getAdminCode", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> getAdminCode() {
         return WebUtil.result(accountService.getAdminCode());
+    }
+
+    @RequestMapping(value = "checkLogin", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> checkLogin(HttpSession session) {
+        Integer userId = (Integer) session.getAttribute("userId");
+        return WebUtil.result(userId != null);
     }
 
     private static String bytesToHexString(byte[] src) {

@@ -101,15 +101,22 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
+    public Integer login(String telephone) throws Exception {
+        UserPO userPO = userDao.queryUserByTelephone(telephone);
+        if (userPO == null)
+            throw new Exception();
+        return userPO.getId();
+    }
+
+    @Override
     public String getAdminCode() {
         UserPO userPO = userDao.queryUserByStatus(1);
         return userDao.queryUserByStatus(Constants.USER_ADMIN).getInvitationCode();
     }
 
-
-    public int login(String telephone) {
-        //TODO 返回userPO id
-        return 1;
+    @Override
+    public AddressPO getDefaultAddress(Integer userId) {
+        return addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT, userId);
     }
 
 

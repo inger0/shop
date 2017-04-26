@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 public class UserPO {
     Integer id;
+    String userName;
     String loginCode;
     String payPassword;
     String telephone;

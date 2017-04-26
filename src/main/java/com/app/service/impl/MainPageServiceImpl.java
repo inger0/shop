@@ -53,7 +53,7 @@ public class MainPageServiceImpl implements MainPageService {
         //按分类添加热门商品
         Map<String,Object> result = new HashMap();
         result.put("outstanding_shop_goods",new ArrayList<GoodPO>());
-        result.put("advertisement",goodPOs1);
+        result.put("advertisement",new ArrayList<GoodPO>());
         for(GoodPO po : goodPOs){
             Integer goodClassify = po.getClassifyId();
             if(result.get(String.valueOf(goodClassify)) == null){
@@ -86,6 +86,7 @@ public class MainPageServiceImpl implements MainPageService {
         //TODO 以后再写比率 这里先使用暂时的比率
         if(userPO==null)
             return null;
+        result.put("userName",userPO.getUserName());
         result.put("headImg",userPO.getHeadImg());
         result.put("coin",userPO.getCoin());
         result.put("point",userPO.getPoint());

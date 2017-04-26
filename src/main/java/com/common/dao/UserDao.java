@@ -23,5 +23,8 @@ public interface UserDao {
 
     UserPO queryUserByStatus(@Param("status") Integer status);
 
+    UserPO queryUserByTelephone(@Param("telephone") String telephone);
+
+
     int updatePO(UserPO userPO);
 }
