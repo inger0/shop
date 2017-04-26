@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.common.dao.ShopDao">
     <sql id="Base_Column_List">
-        id,name,status,activity_img,head_img,main_img,telephone
+        id,`name`,status,activity_img,head_img,main_img,telephone,owner_id
 
     </sql>
     <select id="queryShopByStatus" resultType="com.common.model.po.ShopPO">

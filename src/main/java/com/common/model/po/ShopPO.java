@@ -14,4 +14,5 @@ public class ShopPO {
     String headImg;
     String mainImg;
     String telephone;
+    String ownerId;
 }

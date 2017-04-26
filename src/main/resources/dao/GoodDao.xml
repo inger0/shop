@@ -15,46 +15,61 @@
 
     <select id="queryGoodRegexp" resultType="com.common.model.po.GoodPO">
         SELECT
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from good
         where `name` regexp #{regexp}
     </select>
 
     <select id="queryGoodsByStatus" resultType="com.common.model.po.GoodPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from good
         where status &amp; #{status} = #{status}
     </select>
 
     <select id="queryGoodsByStatusAndClassifyId" resultType="com.common.model.po.GoodPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from good
-        where status  &amp; #{status} = #{status}
+        where status &amp; #{status} = #{status}
         and classify_id = #{classifyId}
     </select>
     <select id="queryGoodsByClassifyId" resultType="com.common.model.po.GoodPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from good
         where classify_id = #{classifyId}
     </select>
 
     <select id="queryGoodsByShopId" resultType="com.common.model.po.GoodPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from good
         where shop_id = #{shopId}
+    </select>
+
+    <select id="queryGoodsByShopName" resultType="com.common.model.po.GoodPO">
+        select
+        <include refid="Base_Column_List"/>
+        from good
+        where name like #{goodName}
     </select>
 
     <select id="queryGoodsByShopIdAndStatus" resultType="com.common.model.po.GoodPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from good
         where shop_id = #{shopId}
-        and status  &amp; #{status} = #{status}
+        and status &amp; #{status} = #{status}
     </select>
 
+    <update id="updatePO" parameterType="com.common.model.po.GoodPO">
+        update good set name=#{name},classify_id=#{classifyId},classify_name=#{classifyName},
+        shop_id=#{shopId},origin_price=#{originPrice},stock=#{stock},sales_volume=#{salesVolume},
+        min_price=#{minPrice},new_price=#{newPrice},max_point=#{maxPoint},min_point=#{minPoint},
+        max_coin=#{maxCoin},min_coin=#{minCoin},head_img=#{headImg},content_img=#{contentImg},
+        content=#{content},status=#{status} where id = #{id}
+
+    </update>
 
 </mapper>

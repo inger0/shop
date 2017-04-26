@@ -38,4 +38,6 @@ public interface AccountService {
     String getAdminCode();
 
     AddressPO getDefaultAddress(Integer userId);
+
+    int updateAddress(AddressPO addressPO);
 }

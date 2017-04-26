@@ -15,6 +15,8 @@ public interface GoodDao {
 
     GoodPO queryGoodById(@Param("id") int id);
 
+    List<GoodPO> queryGoodsByShopName(@Param("goodName")String goodName);
+
     List<GoodPO> queryGoodsByStatusAndClassifyId(@Param("classifyId")int classifyId,@Param("status") int status);
 
     List<GoodPO> queryGoodRegexp(@Param("regexp")String regexp);
@@ -24,4 +26,6 @@ public interface GoodDao {
     List<GoodPO> queryGoodsByShopId(int shopId);
 
     List<GoodPO> queryGoodsByShopIdAndStatus(@Param("shopId") int shopId,@Param("status") int status);
+
+    int  updatePO(GoodPO goodPO);
 }

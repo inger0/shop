@@ -30,4 +30,9 @@
         from address
         where  user_id = #{userId} and status = #{status}
     </select>
+
+    <update id="updatePO" parameterType="com.common.model.po.AddressPO">
+        update address set user_id=#{userId},reciever=#{reciever},address=#{address},reciever_telephone=#{recieverTelephone},mail_number=#{mailNumber},status=#{status} where id = #{id}
+
+    </update>
 </mapper>

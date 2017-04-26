@@ -5,4 +5,6 @@ package com.common.utils.enums;
  */
 public interface UserStatus {
     int USER_DEFAULT = 0;
+    int USER_ADMIN = 1;
+    int USER_IS_S = 2;
 }

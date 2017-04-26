@@ -980,7 +980,10 @@ method: post
 request:
 ```json
 {
-  "orderIds":[1,2,3,4,5,6,7]
+  "orderIds":[1,2,3,4,5,6,7],
+  "addressId":1,
+  "transportWay":"顺丰",
+  "amountPrice":300
 }
 ```
 

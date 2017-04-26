@@ -10,4 +10,10 @@
          <include refid="Base_Column_List" />
          from classify
     </select>
+    <select id="queryClassifyById" resultType="com.common.model.po.ClassifyPO">
+        select
+        <include refid="Base_Column_List" />
+        from classify
+        where id = #{classifyId}
+    </select>
 </mapper>

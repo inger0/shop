@@ -126,6 +126,7 @@ public class GoodAndOrderController {
         }
     }
 
+    //TODO 补全接口 录入付款订单数据
     @RequestMapping(value = "payedOrder", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> payedOrder(@RequestBody ArrayList<Integer> orderIds, HttpSession session) {
         try {
@@ -174,9 +175,9 @@ public class GoodAndOrderController {
     }
 
     @RequestMapping(value = "search", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> search(String goodName) {
+    public ResponseEntity<Map<String, Object>> search(@RequestBody Map<String,String> params) {
         try {
-
+            String goodName = params.get("goodName");
             return WebUtil.result(goodService.search(goodName));
         } catch (Exception e) {
             e.printStackTrace();

@@ -2,6 +2,7 @@ package com.app.controller;
 
 import com.common.model.po.AddressPO;
 import com.app.service.AccountService;
+import com.common.utils.Constants;
 import com.common.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -99,7 +100,24 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> addAddress(@RequestBody AddressPO addressPO, HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         addressPO.setUserId(userId);
+        if(addressPO.getStatus() == null)
+            addressPO.setStatus(Constants.ADDRESS_NOT_DEFAULT);
         int result = accountService.saveAddress(addressPO);
+
+        if (result == -1) {
+            WebUtil.error("add Address failue");
+        }
+
+        return WebUtil.result("");
+    }
+
+    @RequestMapping(value = "updateAddress", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> updateAddress(@RequestBody AddressPO addressPO, HttpSession session) {
+        Integer userId = (Integer) session.getAttribute("userId");
+        addressPO.setUserId(userId);
+        if(addressPO.getStatus() == null)
+            addressPO.setStatus(Constants.ADDRESS_NOT_DEFAULT);
+        int result = accountService.updateAddress(addressPO);
 
         if (result == -1) {
             WebUtil.error("add Address failue");

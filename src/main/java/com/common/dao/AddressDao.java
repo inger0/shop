@@ -20,5 +20,6 @@ public interface AddressDao {
 
     AddressPO queryAddressByStatus(@Param("status") Integer status, @Param("userId") Integer userId);
 
+    int updatePO(AddressPO addressPO);
 
 }

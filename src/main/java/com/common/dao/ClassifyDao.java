@@ -3,6 +3,7 @@ package com.common.dao;
 import com.common.model.po.ClassifyPO;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -11,4 +12,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ClassifyDao {
     List<ClassifyPO> queryClassify();
+
+    ClassifyPO queryClassifyById(@Param("classifyId")Integer id);
 }

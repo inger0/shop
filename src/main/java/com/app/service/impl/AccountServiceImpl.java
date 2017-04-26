@@ -6,6 +6,7 @@ import com.common.model.po.AddressPO;
 import com.common.model.po.UserPO;
 import com.app.service.AccountService;
 import com.common.utils.Constants;
+import com.common.utils.enums.UserStatus;
 import com.taobao.api.ApiException;
 import com.taobao.api.DefaultTaobaoClient;
 import com.taobao.api.TaobaoClient;
@@ -31,7 +32,14 @@ public class AccountServiceImpl implements AccountService {
     UserDao userDao;
 
     @Override
+    @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     public int saveAddress(AddressPO addressPO) {
+        if(addressPO.getStatus() == Constants.ADDRESS_IS_DEFAULT){
+            AddressPO tmp = addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT,addressPO.getUserId());
+            if(tmp != null)
+                tmp.setStatus(Constants.ADDRESS_NOT_DEFAULT);
+            addressDao.updatePO(tmp);
+        }
         return addressDao.saveAddress(addressPO);
     }
 
@@ -111,12 +119,24 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public String getAdminCode() {
         UserPO userPO = userDao.queryUserByStatus(1);
-        return userDao.queryUserByStatus(Constants.USER_ADMIN).getInvitationCode();
+        return userDao.queryUserByStatus(UserStatus.USER_ADMIN).getInvitationCode();
     }
 
     @Override
     public AddressPO getDefaultAddress(Integer userId) {
+        AddressPO addressPO = addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT, userId);
         return addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT, userId);
+    }
+
+    @Override
+    public int updateAddress(AddressPO addressPO) {
+        if(addressPO.getStatus() == Constants.ADDRESS_IS_DEFAULT){
+            AddressPO tmp = addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT,addressPO.getUserId());
+            if(tmp != null)
+                tmp.setStatus(Constants.ADDRESS_NOT_DEFAULT);
+            addressDao.updatePO(tmp);
+        }
+        return addressDao.updatePO(addressPO);
     }
 
 
