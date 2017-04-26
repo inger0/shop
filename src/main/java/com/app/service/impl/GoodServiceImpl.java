@@ -121,6 +121,12 @@ public class GoodServiceImpl implements GoodService {
                 OrderAndGoodDTO orderAndGoodDTO = mapper.mapper(new OrderAndGoodDTO(),orderPO,goodPO);
                 orderAndGoodDTO.setShopName(shopDao.queryShopById(goodPO.getShopId()).getName());
                 orderAndGoodDTO.setOrderId(orderPO.getId());
+                switch (orderPO.getStatus()){
+                    case OrderStatus.GOOD_AFTER_RECIEVED:
+                        orderAndGoodDTO.setDescribeStatus("交易成功");
+                    default:
+                        orderAndGoodDTO.setDescribeStatus("交易中");
+                }
                 results.add(orderAndGoodDTO);
             }
         }
