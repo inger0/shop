@@ -554,6 +554,7 @@ response:
   "code": 200,
   "msg": {
     "headImg":"/img/1492605839775_[B@4b3a50f7.png",
+    "diamond":3,
     "userName":"test",
     "point": 100,
     "price": 70,//可当xx元使用

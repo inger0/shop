@@ -88,6 +88,7 @@ public class MainPageServiceImpl implements MainPageService {
             return null;
         result.put("userName",userPO.getUserName());
         result.put("headImg",userPO.getHeadImg());
+        result.put("diamond",userPO.getDiamond());
         result.put("coin",userPO.getCoin());
         result.put("point",userPO.getPoint());
         result.put("price",Math.floor(userPO.getPoint()*0.3+userPO.getCoin()*0.4));
