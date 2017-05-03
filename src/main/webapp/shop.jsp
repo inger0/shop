@@ -10,6 +10,6 @@
 </head>
 <body>
 <div id="app"></div>
-<script src="http://localhost/result.js"></script>
+<script src="http://localhost:3001/static/result.js"></script>
 </body>
 </html>

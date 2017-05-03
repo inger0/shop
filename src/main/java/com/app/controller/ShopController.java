@@ -33,7 +33,7 @@ public class ShopController {
             return WebUtil.result(shopService.getAll(shopId));
         }catch (Exception e){
             e.printStackTrace();
-            return WebUtil.error("get all goods failure");
+            return WebUtil.error("获取全部商品失败");
         }
     }
 
@@ -43,7 +43,7 @@ public class ShopController {
             return WebUtil.result(shopService.getHotSale(shopId));
         }catch (Exception e){
             e.printStackTrace();
-            return WebUtil.error("get hot sale goods failure");
+            return WebUtil.error("获取热销商品失败");
         }
     }
 
@@ -53,7 +53,7 @@ public class ShopController {
             return WebUtil.result(shopService.getShopMainPage(shopId));
         }catch (Exception e){
             e.printStackTrace();
-            return WebUtil.error("get shop main page failure");
+            return WebUtil.error("获取店铺首页失败");
         }
     }
 
@@ -63,7 +63,7 @@ public class ShopController {
             return WebUtil.result(shopService.getShopActivityImgUrl(shopId));
         }catch (Exception e){
             e.printStackTrace();
-            return WebUtil.error("get activity img failure");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -73,7 +73,7 @@ public class ShopController {
             return WebUtil.result(shopService.getTelephone(shopId));
         }catch (Exception e){
             e.printStackTrace();
-            return WebUtil.error("get telephone failure");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 

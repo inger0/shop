@@ -16,5 +16,6 @@ public class OrderPO {
     String transportWay;
     Integer addressId;
     Integer amountPrice;
+    String orderNum;
     Integer status;
 }

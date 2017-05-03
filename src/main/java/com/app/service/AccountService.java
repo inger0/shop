@@ -30,7 +30,7 @@ public interface AccountService {
     void sendMessage(String code, String telephone) throws ApiException;
 
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
-    void register(String inviterCode, String telephone) throws Exception;
+    String register(String inviterCode, String telephone) throws Exception;
 
     Integer login(String telephone) throws Exception;
 
@@ -40,4 +40,17 @@ public interface AccountService {
     AddressPO getDefaultAddress(Integer userId);
 
     int updateAddress(AddressPO addressPO);
+
+
+
+
+    Integer wechatLogin(String code, String UUID) throws Exception;
+
+
+
+    String getCharge(Integer userId, String channel, String price, Integer integer) throws Exception;
+
+    String getUUID(Integer userId);
+
+    void changeUserName(Integer userId, String userName);
 }

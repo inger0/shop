@@ -1,20 +1,16 @@
 package test;
 
 import java.io.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by yujingyang on 2017/4/26.
  */
 public class Test {
-    public static void main(String[] args) throws IOException {
-        File f = new File("/Users/yujingyang/Downloads/psb.gif");
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(f)));
-        String str = bufferedReader.readLine();
-        while (str!=null){
-            System.out.println(str);
-            if(str.contains("var"))
-                System.out.println("get script");
-            str = bufferedReader.readLine();
-        }
+    public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
+        MessageDigest messageDigest = MessageDigest.getInstance("md5");
+        String orderNo =messageDigest.digest(String.valueOf(System.currentTimeMillis() / 1000).getBytes())+"";
+        System.out.println(orderNo);
     }
 }

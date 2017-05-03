@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.common.dao.UserDao">
     <sql id="Base_Column_List">
-        id,user_name,pay_password,telephone,coin,point,diamond,head_img,status,inviter_id,invitation_code
+        id,user_name,login_code,pay_password,telephone,coin,point,diamond,head_img,status,inviter_id,invitation_code,UUID
     </sql>
 
-    <insert id="saveUser">
+    <insert id="saveUser" useGeneratedKeys="true" keyColumn="id">
         insert into `user` (telephone, inviter_id) VALUES (#{telephone},#{inviterId})
     </insert>
 
@@ -14,6 +14,30 @@
         <include refid="Base_Column_List"/>
         from `user`
         where id = #{userId}
+
+    </select>
+
+    <insert id="savePO" useGeneratedKeys="true" keyProperty="id" parameterType="com.common.model.po.UserPO">
+        insert into user(user_name,login_code,pay_password,
+        telephone,coin,point,diamond,head_img,status,inviter_id,
+        invitation_code,UUID) values (#{userName},#{loginCode},
+        #{payPassword},#{telephone},#{coin},#{point},#{diamond},
+        #{headImg},#{status},#{inviterId},#{invitationCode},#{UUID})
+
+    </insert>
+
+    <select id="queryUserByLoginCode" resultType="com.common.model.po.UserPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `user`
+        where login_code = #{loginCode}
+    </select>
+
+    <select id="queryUserByUUID" resultType="com.common.model.po.UserPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `user`
+        where UUID = #{UUID}
     </select>
 
     <select id="queryUserByStatus" resultType="com.common.model.po.UserPO">
@@ -59,7 +83,7 @@
         set user_name=#{userName},login_code=#{loginCode},
         pay_password=#{payPassword},telephone=#{telephone},coin=#{coin},
         point=#{point},diamond=#{diamond},head_img=#{headImg},status=#{status},
-        inviter_id=#{inviterId},invitation_code=#{invitationCode}
+        inviter_id=#{inviterId},invitation_code=#{invitationCode},UUID=#{UUID}
         where id = #{id}
 
     </update>

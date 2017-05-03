@@ -19,5 +19,6 @@ public class UserPO {
     int status;
     int inviterId;
     String invitationCode;
+    String UUID;
 
 }

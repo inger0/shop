@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public interface GoodService {
 
 
 
-    int commitOrder(ArrayList<Integer> orderIds, int userId);
+    int commitOrder(List<Integer> orderIds, int userId);
 
     int abandonOrder(ArrayList<Integer> orderIds, int userId);
 
@@ -43,4 +44,8 @@ public interface GoodService {
 
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     void exchangeGift(Integer giftId, Integer userId) throws Exception;
+
+    String confirmOrders(List<OrderAndGoodDTO> confirmOrders) throws NoSuchAlgorithmException;
+
+    void paySucceed(String orderNum);
 }

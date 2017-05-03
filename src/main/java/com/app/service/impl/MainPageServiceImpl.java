@@ -63,6 +63,9 @@ public class MainPageServiceImpl implements MainPageService {
             if(po.getShopId() == shopPO.getId()){
                 ((ArrayList<GoodPO>)result.get("outstanding_shop_goods")).add(po);
             }
+            if((po.getStatus() & GoodStatus.IS_ADDVER) > 0){
+                ((ArrayList<GoodPO>)result.get("advertisement")).add(po);
+            }
 
 
 

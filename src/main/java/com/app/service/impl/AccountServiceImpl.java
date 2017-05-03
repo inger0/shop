@@ -1,17 +1,29 @@
 package com.app.service.impl;
 
 import com.common.dao.AddressDao;
+import com.common.dao.OrderDao;
 import com.common.dao.UserDao;
 import com.common.model.po.AddressPO;
 import com.common.model.po.UserPO;
 import com.app.service.AccountService;
 import com.common.utils.Constants;
+import com.common.utils.UUIDUtil;
 import com.common.utils.enums.UserStatus;
+import com.pingplusplus.Pingpp;
+import com.pingplusplus.exception.*;
+import com.pingplusplus.model.Charge;
 import com.taobao.api.ApiException;
 import com.taobao.api.DefaultTaobaoClient;
 import com.taobao.api.TaobaoClient;
 import com.taobao.api.request.AlibabaAliqinFcSmsNumSendRequest;
 import com.taobao.api.response.AlibabaAliqinFcSmsNumSendResponse;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +31,10 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.security.NoSuchAlgorithmException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by yujingyang on 2017/4/17.
@@ -30,13 +45,15 @@ public class AccountServiceImpl implements AccountService {
     AddressDao addressDao;
     @Autowired
     UserDao userDao;
+    @Autowired
+    OrderDao orderDao;
 
     @Override
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     public int saveAddress(AddressPO addressPO) {
-        if(addressPO.getStatus() == Constants.ADDRESS_IS_DEFAULT){
-            AddressPO tmp = addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT,addressPO.getUserId());
-            if(tmp != null)
+        if (addressPO.getStatus() == Constants.ADDRESS_IS_DEFAULT) {
+            AddressPO tmp = addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT, addressPO.getUserId());
+            if (tmp != null)
                 tmp.setStatus(Constants.ADDRESS_NOT_DEFAULT);
             addressDao.updatePO(tmp);
         }
@@ -55,7 +72,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public int changeUserHeadImg(String filePath, Integer userId) {
-        return userDao.updateHeadImgById(filePath, userId);
+        return userDao.updateHeadImgById("/userImgs/" + filePath, userId);
     }
 
 
@@ -100,12 +117,19 @@ public class AccountServiceImpl implements AccountService {
 
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     @Override
-    public void register(String inviterCode, String telephone) throws Exception {
+    public String register(String inviterCode, String telephone) throws Exception {
         UserPO userPO = userDao.queryUserByInvitationCode(inviterCode);
-        if (userPO == null)
+        UserPO po = userDao.queryUserByTelephone(telephone);
+        if (userPO == null || po != null)
             throw new Exception();
-        userDao.saveUser(telephone, userPO.getInviterId());
-
+        UserPO savePO = new UserPO();
+        savePO.setInviterId(userPO.getId());
+        savePO.setTelephone(telephone);
+        savePO.setUserName("唐僧用户" + telephone.substring(telephone.length() - 4));
+        savePO.setUUID(UUIDUtil.generateUUID());
+        savePO.setHeadImg("/imgs/user.jpg");
+        userDao.savePO(savePO);
+        return savePO.getUUID();
     }
 
     @Override
@@ -130,14 +154,112 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public int updateAddress(AddressPO addressPO) {
-        if(addressPO.getStatus() == Constants.ADDRESS_IS_DEFAULT){
-            AddressPO tmp = addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT,addressPO.getUserId());
-            if(tmp != null)
+        if (addressPO.getStatus() == Constants.ADDRESS_IS_DEFAULT) {
+            AddressPO tmp = addressDao.queryAddressByStatus(Constants.ADDRESS_IS_DEFAULT, addressPO.getUserId());
+            if (tmp != null)
                 tmp.setStatus(Constants.ADDRESS_NOT_DEFAULT);
             addressDao.updatePO(tmp);
         }
         return addressDao.updatePO(addressPO);
     }
 
+
+    @Override
+    public Integer wechatLogin(String code, String UUID) throws Exception {
+        CloseableHttpClient httpclient = HttpClients.createDefault();
+        //2.生成一个get请求
+        HttpGet httpget = new HttpGet("https://api.weixin.qq.com/sns/oauth2/access_token?appid=" + Constants.APP_ID + "&secret=" + Constants.APP_SECRET + "&code=" + code + "&grant_type=authorization_code");
+        CloseableHttpResponse response = null;
+        //3.执行get请求并返回结果
+        response = httpclient.execute(httpget);
+        String result;
+        HttpEntity entity = response.getEntity();
+        if (entity != null) {
+            result = EntityUtils.toString(entity);
+            JSONObject json = new JSONObject(result); //Convert String to JSON Object
+            String unionId = json.getString("openid");
+            UserPO userPO = userDao.queryUserByLoginCode(unionId);
+            if (userPO == null) {
+                UserPO tmp = userDao.queryUserByUUID(UUID);
+                if (tmp == null)
+                    throw new Exception();
+                tmp.setLoginCode(unionId);
+                userDao.updatePO(tmp);
+                return tmp.getId();
+            }
+            return userPO.getId();
+        } else {
+            throw new Exception();
+        }
+    }
+
+    @Override
+    public String getCharge(Integer userId, String channel, String orderNum, Integer price) throws Exception {
+        UserPO userPO = userDao.queryUserById(userId);
+        if (userPO == null)
+            throw new Exception();
+        else if (userPO.getLoginCode() == null) {
+            return "error";
+        } else {
+
+            return createChargeWithOpenid(userPO.getLoginCode(), userPO.getTelephone(), channel, orderNum, price).toString();
+        }
+    }
+
+
+    private Charge createChargeWithOpenid(String openid, String telephone, String channel, String orderNum, int price) throws NoSuchAlgorithmException, RateLimitException, APIException, ChannelException, InvalidRequestException, APIConnectionException, AuthenticationException {
+        Pingpp.apiKey = "sk_test_Hqv1iTf1WzfPWTCyPCmj5SSC";
+        Charge charge = null;
+        Map<String, Object> chargeMap = new HashMap<String, Object>();
+        chargeMap.put("amount", price);//订单总金额, 人民币单位：分（如订单总金额为 1 元，此处请填 100）
+        chargeMap.put("currency", "cny");
+        chargeMap.put("subject", "TS_SHOP");
+        chargeMap.put("body", "唐僧商城商品支付");
+
+        chargeMap.put("order_no", orderNum);// 推荐使用 8-20 位，要求数字或字母，不允许其他字符
+        chargeMap.put("channel", channel);// 支付使用的第三方支付渠道取值，请参考：https://www.pingxx.com/api#api-c-new
+        chargeMap.put("client_ip", "127.0.0.1"); // 发起支付请求客户端的 IP 地址，格式为 IPV4，如: 127.0.0.1
+        Map<String, String> app = new HashMap<String, String>();
+        app.put("id", "app_D4i1SODuXHKCDCWj");
+        chargeMap.put("app", app);
+
+        Map<String, Object> extra = new HashMap<String, Object>();
+        switch (channel) {
+            case "wx_pub":
+                extra.put("open_id", openid);// 用户在商户微信公众号下的唯一标识，获取方式可参考 WxPubOAuthExample.java
+                break;
+            case "alipay_wap":
+                extra.put("success_url", "http://www.tangseng.shop/account/paySucceed?orderNum=" + orderNum);
+                extra.put("cancel_url", "http://www.tangseng.shop/payment/failed");
+                break;
+            case "upacp_wap":
+                extra.put("success_url", "http://www.tangseng.shop/account/paySucceed?orderNum=" + orderNum);
+                break;
+        }
+        chargeMap.put("extra", extra);
+//        try {
+//            //发起交易请求
+//            charge = Charge.create(chargeMap);
+//            // 传到客户端请先转成字符串 .toString(), 调该方法，会自动转成正确的 JSON 字符串
+//            String chargeString = charge.toString();
+//            System.out.println(chargeString);
+//        } catch (PingppException e) {
+//            e.printStackTrace();
+//        }
+        return Charge.create(chargeMap);
+    }
+
+    @Override
+    public String getUUID(Integer userId) {
+        UserPO userPO = userDao.queryUserById(userId);
+        return userPO.getUUID();
+    }
+
+    @Override
+    public void changeUserName(Integer userId, String userName) {
+        UserPO userPO = userDao.queryUserById(userId);
+        userPO.setUserName(userName);
+        userDao.updatePO(userPO);
+    }
 
 }

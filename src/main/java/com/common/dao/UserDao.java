@@ -11,6 +11,8 @@ import org.springframework.stereotype.Repository;
 public interface UserDao {
     UserPO queryUserById(@Param("userId") Integer userId);
 
+    UserPO queryUserByUUID(@Param("UUID")String UUID);
+
     UserPO queryUserByInvitationCode(@Param("invitationCode")String invitationCode);
 
     int updateHeadImgById(@Param("headImg")String headImg,@Param("userId")int userId);
@@ -21,10 +23,14 @@ public interface UserDao {
 
     int saveUser(@Param("telephone")String telephone, @Param("inviterId")int InviterId);
 
+    int savePO(UserPO userPO);
+
     UserPO queryUserByStatus(@Param("status") Integer status);
 
     UserPO queryUserByTelephone(@Param("telephone") String telephone);
 
+
+    UserPO queryUserByLoginCode(@Param("loginCode")String loginCode);
 
     int updatePO(UserPO userPO);
 }

@@ -88,7 +88,7 @@ public class MapperCreator {
 
     public static String createInsert(String tableName){
         Connection conn = getConn();
-        String sql = "select COLUMN_NAME from information_schema.COLUMNS where table_name = \""+tableName+"\";";
+        String sql = "select COLUMN_NAME from information_schema.COLUMNS where table_name = \""+tableName+"\" and TABLE_SCHEMA=\"shop\";";
         PreparedStatement pstmt;
         try {
             pstmt = (PreparedStatement) conn.prepareStatement(sql);
@@ -100,12 +100,12 @@ public class MapperCreator {
             }
             StringBuilder sql1 = new StringBuilder("insert into "+tableName+"(");
             for(String str : list){
-                sql1.append(str+",");
+                sql1.append(str.toLowerCase()+",");
             }
             sql1.deleteCharAt(sql1.length()-1);
             sql1.append(") values (");
             for(String str : list){
-                sql1.append("#{"+underlineToCamel(str)+"},");
+                sql1.append("#{"+underlineToCamel(str.toLowerCase())+"},");
             }
             sql1.deleteCharAt(sql1.length()-1);
             sql1.append(")");
@@ -203,7 +203,7 @@ public class MapperCreator {
 
 
     public static void main(String[] args) {
-        System.out.println(createUpdate("address"));
+        System.out.println(createUpdate("order"));
     }
     
 }

@@ -10,9 +10,12 @@ import com.common.model.po.UserPO;
 import com.common.utils.MapperPO2DTO;
 import com.common.utils.enums.OrderStatus;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -91,7 +94,7 @@ public class GoodServiceImpl implements GoodService {
     }
 
     @Override
-    public int commitOrder(ArrayList<Integer> orderIds, int userId) {
+    public int commitOrder(List<Integer> orderIds, int userId) {
         return orderDao.batchUpdateOrder(orderIds, OrderStatus.GOOD_IS_SETTLED, userId);
     }
 
@@ -166,6 +169,44 @@ public class GoodServiceImpl implements GoodService {
         userPO.setPoint(userPO.getPoint()+giftPO.getPointValue());
         userPO.setDiamond(userPO.getDiamond()-giftPO.getCost());
         userDao.updatePO(userPO);
+    }
+
+    @Override
+    public String confirmOrders(List<OrderAndGoodDTO> confirmOrders) throws NoSuchAlgorithmException {
+        MessageDigest messageDigest = MessageDigest.getInstance("md5");
+        messageDigest.update(String.valueOf(System.currentTimeMillis() / 1000).getBytes());
+
+        byte b[] = messageDigest.digest();
+
+        int i;
+
+        StringBuffer buf = new StringBuffer("DD");
+        for (int offset = 0; offset < b.length; offset++) {
+            i = b[offset];
+            if (i < 0)
+                i += 256;
+            if (i < 16)
+                buf.append("0");
+            buf.append(Integer.toHexString(i));
+        }
+
+        String orderNo = buf.toString().substring(8, 24);
+
+        for(OrderAndGoodDTO orderPO : confirmOrders){
+            orderPO.setOrderNum(orderNo);
+            orderDao.updatePO(orderPO);
+        }
+        return orderNo;
+    }
+
+    @Override
+    public void paySucceed(String orderNum){
+        List<OrderPO> list = orderDao.queryOrderByOrderNum(orderNum);
+        for(OrderPO orderPO : list){
+            orderPO.setStatus(OrderStatus.GOOD_AFTER_PAYED);
+            orderDao.updatePO2(orderPO);
+        }
+
     }
 
 }

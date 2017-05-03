@@ -1,5 +1,6 @@
 package com.common.dao;
 
+import com.common.model.dto.OrderAndGoodDTO;
 import com.common.model.po.OrderPO;
 
 import java.util.ArrayList;
@@ -23,7 +24,14 @@ public interface OrderDao {
 
     OrderPO queryOrderById(@Param("orderId")Integer orderId,@Param("userId")Integer userId);
 
-    int batchUpdateOrder(@Param("orderIds")ArrayList<Integer> orderIds, @Param("status")Integer status,@Param("userId")Integer userId );
+    int batchUpdateOrder(@Param("orderIds")List<Integer> orderIds, @Param("status")Integer status,@Param("userId")Integer userId );
+
+    int updatePO(OrderAndGoodDTO orderPO);
+
+    List<OrderPO> queryOrderByOrderNum(@Param("orderNum")String orderNum);
 
     List<OrderPO> queryOrderByUserId(@Param("userId")int userId);
+
+    int updatePO2(OrderPO orderPO);
+
 }

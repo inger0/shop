@@ -17,4 +17,9 @@ public  interface Constants {
 
     String MESSAGE_API = "http://gw.api.taobao.com/router/rest";
 
+    String APP_ID ="wx1be0f2a1f512729a";
+
+    String APP_SECRET = "dd0e38b8b94dfd25e7d6aa5767342883";
+
+
 }

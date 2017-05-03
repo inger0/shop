@@ -1,8 +1,10 @@
 package com.app.controller;
 
 import com.common.dao.ShopDao;
+import com.common.model.dto.OrderAndGoodDTO;
 import com.common.model.po.GoodPO;
 import com.app.service.GoodService;
+import com.common.model.po.OrderPO;
 import com.common.utils.PO2MapUtil;
 import com.common.utils.WebUtil;
 import com.common.utils.enums.OrderStatus;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -38,7 +41,7 @@ public class GoodAndOrderController {
             return WebUtil.result(map);
         } catch (Exception e) {
             e.printStackTrace();
-            return WebUtil.error("get good failure");
+            return WebUtil.error("获取商品失败");
         }
     }
 
@@ -47,12 +50,17 @@ public class GoodAndOrderController {
     public ResponseEntity<Map<String, Object>> addGoodToCart(@RequestBody Map<String, Integer> params, HttpSession session) throws Exception {
         try {
             Integer goodId = params.get("goodId");
+
             Integer userId = (Integer) session.getAttribute("userId");
+            if(userId == null)
+                return WebUtil.error("请登录");
             System.out.println(goodService);
             int count = goodService.addGoodToCast(goodId, userId);
-            return WebUtil.result(count);
+            Map<String,Object> map = new HashMap<>();
+            map.put("count",count);
+            return WebUtil.result(map);
         } catch (Exception e) {
-            return WebUtil.error("addGoodToCart failure");
+            return WebUtil.error("添加到购物车失败");
         }
 
     }
@@ -62,7 +70,7 @@ public class GoodAndOrderController {
         Integer userId = (Integer) session.getAttribute("userId");
 
         if (userId == null)
-            return WebUtil.error("please login");
+            return WebUtil.error("请登录");
         else {
             return WebUtil.result(goodService.getOrderInfo(userId, OrderStatus.GOOD_IN_CART));
         }
@@ -75,7 +83,7 @@ public class GoodAndOrderController {
         Integer orderId = params.get("orderId");
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null) {
-            return WebUtil.error("please login");
+            return WebUtil.error("请登录");
         }
         int result = goodService.deleteGoodFromCart(orderId, userId);
         if (result > 0) {
@@ -90,29 +98,31 @@ public class GoodAndOrderController {
         try {
             Integer userId = (Integer) session.getAttribute("userId");
             if (userId == null) {
-                return WebUtil.error("please login");
+                return WebUtil.error("请登录");
             }
             Integer count = params.get("count");
             int result = goodService.changeOrderCount(count, orderId, userId);
             if (result < 0) {
-                return WebUtil.error("change Order Count failure");
+                return WebUtil.error("服务器提了一个问题");
             }
             Map<String, Integer> returnData = new HashMap();
             returnData.put("count", result);
             return WebUtil.result(returnData);
         } catch (Exception e) {
             e.printStackTrace();
-            return WebUtil.error("failure changeOrderCount");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
     @RequestMapping(value = "commitOrder", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> commitOrder(@RequestBody ArrayList<Integer> orderIds, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> commitOrder(@RequestBody Map<String,List<Integer>> params, HttpSession session) {
         try {
+            List<Integer> orderIds = params.get("orderIds");
             goodService.commitOrder(orderIds, (Integer) session.getAttribute("userId"));
             return WebUtil.result("");
         } catch (Exception e) {
-            return WebUtil.error("commit order failure");
+            e.printStackTrace();
+            return WebUtil.error("完成支付的订单数为0");
         }
     }
 
@@ -122,7 +132,7 @@ public class GoodAndOrderController {
             goodService.abandonOrder(orderIds, (Integer) session.getAttribute("userId"));
             return WebUtil.result("");
         } catch (Exception e) {
-            return WebUtil.error("abandon order failure");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -134,7 +144,7 @@ public class GoodAndOrderController {
             goodService.abandonOrder(orderIds, (Integer) session.getAttribute("userId"));
             return WebUtil.result("");
         } catch (Exception e) {
-            return WebUtil.error("commit order failure");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -151,7 +161,7 @@ public class GoodAndOrderController {
         int queryStatus;
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null) {
-            return WebUtil.error("please login");
+            return WebUtil.error("请登录");
         }
         switch (status) {
             case "All":
@@ -164,13 +174,13 @@ public class GoodAndOrderController {
                 queryStatus = OrderStatus.GOOD_AFTER_SENT;
                 break;
             default:
-                return WebUtil.error("wrong status");
+                return WebUtil.error("状态码错误");
         }
         try {
             return WebUtil.result(goodService.getOrderInfo(userId, queryStatus));
         } catch (IllegalAccessException e) {
             e.printStackTrace();
-            return WebUtil.error("get order info error");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -181,7 +191,7 @@ public class GoodAndOrderController {
             return WebUtil.result(goodService.search(goodName));
         } catch (Exception e) {
             e.printStackTrace();
-            return WebUtil.error("failure search");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -190,7 +200,7 @@ public class GoodAndOrderController {
         try {
             return WebUtil.result(goodService.getGifts());
         } catch (Exception e) {
-            return WebUtil.error("failure getGifts");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -201,7 +211,7 @@ public class GoodAndOrderController {
         try {
             return WebUtil.result(goodService.getGiftById(giftId));
         } catch (Exception e) {
-            return WebUtil.error("failure getGift");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -211,15 +221,26 @@ public class GoodAndOrderController {
             return WebUtil.error("giftId is null");
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null)
-            return WebUtil.error("please login");
+            return WebUtil.error("请先登录");
         try {
             goodService.exchangeGift(giftId, userId);
             return WebUtil.result("");
         } catch (Exception e) {
             e.printStackTrace();
-            return WebUtil.error("failure exchange");
+            return WebUtil.error("兑换失败");
         }
     }
 
+    @RequestMapping(value = "confirmOrder",method = RequestMethod.POST)
+    public ResponseEntity<Map<String,Object>> confirmOrder(@RequestBody Map<String,List<OrderAndGoodDTO>> params){
+        try {
+            return WebUtil.result(goodService.confirmOrders(params.get("lastOrders")));
+        }catch (Exception e){
+            e.printStackTrace();
+            return WebUtil.error("提交结算失败");
+        }
+
+
+    }
 
 }

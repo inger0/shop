@@ -27,7 +27,7 @@ public class MainPageController {
             return WebUtil.result(mainPageService.getClassify());
 
         }catch (Exception e){
-            return WebUtil.error("get classify failure");
+            return WebUtil.error("服务器提了一个问题");
         }
     }
 
@@ -38,7 +38,7 @@ public class MainPageController {
             return WebUtil.result(mainPageService.getMainPageGood());
         }catch (Exception e){
             e.printStackTrace();
-            return WebUtil.error("get goods failure");
+            return WebUtil.error("服务器提了一个问题");
         }
 
     }
@@ -49,7 +49,7 @@ public class MainPageController {
             return WebUtil.result(mainPageService.getUserInfo(userId));
         }catch (Exception e){
             e.printStackTrace();
-            return WebUtil.error("get userInfo failure");
+            return WebUtil.error("获取用户信息错误");
         }
     }
 

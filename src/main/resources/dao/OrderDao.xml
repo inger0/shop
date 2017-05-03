@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.common.dao.OrderDao">
     <sql id="Base_Column_List">
-    id,good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,status
+    id,good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,order_num,status
     </sql>
     <sql id="Column_List_Without_Key">
-        good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,status
+        good_id,good_count,user_id,used_coin,used_point,transport_way,address_id,amount_price,order_num,status
     </sql>
     <select id="queryOrderByUserIdAndStatusAndGoodId" resultType="com.common.model.po.OrderPO">
         select
@@ -34,10 +34,18 @@
 
     </select>
 
+    <select id="queryOrderByOrderNum" resultType="com.common.model.po.OrderPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `order`
+        where order_num = #{orderNum}
+
+    </select>
+
     <insert id="saveOrder" parameterType="com.common.model.po.OrderPO" useGeneratedKeys="true" keyProperty="po.id">
         insert into `order` (<include refid="Column_List_Without_Key"/>)
         VALUES
-        (#{goodId},#{goodCount},#{userId},#{usedCoin},#{usedPoint},#{transportWay},#{addressId},#{amountPrice},#{status})
+        (#{goodId},#{goodCount},#{userId},#{usedCoin},#{usedPoint},#{transportWay},#{addressId},#{amountPrice},#{orderNum},#{status})
     </insert>
 
     <update id="updateOrderCountById">
@@ -45,7 +53,7 @@
     </update>
 
     <delete id="deleteOrderById">
-        delete from `order` where id = #{id} and user_id = #{userId}
+        delete from `order` where id = #{orderId} and user_id = #{userId}
     </delete>
 
     <update id="batchUpdateOrder">
@@ -57,5 +65,24 @@
             </foreach>
         </if>
         and user_id = #{userId}
+    </update>
+
+    <update id="updatePO" parameterType="com.common.model.dto.OrderAndGoodDTO">
+        update `order` set
+
+        good_id=#{goodId},good_count=#{goodCount},user_id=#{userId},
+        used_coin=#{usedCoin},used_point=#{usedPoint},transport_way=#{transportWay},
+        address_id=#{addressId},amount_price=#{amountPrice},order_num=#{orderNum}
+        where id = #{orderId}
+    </update>
+
+    <update id="updatePO2" parameterType="com.common.model.po.OrderPO">
+        update `order` set
+        good_id=#{goodId},good_count=#{goodCount},
+        user_id=#{userId},used_coin=#{usedCoin},
+        used_point=#{usedPoint},transport_way=#{transportWay},
+        address_id=#{addressId},amount_price=#{amountPrice},
+        order_num=#{orderNum},status=#{status} where id = #{id}
+
     </update>
 </mapper>

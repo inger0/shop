@@ -12,6 +12,7 @@ import java.io.IOException;
 /**
  * Created by yujingyang on 2017/4/14.
  */
+@WebFilter("/*")
 public class StaticInterceptor implements Filter {
 
     @Override

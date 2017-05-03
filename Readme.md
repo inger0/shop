@@ -1562,6 +1562,27 @@ response:
   ]
 }
 ```
+-----
+#####15.修改用户名
+
+method: post
+
+url: /account/changeUserName
+
+request:
+```json
+{
+  "userName":"于景洋"
+}
+```
+
+response:
+```json
+{
+  "code":200,
+  "msg":""
+}
+```
 
 -----
 礼包商城部分

@@ -1,8 +1,10 @@
 package com.app.controller;
 
+import com.app.service.GoodService;
 import com.common.model.po.AddressPO;
 import com.app.service.AccountService;
 import com.common.utils.Constants;
+import com.common.utils.UUIDUtil;
 import com.common.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -27,28 +29,34 @@ public class AccountController {
 
     @Autowired
     AccountService accountService;
+    @Autowired
+    GoodService goodService;
 
     //TODO 缺少获得管理员邀请码接口
 
     //TODO 上线后删除此接口!
     @RequestMapping(value = "loginTest")
     public ResponseEntity<Map<String, Object>> loginTest(HttpServletResponse response, HttpSession session) {
-        session.setAttribute("userId", 1);
+        session.setAttribute("userId", 29);
         return WebUtil.result("success");
     }
 
     @RequestMapping(value = "register", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> register(String telephone, String checkCode, String invitationCode, HttpSession session) {
+    public ResponseEntity<Map<String, Object>> register(@RequestBody Map<String, String> params, HttpSession session) {
         try {
+            String telephone = params.get("telephone");
+            String checkCode = params.get("checkCode");
+            String invitationCode = params.get("invitationCode");
             String checkCodeInSession = (String) session.getAttribute("checkCode");
             session.setAttribute("checkCode", null);//使用后立刻销毁
-            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
-                return WebUtil.error("failure register");
-            }
-            accountService.register(telephone, invitationCode);
-            return WebUtil.result("");
+//            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
+//                return WebUtil.error("failure register");
+//            }
+            String UUID = accountService.register(invitationCode, telephone);
+            return WebUtil.result(UUID);
         } catch (Exception e) {
-            return WebUtil.error("failure register");
+            e.printStackTrace();
+            return WebUtil.error("注册失败");
         }
 
     }
@@ -61,18 +69,18 @@ public class AccountController {
             String checkCode = params.get("checkCode");
             String checkCodeInSession = (String) session.getAttribute("checkCode");
             session.setAttribute("checkCode", null);//使用后立刻销毁
-            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
-                return WebUtil.error("failure login");
-            }
+//            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
+//                return WebUtil.error("验证码错误");
+//            }
             //TODO 调用login
             Integer userId = accountService.login(telephone);
             if (userId == null)
-                return WebUtil.error("failure login");
+                return WebUtil.error("登录失败");
             session.setAttribute("userId", userId);
             return WebUtil.result("");
         } catch (Exception e) {
             e.printStackTrace();
-            return WebUtil.error("failure login");
+            return WebUtil.error("登录失败");
         }
     }
 
@@ -91,21 +99,27 @@ public class AccountController {
             session.setAttribute("checkCode", stringBuilder.toString());
             return WebUtil.result("");
         } catch (Exception e) {
-            return WebUtil.error("failure sendMessage");
+            return WebUtil.error("发送信息失败");
         }
     }
 
+
+    @RequestMapping(value = "logOut", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> logOut(HttpSession session) {
+        session.setAttribute("userId", null);
+        return WebUtil.result("");
+    }
 
     @RequestMapping(value = "addAddress", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> addAddress(@RequestBody AddressPO addressPO, HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         addressPO.setUserId(userId);
-        if(addressPO.getStatus() == null)
+        if (addressPO.getStatus() == null)
             addressPO.setStatus(Constants.ADDRESS_NOT_DEFAULT);
         int result = accountService.saveAddress(addressPO);
 
         if (result == -1) {
-            WebUtil.error("add Address failue");
+            WebUtil.error("添加地址失败");
         }
 
         return WebUtil.result("");
@@ -115,12 +129,12 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> updateAddress(@RequestBody AddressPO addressPO, HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         addressPO.setUserId(userId);
-        if(addressPO.getStatus() == null)
+        if (addressPO.getStatus() == null)
             addressPO.setStatus(Constants.ADDRESS_NOT_DEFAULT);
         int result = accountService.updateAddress(addressPO);
 
         if (result == -1) {
-            WebUtil.error("add Address failue");
+            WebUtil.error("添加地址失败");
         }
 
         return WebUtil.result("");
@@ -145,7 +159,7 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> getDefaultAddress(HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null)
-            return WebUtil.error("please login");
+            return WebUtil.error("请登录");
         return WebUtil.result(accountService.getDefaultAddress(userId));
     }
 
@@ -163,7 +177,7 @@ public class AccountController {
             if (!(fileTypeHex.toUpperCase().startsWith("FFD8FF") || fileTypeHex.toUpperCase().startsWith("89504E47") || fileTypeHex.toUpperCase().startsWith("47494638") || fileTypeHex.toUpperCase().startsWith("424D"))) {
                 return WebUtil.error("file type error");
             }
-            String newFileName = System.currentTimeMillis() + "_" + messageDigest.digest(file.getOriginalFilename().getBytes("utf-8")) + type;
+            String newFileName = System.currentTimeMillis() + "_" + UUIDUtil.generateUUID() + type;
             System.out.println(newFileName);
 
 
@@ -176,7 +190,7 @@ public class AccountController {
                 throw new Exception();
             }
 
-            File newFile = new File("/Users/yujingyang/codes/shop/src/main/resources/static/" + newFileName);
+            File newFile = new File("/var/www/static/userImgs/" + newFileName);
             file.transferTo(newFile);
             return WebUtil.result("");
         } catch (Exception e) {
@@ -192,11 +206,11 @@ public class AccountController {
         Integer userId = (Integer) session.getAttribute("userId");
         try {
             if (userId == null)
-                return WebUtil.error("please login");
+                return WebUtil.error("请登录");
             accountService.changePayPassword(originalPassword, newPassword, userId);
             return WebUtil.result("");
         } catch (Exception e) {
-            return WebUtil.error("change pay password error");
+            return WebUtil.error("更改支付密码失败");
         }
     }
 
@@ -204,7 +218,7 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> getOriginalTelephone(HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null)
-            return WebUtil.error("please login");
+            return WebUtil.error("请登录");
         return WebUtil.result(accountService.getOriginalTelephone(userId));
     }
 
@@ -213,14 +227,37 @@ public class AccountController {
         String newTelephone = param.get("newTelephone");
         Integer userId = (Integer) session.getAttribute("userId");
         if (userId == null) {
-            return WebUtil.error("please login");
+            return WebUtil.error("请登录");
         }
         try {
             accountService.changeTelephone(newTelephone, userId);
             return WebUtil.result("");
         } catch (Exception e) {
             e.printStackTrace();
-            return WebUtil.error("change telephone error");
+            return WebUtil.error("更换手机号失败");
+        }
+    }
+
+    @RequestMapping(value = "getUUID", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> getUUID(HttpSession session) {
+        Integer userId = (Integer) session.getAttribute("userId");
+        if (userId == null)
+            return WebUtil.error("请登录");
+        else {
+            String UUID = accountService.getUUID(userId);
+            return WebUtil.result(UUID);
+        }
+    }
+
+    @RequestMapping(value = "wechatLogin", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> weChatLogin(String code, String UUID, HttpSession session, HttpServletResponse response) throws Exception {
+        try {
+            Integer userIdRe = accountService.wechatLogin(code, UUID);
+            session.setAttribute("userId", userIdRe);
+            response.sendRedirect("/");
+            return WebUtil.result("");
+        } catch (Exception e) {
+            return WebUtil.error("请先注册");
         }
     }
 
@@ -233,6 +270,26 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> checkLogin(HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         return WebUtil.result(userId != null);
+    }
+
+    @RequestMapping(value = "getCharge", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> getCharge(HttpSession session, String channel, String orderNum, Integer price) {
+        Integer userId = (Integer) session.getAttribute("userId");
+        if (userId == null)
+            return WebUtil.error("请登录");
+        try {
+
+            String result = accountService.getCharge(userId, channel, orderNum, price);
+            System.out.println(result);
+            if (result.equals("error")) {
+                return WebUtil.result("auth");
+            } else {
+                return WebUtil.result(result);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return WebUtil.error("获取支付凭据失败");
+        }
     }
 
     private static String bytesToHexString(byte[] src) {
@@ -249,6 +306,30 @@ public class AccountController {
             stringBuilder.append(hv);
         }
         return stringBuilder.toString();
+    }
+
+    @RequestMapping(value = "paySucceed", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> paySucceed(String orderNum, HttpServletResponse response) throws IOException {
+        goodService.paySucceed(orderNum);
+        response.sendRedirect("/payment/succeed");
+        return WebUtil.result("");
+    }
+
+    @RequestMapping(value = "changeUserName", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> changeUserName(HttpSession session, @RequestBody Map<String, String> params) {
+        try {
+            Integer userId = (Integer) session.getAttribute("userId");
+            if (userId == null)
+                return WebUtil.error("请登录");
+            else {
+                String userName = params.get("userName");
+                accountService.changeUserName(userId, userName);
+            }
+            return WebUtil.result("");
+        }catch (Exception e){
+            e.printStackTrace();
+            return WebUtil.error("服务器内部错误");
+        }
     }
 
 

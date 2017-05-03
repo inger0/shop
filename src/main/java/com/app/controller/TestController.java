@@ -22,8 +22,8 @@ public class TestController {
     @Autowired
     TestService testService;
 
-//    @RequestMapping(value = "/",method = RequestMethod.GET)
-//    public ModelAndView test(HttpServletRequest request, HttpServletResponse response) throws IOException {
-//        return new ModelAndView("shop.jsp");
-//    }
+    @RequestMapping(value = "/",method = RequestMethod.GET)
+    public ModelAndView test(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        return new ModelAndView("shop.jsp");
+    }
 }
