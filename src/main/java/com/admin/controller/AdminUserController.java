@@ -2,10 +2,13 @@ package com.admin.controller;
 
 import com.admin.service.AdminUserService;
 import com.app.service.MainPageService;
+import com.common.dao.UserDao;
 import com.common.model.po.GoodPO;
+import com.common.model.po.UserPO;
 import com.common.utils.UUIDUtil;
 import com.common.utils.WebUtil;
 import com.common.utils.enums.GoodStatus;
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -29,6 +32,8 @@ public class AdminUserController {
     AdminUserService adminUserService;
     @Autowired
     MainPageService mainPageService;
+    @Autowired
+    UserDao userDao;
 
     @RequestMapping(value = "queryByTelephone", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> queryUserByTelephone(String telephone) {
@@ -166,7 +171,7 @@ public class AdminUserController {
     @RequestMapping(value = "addClassify", method = RequestMethod.POST)
     public String addClassify(@RequestParam("classifyName") String classifyName, @RequestParam("file1") CommonsMultipartFile file) throws IOException {
         String UUID = UUIDUtil.generateUUID();
-        File newFile = new File("/var/www/static/classifyImg/"  + UUID+ file.getOriginalFilename());
+        File newFile = new File("/var/www/static/classifyImg/" + UUID + file.getOriginalFilename());
         String filePath = "/classifyImg/" + UUID + file.getOriginalFilename();
         file.transferTo(newFile);
         adminUserService.addClassify(classifyName, filePath);
@@ -174,29 +179,29 @@ public class AdminUserController {
     }
 
     @RequestMapping(value = "uploadShopImg", method = RequestMethod.POST)
-    public String uploadShopImg(@RequestParam("file1") CommonsMultipartFile file1, @RequestParam("file2") CommonsMultipartFile file2,String shopName,String telephone, HttpSession session) throws IOException {
+    public String uploadShopImg(@RequestParam("file1") CommonsMultipartFile file1, @RequestParam("file2") CommonsMultipartFile file2, String shopName, String telephone, HttpSession session) throws IOException {
         String UUID1 = UUIDUtil.generateUUID();
         String UUID2 = UUIDUtil.generateUUID();
 
-        File newFile1 = new File("/var/www/static/shopImgs/"  + UUID1+ file1.getOriginalFilename());
-        File newFile2 = new File("/var/www/static/shopImgs/"  + UUID2+ file2.getOriginalFilename());
+        File newFile1 = new File("/var/www/static/shopImgs/" + UUID1 + file1.getOriginalFilename());
+        File newFile2 = new File("/var/www/static/shopImgs/" + UUID2 + file2.getOriginalFilename());
 
         file1.transferTo(newFile1);
         file2.transferTo(newFile2);
 
-        String path1 = "/shopImgs/"  + UUID1+ file1.getOriginalFilename();
-        String path2 = "/shopImgs/"  + UUID1+ file2.getOriginalFilename();
+        String path1 = "/shopImgs/" + UUID1 + file1.getOriginalFilename();
+        String path2 = "/shopImgs/" + UUID1 + file2.getOriginalFilename();
 
         Integer userId = (Integer) session.getAttribute("userId");
 
-        adminUserService.setShop(path1,path2,shopName,telephone ,userId);
+        adminUserService.setShop(path1, path2, shopName, telephone, userId);
         return "uploadSuccess";
     }
 
-    @RequestMapping(value = "addGoodToShop",method = RequestMethod.POST)
+    @RequestMapping(value = "addGoodToShop", method = RequestMethod.POST)
     public String addGoodToShop(
-            String name,Integer classifyId,Integer originPrice,Integer stock,Integer minPrice,Integer maxCoin
-            ,Integer maxPoint,CommonsMultipartFile headImg,CommonsMultipartFile contentImg,CommonsMultipartFile content,HttpSession session
+            String name, Integer classifyId, Integer originPrice, Integer stock, Integer minPrice, Integer maxCoin
+            , Integer maxPoint, CommonsMultipartFile headImg, CommonsMultipartFile contentImg, CommonsMultipartFile content, HttpSession session
     ) throws IOException {
         GoodPO goodPO = new GoodPO();
         goodPO.setName(name);
@@ -208,31 +213,43 @@ public class AdminUserController {
         goodPO.setMaxCoin(maxCoin);
         goodPO.setMaxPoint(maxPoint);
         String UUID = UUIDUtil.generateUUID();
-        File newHeadImg = new File("/var/www/static/goodImgs/"+UUID+headImg.getOriginalFilename());
-        File newContentImg = new File("/var/www/static/goodImgs/"+UUID+contentImg.getOriginalFilename());
-        File newContent = new File("/var/www/static/goodImgs/"+UUID+content.getOriginalFilename());
+        File newHeadImg = new File("/var/www/static/goodImgs/" + UUID + headImg.getOriginalFilename());
+        File newContentImg = new File("/var/www/static/goodImgs/" + UUID + contentImg.getOriginalFilename());
+        File newContent = new File("/var/www/static/goodImgs/" + UUID + content.getOriginalFilename());
 
         headImg.transferTo(newHeadImg);
         contentImg.transferTo(newContentImg);
         content.transferTo(newContent);
 
-        goodPO.setHeadImg("/goodImgs/"+UUID+headImg.getOriginalFilename());
-        goodPO.setContentImg("/goodImgs/"+UUID+contentImg.getOriginalFilename());
-        goodPO.setContent("/goodImgs/"+UUID+content.getOriginalFilename());
+        goodPO.setHeadImg("/goodImgs/" + UUID + headImg.getOriginalFilename());
+        goodPO.setContentImg("/goodImgs/" + UUID + contentImg.getOriginalFilename());
+        goodPO.setContent("/goodImgs/" + UUID + content.getOriginalFilename());
 
         Integer userId = (Integer) session.getAttribute("userId");
 
-        adminUserService.saveGood(goodPO,userId);
+        adminUserService.saveGood(goodPO, userId);
 
 
         return "uploadSuccess";
     }
 
-    @RequestMapping(value = "getUserTree",method = RequestMethod.GET)
-    public ResponseEntity<Map<String,Object>> getUserTree(HttpSession session){
+    @RequestMapping(value = "getUserTree", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> getUserTree(HttpSession session) {
         Integer userId = (Integer) session.getAttribute("userId");
         return WebUtil.result(adminUserService.getUserTreeMiddle(userId));
     }
 
+    @RequestMapping(value = "login", method = RequestMethod.POST)
+    public ResponseEntity<Map<String, Object>> login(String telephone, String password, HttpSession session) {
+        if (BCrypt.checkpw(password, "$2a$10$YgHyjBPxgcy6lVj0V9BIR.fd0Jpwe/DnmDhCk57DW92/d/0wTXtqO")) {
+            UserPO userPO = userDao.queryUserByTelephone(telephone);
+            if (userPO != null) {
+                session.setAttribute("userId", userPO.getId());
+                return WebUtil.result("");
+            }
+        }
+        return WebUtil.error("登录失败");
+
+    }
 
 }

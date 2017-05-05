@@ -342,3 +342,9 @@
 
     }
 </script>
+
+<script>
+    $("#manageClassify").addClass("active");
+    $("#manager").addClass("active open");
+
+</script>

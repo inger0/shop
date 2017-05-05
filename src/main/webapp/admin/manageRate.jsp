@@ -100,4 +100,9 @@
     })
 </script>
 <!--own scripts-->
+<script>
+    $("#manageRate").addClass("active");
+    $("#manager").addClass("active open");
+
+</script>
 

@@ -68,4 +68,8 @@
 
 
 <!--own scripts-->
+<script>
+    $("#manageMainPage").addClass("active");
+    $("#manager").addClass("active open");
 
+</script>

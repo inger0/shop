@@ -893,3 +893,8 @@
 
 
 </script>
+<script>
+    $("#manageUser").addClass("active");
+    $("#manager").addClass("active open");
+
+</script>
