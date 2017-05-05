@@ -16,4 +16,13 @@
         from classify
         where id = #{classifyId}
     </select>
+
+    <delete id="deleteClassify">
+        delete from classify
+        where id = #{id}
+    </delete>
+
+    <insert id="saveClassify" useGeneratedKeys="true" keyColumn="id" parameterType="com.common.model.po.ClassifyPO">
+        insert into `classify` (classify_name, classify_img) VALUES (#{classifyName},#{classifyImg})
+    </insert>
 </mapper>

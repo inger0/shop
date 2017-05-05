@@ -56,7 +56,7 @@ public class AccountController {
             return WebUtil.result(UUID);
         } catch (Exception e) {
             e.printStackTrace();
-            return WebUtil.error("注册失败");
+            return WebUtil.error("注册失败 该手机号已存在");
         }
 
     }
@@ -69,9 +69,9 @@ public class AccountController {
             String checkCode = params.get("checkCode");
             String checkCodeInSession = (String) session.getAttribute("checkCode");
             session.setAttribute("checkCode", null);//使用后立刻销毁
-//            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
-//                return WebUtil.error("验证码错误");
-//            }
+            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
+                return WebUtil.error("验证码错误");
+            }
             //TODO 调用login
             Integer userId = accountService.login(telephone);
             if (userId == null)
@@ -182,8 +182,9 @@ public class AccountController {
 
 
             Integer userId = (Integer) session.getAttribute("userId");
+
             if (userId == null) {
-                throw new Exception();
+                return WebUtil.error("请登录");
             }
 
             if (accountService.changeUserHeadImg(newFileName, userId) != 1) {

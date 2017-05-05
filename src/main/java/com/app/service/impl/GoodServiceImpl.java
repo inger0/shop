@@ -119,7 +119,7 @@ public class GoodServiceImpl implements GoodService {
         MapperPO2DTO<OrderAndGoodDTO , OrderPO, GoodPO> mapper = new MapperPO2DTO();
 
         for(OrderPO orderPO : orderPOs){
-            if(orderPO.getStatus() == status || status == -1){
+            if(orderPO.getStatus() == status){
                 GoodPO goodPO = goodDao.queryGoodById(orderPO.getGoodId());
                 OrderAndGoodDTO orderAndGoodDTO = mapper.mapper(new OrderAndGoodDTO(),orderPO,goodPO);
                 orderAndGoodDTO.setShopName(shopDao.queryShopById(goodPO.getShopId()).getName());

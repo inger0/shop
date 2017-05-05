@@ -72,4 +72,24 @@
 
     </update>
 
+    <delete id="batchDelete" parameterType="java.util.List">
+        delete from good
+        where id in
+        <foreach collection="list" item="item" separator="," open="(" close=")">
+            #{item.id}
+        </foreach>
+    </delete>
+
+    <insert id="savePO" parameterType="com.common.model.po.GoodPO" useGeneratedKeys="true" keyColumn="id">
+        insert into good
+        (`name`,classify_id,classify_name,shop_id,origin_price,
+        stock,sales_volume,min_price,new_price,max_point,min_point,
+        max_coin,min_coin,head_img,content_img,content,status) values
+        (#{name},#{classifyId},#{classifyName},#{shopId},
+        #{originPrice},#{stock},#{salesVolume},#{minPrice},
+        #{newPrice},#{maxPoint},#{minPoint},#{maxCoin},#{minCoin},
+        #{headImg},#{contentImg},#{content},#{status})
+
+    </insert>
+
 </mapper>

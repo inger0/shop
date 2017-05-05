@@ -28,4 +28,8 @@ public interface GoodDao {
     List<GoodPO> queryGoodsByShopIdAndStatus(@Param("shopId") int shopId,@Param("status") int status);
 
     int  updatePO(GoodPO goodPO);
+
+    int  batchDelete(List list);
+
+    int savePO(GoodPO goodPO);
 }

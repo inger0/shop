@@ -7,15 +7,39 @@
     </sql>
     <select id="queryShopByStatus" resultType="com.common.model.po.ShopPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from shop
         where status = #{status}
     </select>
 
     <select id="queryShopById" resultType="com.common.model.po.ShopPO">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List"/>
         from shop
         where id = #{shopId}
     </select>
+
+    <select id="queryShopByUserId" resultType="com.common.model.po.ShopPO">
+        select
+        <include refid="Base_Column_List"/>
+        from shop
+        where owner_id = #{userId}
+    </select>
+
+    <insert id="savePO" parameterType="com.common.model.po.ShopPO" useGeneratedKeys="true" keyColumn="id">
+        insert into shop
+        (`name`,status,activity_img,head_img,main_img,telephone,owner_id)
+         values
+         (
+         #{name},#{status},#{activityImg},#{headImg},#{mainImg},#{telephone},#{ownerId})
+
+    </insert>
+
+    <update id="updatePO" parameterType="com.common.model.po.ShopPO">
+          update shop set `name`=#{name},status=#{status},
+          activity_img=#{activityImg},head_img=#{headImg},
+          main_img=#{mainImg},telephone=#{telephone},owner_id=#{ownerId} where id = #{id}
+
+    </update>
+
 </mapper>

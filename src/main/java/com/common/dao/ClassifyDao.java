@@ -14,4 +14,8 @@ public interface ClassifyDao {
     List<ClassifyPO> queryClassify();
 
     ClassifyPO queryClassifyById(@Param("classifyId")Integer id);
+
+    int deleteClassify(@Param("id")Integer id);
+
+    int saveClassify(ClassifyPO classifyPO);
 }

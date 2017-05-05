@@ -36,11 +36,11 @@
         </property>
     </bean>
     <!--&lt;!&ndash; 定义跳转的文件的前后缀 ，视图模式配置&ndash;&gt;-->
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-    <!--&lt;!&ndash; 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 &ndash;&gt;-->
-    <!--<property name="prefix" value="/WEB-INF/jsp/" />-->
-    <!--<property name="suffix" value=".jsp" />-->
-    <!--</bean>-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <!-- 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 -->
+    <property name="prefix" value="/admin/" />
+    <property name="suffix" value=".jsp" />
+    </bean>
 
     <mvc:interceptors>
         <!-- 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 -->

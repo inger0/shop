@@ -14,4 +14,10 @@ public interface ShopDao {
     List<ShopPO> queryShopByStatus(@Param("status")int status);
 
     ShopPO queryShopById(int shopId);
+
+    ShopPO queryShopByUserId(@Param("userId")Integer userId);
+
+    int savePO(ShopPO shopPO);
+
+    int updatePO(ShopPO shopPO);
 }

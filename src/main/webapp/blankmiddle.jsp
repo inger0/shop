@@ -53,7 +53,7 @@
             <a href="index.html" class="navbar-brand">
                 <small>
                     <i class="fa fa-leaf"></i>
-                    Ace Admin
+                    唐僧商城后台管理平台
                 </small>
             </a>
         </div>
@@ -319,8 +319,7 @@
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
                         <img class="nav-user-photo" src="/assets/images/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
-									<small>Welcome,</small>
-									Jason
+									<small>欢迎登陆</small>
 								</span>
 
                         <i class="ace-icon fa fa-caret-down"></i>

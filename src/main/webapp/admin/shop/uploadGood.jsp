@@ -1,109 +1,160 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="../blankup.jsp" %>
+<%@include file="../../blankup.jsp" %>
+<link rel="stylesheet" href="/assets/css/jquery-ui.custom.min.css"/>
+<link rel="stylesheet" href="/assets/css/chosen.min.css"/>
+<link rel="stylesheet" href="/assets/css/bootstrap-datepicker3.min.css"/>
+<link rel="stylesheet" href="/assets/css/bootstrap-timepicker.min.css"/>
+<link rel="stylesheet" href="/assets/css/daterangepicker.min.css"/>
+<link rel="stylesheet" href="/assets/css/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" href="/assets/css/bootstrap-colorpicker.min.css"/>
 
-<link rel="stylesheet" href="/assets/css/jquery-ui.min.css" />
-
-
-<%@include file="../blankmiddle.jsp"%>
+<%@include file="../../blankmiddle.jsp" %>
 <!--page content-->
 <form class="form-horizontal" role="form">
     <div class="form-group">
-        <label class="col-sm-3 control-label no-padding-right" for="telephoneInput"> 输入用户手机号 </label>
+        <label class="col-sm-3 control-label no-padding-right" for="name"> Text Field </label>
 
         <div class="col-sm-9">
-            <input type="text" id="telephoneInput"   placeholder="telephone" class="col-xs-10 col-sm-5"/>
+            <input type="text" id="name" placeholder="name" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
 
-            <div class="btn btn-success" id="submitTelephone" style="margin-left: 15px;height: 32px;">提交查询</div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <div>
+
+            <label class="col-sm-3 control-label no-padding-right" for="classifyChosen"> 所属分类 </label>
+
+            <div class="col-sm-9">
+                <select class="form-control" id="classifyChosen" style="width: 40%" name="classifyId"
+                        multiple="multiple">
+                    <!--option value="AL">Alabama</option>-->
+                </select>
+            </div>
 
         </div>
-
-
     </div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="originPrice"> 原价 </label>
+
+        <div class="col-sm-9">
+            <input type="text" id="originPrice" placeholder="originPrice" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="originPrice"> 存量 </label>
+
+        <div class="col-sm-9">
+            <input type="text" id="stock" placeholder="stock" name="stock" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="minPrice"> 最低实付 </label>
+
+        <div class="col-sm-9">
+            <input type="text" id="minPrice" placeholder="minPrice" name="minPrice" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="maxCoin"> 最多使用部落币 </label>
+
+        <div class="col-sm-9">
+            <input type="text" id="maxCoin" placeholder="maxCoin" name="maxCoin" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="maxPoint"> 最多使用部落分 </label>
+
+        <div class="col-sm-9">
+            <input type="text" id="maxPoint" placeholder="maxPoint" name="maxPoint" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="contentImg"> 商品缩略图 </label>
+
+        <div class="col-sm-9">
+            <input type="file" id="contentImg" placeholder="contentImg" name="contentImg" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+    <div class="space-4"></div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="headImg"> 商品头图 </label>
+
+        <div class="col-sm-9">
+            <input type="file" id="headImg" placeholder="headImg" name="headImg" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+    <div class="space-4"></div>
+
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="content"> 商品描述图 </label>
+
+        <div class="col-sm-9">
+            <input type="file" id="content" placeholder="content" name="content" class="col-xs-10 col-sm-5"/>
+        </div>
+    </div>
+
+
+    <div class="clearfix form-actions">
+        <div class="col-md-offset-3 col-md-9">
+            <button class="btn btn-info" type="submit">
+                <i class="ace-icon fa fa-check bigger-110"></i>
+                提交
+            </button>
+        </div>
+    </div>
+
+    <div class="hr hr-24"></div>
+
+    <div class="space-24"></div>
 
 
 </form>
 
-<div id="dialog-message" class="hide">
-    <input type="hidden" id="id" name="id">
-    <div class="form-group">
-        <label class="col-sm-3 control-label no-padding-right" for="coin"> 部落币 </label>
 
-        <div class="col-xs-9">
-            <input type="text"  id="coin" name="coin" class="col-xs-10 col-sm-5"/>
-
-        </div>
-
-        <br />
-        <label class="col-sm-3 control-label no-padding-right" for="point"> 部落分 </label>
-
-        <div class="col-xs-9">
-            <input type="text"  id="point" name="point" class="col-xs-10 col-sm-5"/>
-
-        </div>
-        <br/>
-        <label class="col-sm-3 control-label no-padding-right" for="diamond"> 钻石 </label>
-
-        <div class="col-xs-9">
-            <input type="text"  id="diamond" name="diamond" class="col-xs-10 col-sm-5"/>
-
-        </div>
-
-
-    </div>
-</div><!-- #dialog-message -->
-
-
-<div class="row">
-    <div class="col-xs-12">
-        <table id="simple-table" class="table  table-bordered table-hover">
-            <thead>
-            <tr>
-
-                <th>用户名</th>
-                <th>手机</th>
-                <th class="hidden-480">部落币</th>
-
-                <th>
-                    部落分
-                </th>
-                <th class="hidden-480">钻石</th>
-
-                <th>是否为S端</th>
-
-                <th>提升为S端</th>
-
-                <th>编辑</th>
-            </tr>
-            </thead>
-
-            <tbody id="manageUserBody">
-
-
-            </tbody>
-        </table>
-    </div><!-- /.span -->
-</div>
-<!-- /.row -->
-
-<%@include file="../blankdown.jsp" %>
+<%@include file="../../blankdown.jsp" %>
 <!--scripts-->
-<script src="/assets/js/jquery.dataTables.min.js"></script>
-<script src="/assets/js/jquery.dataTables.bootstrap.min.js"></script>
-<script src="/assets/js/dataTables.buttons.min.js"></script>
-<script src="/assets/js/buttons.flash.min.js"></script>
-<script src="/assets/js/buttons.html5.min.js"></script>
-<script src="/assets/js/buttons.print.min.js"></script>
-<script src="/assets/js/buttons.colVis.min.js"></script>
-<script src="/assets/js/dataTables.select.min.js"></script>
-
-<script src="/assets/js/jquery-ui.min.js"></script>
+<script src="/assets/js/jquery-ui.custom.min.js"></script>
 <script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/assets/js/chosen.jquery.min.js"></script>
+<script src="/assets/js/spinbox.min.js"></script>
+<script src="/assets/js/bootstrap-datepicker.min.js"></script>
+<script src="/assets/js/bootstrap-timepicker.min.js"></script>
+<script src="/assets/js/moment.min.js"></script>
+<script src="/assets/js/daterangepicker.min.js"></script>
+<script src="/assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/assets/js/bootstrap-colorpicker.min.js"></script>
+<script src="/assets/js/jquery.knob.min.js"></script>
+<script src="/assets/js/autosize.min.js"></script>
+<script src="/assets/js/jquery.inputlimiter.min.js"></script>
+<script src="/assets/js/jquery.maskedinput.min.js"></script>
+<script src="/assets/js/bootstrap-tag.min.js"></script>
 
-<%@include file="../blankbottom.jsp" %>
-
-<script src="/assets/js/toJson.js"></script>
-
-<!--inline scripts-->
+<%@include file="../../blankbottom.jsp" %>
 <script type="text/javascript">
     jQuery(function ($) {
         $('#id-disable-check').on('click', function () {
@@ -573,323 +624,16 @@
     });
 </script>
 
-<script type="text/javascript">
-    jQuery(function ($) {
-        //initiate dataTables plugin
-        var myTable =
-                $('#dynamic-table')
-                //.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
-                        .DataTable({
-                            bAutoWidth: false,
-                            "aoColumns": [
-                                {"bSortable": false},
-                                null, null, null, null, null,
-                                {"bSortable": false}
-                            ],
-                            "aaSorting": [],
-
-
-                            //"bProcessing": true,
-                            //"bServerSide": true,
-                            //"sAjaxSource": "http://127.0.0.1/table.php"	,
-
-                            //,
-                            //"sScrollY": "200px",
-                            //"bPaginate": false,
-
-                            //"sScrollX": "100%",
-                            //"sScrollXInner": "120%",
-                            //"bScrollCollapse": true,
-                            //Note: if you are applying horizontal scrolling (sScrollX) on a ".table-bordered"
-                            //you may want to wrap the table inside a "div.dataTables_borderWrap" element
-
-                            //"iDisplayLength": 50
-
-
-                            select: {
-                                style: 'multi'
-                            }
-                        });
-
-
-        $.fn.dataTable.Buttons.defaults.dom.container.className = 'dt-buttons btn-overlap btn-group btn-overlap';
-
-        new $.fn.dataTable.Buttons(myTable, {
-            buttons: [
-                {
-                    "extend": "colvis",
-                    "text": "<i class='fa fa-search bigger-110 blue'></i> <span class='hidden'>Show/hide columns</span>",
-                    "className": "btn btn-white btn-primary btn-bold",
-                    columns: ':not(:first):not(:last)'
-                },
-                {
-                    "extend": "copy",
-                    "text": "<i class='fa fa-copy bigger-110 pink'></i> <span class='hidden'>Copy to clipboard</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "csv",
-                    "text": "<i class='fa fa-database bigger-110 orange'></i> <span class='hidden'>Export to CSV</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "excel",
-                    "text": "<i class='fa fa-file-excel-o bigger-110 green'></i> <span class='hidden'>Export to Excel</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "pdf",
-                    "text": "<i class='fa fa-file-pdf-o bigger-110 red'></i> <span class='hidden'>Export to PDF</span>",
-                    "className": "btn btn-white btn-primary btn-bold"
-                },
-                {
-                    "extend": "print",
-                    "text": "<i class='fa fa-print bigger-110 grey'></i> <span class='hidden'>Print</span>",
-                    "className": "btn btn-white btn-primary btn-bold",
-                    autoPrint: false,
-                    message: 'This print was produced using the Print button for DataTables'
-                }
-            ]
-        });
-        myTable.buttons().container().appendTo($('.tableTools-container'));
-
-        //style the message box
-        var defaultCopyAction = myTable.button(1).action();
-        myTable.button(1).action(function (e, dt, button, config) {
-            defaultCopyAction(e, dt, button, config);
-            $('.dt-button-info').addClass('gritter-item-wrapper gritter-info gritter-center white');
-        });
-
-
-        var defaultColvisAction = myTable.button(0).action();
-        myTable.button(0).action(function (e, dt, button, config) {
-
-            defaultColvisAction(e, dt, button, config);
-
-
-            if ($('.dt-button-collection > .dropdown-menu').length == 0) {
-                $('.dt-button-collection')
-                        .wrapInner('<ul class="dropdown-menu dropdown-light dropdown-caret dropdown-caret" />')
-                        .find('a').attr('href', '#').wrap("<li />")
+<script>
+    $.ajax({
+        url: "/adminUser/getClassify",
+        type: "get",
+        success: function (data) {
+            var arr = data.msg;
+            $("#classifyChosen").find("option").remove();
+            for (var i = 0; i < arr.length; i++) {
+                $("#classifyChosen").append("<option value='"+arr[i].id+"'>"+arr[i].classifyName+"</option>");
             }
-            $('.dt-button-collection').appendTo('.tableTools-container .dt-buttons')
-        });
-
-        ////
-
-        setTimeout(function () {
-            $($('.tableTools-container')).find('a.dt-button').each(function () {
-                var div = $(this).find(' > div').first();
-                if (div.length == 1) div.tooltip({container: 'body', title: div.parent().text()});
-                else $(this).tooltip({container: 'body', title: $(this).text()});
-            });
-        }, 500);
-
-
-        myTable.on('select', function (e, dt, type, index) {
-            if (type === 'row') {
-                $(myTable.row(index).node()).find('input:checkbox').prop('checked', true);
-            }
-        });
-        myTable.on('deselect', function (e, dt, type, index) {
-            if (type === 'row') {
-                $(myTable.row(index).node()).find('input:checkbox').prop('checked', false);
-            }
-        });
-
-
-        /////////////////////////////////
-        //table checkboxes
-        $('th input[type=checkbox], td input[type=checkbox]').prop('checked', false);
-
-        //select/deselect all rows according to table header checkbox
-        $('#dynamic-table > thead > tr > th input[type=checkbox], #dynamic-table_wrapper input[type=checkbox]').eq(0).on('click', function () {
-            var th_checked = this.checked;//checkbox inside "TH" table header
-
-            $('#dynamic-table').find('tbody > tr').each(function () {
-                var row = this;
-                if (th_checked) myTable.row(row).select();
-                else  myTable.row(row).deselect();
-            });
-        });
-
-        //select/deselect a row when the checkbox is checked/unchecked
-        $('#dynamic-table').on('click', 'td input[type=checkbox]', function () {
-            var row = $(this).closest('tr').get(0);
-            if (this.checked) myTable.row(row).deselect();
-            else myTable.row(row).select();
-        });
-
-
-        $(document).on('click', '#dynamic-table .dropdown-toggle', function (e) {
-            e.stopImmediatePropagation();
-            e.stopPropagation();
-            e.preventDefault();
-        });
-
-
-        //And for the first simple table, which doesn't have TableTools or dataTables
-        //select/deselect all rows according to table header checkbox
-        var active_class = 'active';
-        $('#simple-table > thead > tr > th input[type=checkbox]').eq(0).on('click', function () {
-            var th_checked = this.checked;//checkbox inside "TH" table header
-
-            $(this).closest('table').find('tbody > tr').each(function () {
-                var row = this;
-                if (th_checked) $(row).addClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', true);
-                else $(row).removeClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', false);
-            });
-        });
-
-        //select/deselect a row when the checkbox is checked/unchecked
-        $('#simple-table').on('click', 'td input[type=checkbox]', function () {
-            var $row = $(this).closest('tr');
-            if ($row.is('.detail-row ')) return;
-            if (this.checked) $row.addClass(active_class);
-            else $row.removeClass(active_class);
-        });
-
-
-        /********************************/
-        //add tooltip for small view action buttons in dropdown menu
-        $('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
-
-        //tooltip placement on right or left
-        function tooltip_placement(context, source) {
-            var $source = $(source);
-            var $parent = $source.closest('table')
-            var off1 = $parent.offset();
-            var w1 = $parent.width();
-
-            var off2 = $source.offset();
-            //var w2 = $source.width();
-
-            if (parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2)) return 'right';
-            return 'left';
         }
-
-
-        /***************/
-        $('.show-details-btn').on('click', function (e) {
-            e.preventDefault();
-            $(this).closest('tr').next().toggleClass('open');
-            $(this).find(ace.vars['.icon']).toggleClass('fa-angle-double-down').toggleClass('fa-angle-double-up');
-        });
-        /***************/
-
-
-        /**
-         //add horizontal scrollbars to a simple table
-         $('#simple-table').css({'width':'2000px', 'max-width': 'none'}).wrap('<div style="width: 1000px;" />').parent().ace_scroll(
-         {
-           horizontal: true,
-           styleClass: 'scroll-top scroll-dark scroll-visible',//show the scrollbars on top(default is bottom)
-           size: 2000,
-           mouseWheelLock: true
-         }
-         ).css('padding-top', '12px');
-         */
-
-
     })
-</script>
-
-<!--own scripts-->
-
-<script>
-    $("#submitTelephone").click(function () {
-        $.ajax({
-            url: "/adminUser/queryByTelephone?telephone=" + $("#telephoneInput").val(),
-            success: function (res) {
-                var data = res.msg
-                console.log(data)
-                if (data == "" || data == null || data == undefined){
-                    alert("该用户未注册")
-
-                    return
-                }
-                console.log("<tr><td>"+data.userName+"</td><td>"+data.telephone+"</td><td>"+data.coin+"</td><td>"+data.point+"</td><td>"+data.diamond+"</td><td>"+(data.status==2)+"</td><td><button class=\"btn btn-success\" >提交查询</button></td></tr>")
-                $("#manageUserBody").children("tr").remove()
-
-                $("#manageUserBody").append("<tr><td>"+data.userName+"</td><td>"+data.telephone+"</td><td>"+data.coin+"</td><td>"+data.point+"</td><td>"+data.diamond+"</td><td>"+(data.status==2?"是":"否")+"</td><td><button userId=\""+data.id+"\" class=\"btn btn-success\" onclick=\"updateToSClient("+data.id+")\" >提升为s端</button></td><td><button userId=\""+data.id+"\" onclick=\"modelClick(event,"+data.id+","+data.coin+","+data.point+","+data.diamond+")\" class=\"btn btn-success\" >编辑</button></td></tr>")
-            }
-
-        })
-    })
-</script>
-
-<script>
-    function updateToSClient(id){
-        $.ajax({
-            url:"/adminUser/updateUser",
-            type:"post",
-            data:{
-                userId:id
-            },
-            success:function(res){
-                if(res.code==200)
-                        alert("提升成功")
-            },
-            error:function(){
-                alert("提升失败")
-            }
-
-        })
-
-    }
-
-    function modelClick(e,id,coin,point,diamond) {
-        e.preventDefault();
-        var dialog = $( "#dialog-message" ).removeClass('hide').dialog({
-            modal: true,
-            title: "编辑页面",
-            title_html: true,
-            buttons: [
-                {
-                    text: "取消",
-                    "class" : "btn btn-minier",
-                    click: function() {
-                        $( this ).dialog( "close" );
-                    }
-                },
-                {
-                    text: "提交",
-                    "class" : "btn btn-primary btn-minier",
-                    click: function() {
-                        $.ajax({
-                            type:"post",
-                            url:"/adminUser/saveUser",
-                            beforeSend: function(xhr) {
-                                xhr.setRequestHeader("Content-Type", "application/json");
-                            },
-                            data:$.toJSON({
-                                "userId":id,
-                                "coin":$("#coin").val(),
-                                "point":$("#point").val(),
-                                "diamond":$("#diamond").val()
-                            }),
-                            success:function(res){
-                                if(res.code!=200)
-                                        alert("更改失败")
-                                else{
-                                    alert("更改成功")
-                                }
-                                $( this ).dialog( "close" );
-                            }
-
-                        })
-                    }
-                }
-            ]
-        });
-
-        /**
-         dialog.data( "uiDialog" )._title = function(title) {
-						title.html( this.options.title );
-					};
-         **/
-    }
-
-
-
 </script>

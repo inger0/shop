@@ -17,6 +17,14 @@
 
     </select>
 
+    <select id="queryUsersByInviterId" resultType="com.common.model.po.UserPO">
+        select
+        <include refid="Base_Column_List"/>
+        from `user`
+        where inviter_id = #{inviterId}
+
+    </select>
+
     <insert id="savePO" useGeneratedKeys="true" keyProperty="id" parameterType="com.common.model.po.UserPO">
         insert into user(user_name,login_code,pay_password,
         telephone,coin,point,diamond,head_img,status,inviter_id,

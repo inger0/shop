@@ -4,6 +4,8 @@ import com.common.model.po.UserPO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created by yujingyang on 2017/4/7.
  */
@@ -31,6 +33,8 @@ public interface UserDao {
 
 
     UserPO queryUserByLoginCode(@Param("loginCode")String loginCode);
+
+    List<UserPO> queryUsersByInviterId(@Param("inviterId")Integer inviterId);
 
     int updatePO(UserPO userPO);
 }

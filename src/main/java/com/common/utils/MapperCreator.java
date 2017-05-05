@@ -203,7 +203,7 @@ public class MapperCreator {
 
 
     public static void main(String[] args) {
-        System.out.println(createUpdate("order"));
+        System.out.println(createInsert("good"));
     }
     
 }

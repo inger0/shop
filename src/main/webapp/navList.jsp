@@ -48,20 +48,13 @@
             <li class="">
                 <a href="elements.html">
                     <i class="menu-icon fa fa-caret-right"></i>
-                    添加商店
+                    首页设置
                 </a>
 
                 <b class="arrow"></b>
             </li>
 
-            <li class="">
-                <a href="buttons.html">
-                    <i class="menu-icon fa fa-caret-right"></i>
-                    设置商家(S)
-                </a>
 
-                <b class="arrow"></b>
-            </li>
 
             <li class="">
                 <a href="content-slider.html">
