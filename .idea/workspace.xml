@@ -7,21 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbba1b99-93c5-493c-a2bb-b679eda2363b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminViewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/common/interceptor/AdminInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Test/test/MainTest.java" afterPath="$PROJECT_DIR$/src/main/Test/test/MainTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/manageClassify.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/manageClassify.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/manageGoods.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/manageGoods.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/manageMainPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/manageMainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/manageRate.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/manageRate.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/manageUser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/manageUser.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/shop/manageStore.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/shop/manageStore.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/navList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/navList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/mvc.xml" afterPath="$PROJECT_DIR$/target/classes/config/mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/mvc.xml" afterPath="$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/mvc.xml" />
     </list>
     <ignored path="com.app.shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,14 +41,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manageGoods.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manageGoods.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageGoods.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="754" column="3" selection-start-line="754" selection-start-column="3" selection-end-line="754" selection-end-column="3" />
+            <state relative-caret-position="343">
+              <caret line="758" column="19" selection-start-line="758" selection-start-column="19" selection-end-line="758" selection-end-column="19" />
               <folding>
-                <marker date="1493968873000" expanded="true" signature="7280:7312" ph="..." />
+                <marker date="1493968977000" expanded="true" signature="7280:7312" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blankmiddle.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/blankmiddle.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8873">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,8 +66,30 @@
       <file leaf-file-name="navList.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/navList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            <state relative-caret-position="193">
+              <caret line="90" column="40" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uploadGood.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="640" column="4" selection-start-line="640" selection-start-column="4" selection-end-line="640" selection-end-column="4" />
+              <folding>
+                <marker date="1493969076000" expanded="true" signature="9473:9505" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageStore.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/shop/manageStore.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="84" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -86,18 +108,8 @@
       <file leaf-file-name="manageClassify.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageClassify.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="346" column="22" selection-start-line="346" selection-start-column="22" selection-end-line="346" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard-admin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/dashboard-admin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="246">
+              <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="349" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -116,8 +128,8 @@
       <file leaf-file-name="manageRate.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageRate.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2262">
-              <caret line="106" column="9" selection-start-line="102" selection-start-column="0" selection-end-line="106" selection-end-column="9" />
+            <state relative-caret-position="199">
+              <caret line="103" column="18" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -130,28 +142,6 @@
               <caret line="896" column="4" selection-start-line="896" selection-start-column="4" selection-end-line="898" selection-end-column="0" />
               <folding>
                 <marker date="1493968631000" expanded="true" signature="7007:7039" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Test/test/MainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/AdminInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,11 +196,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/ClassifyDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/ShopDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/ShopDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/GoodDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/GoodDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/shop/manageStore.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/admin/service/AdminUserService.java" />
@@ -225,12 +213,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/interceptor/AdminInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/navList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/manageUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/manageRate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/manageMainPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/manageClassify.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/manageGoods.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/navList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/shop/manageStore.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp" />
       </list>
     </option>
   </component>
@@ -1637,7 +1627,7 @@
       <workItem from="1492934472136" duration="54456000" />
       <workItem from="1493225278226" duration="73538000" />
       <workItem from="1493570398857" duration="42162000" />
-      <workItem from="1493908169957" duration="25325000" />
+      <workItem from="1493908169957" duration="25657000" />
     </task>
     <servers />
   </component>
@@ -1662,7 +1652,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370076000" />
+    <option name="totallyTimeSpent" value="370408000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1691,7 +1681,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36775106" sideWeight="0.7060086" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36775106" sideWeight="0.7060086" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33848315" sideWeight="0.49427754" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31400284" sideWeight="0.2453505" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1700,7 +1690,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31400284" sideWeight="0.45422032" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26449788" sideWeight="0.42203146" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26449788" sideWeight="0.42203146" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30686694" sideWeight="0.81838566" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30686694" sideWeight="0.18161435" order="2" side_tool="true" content_ui="tabs" />
@@ -2022,25 +2012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
-          <folding>
-            <element signature="n#script#15;n#!!top" expanded="false" />
-            <marker date="1493956868000" expanded="true" signature="9473:9505" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/shop/manageStore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -2129,14 +2100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/blankmiddle.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -2213,14 +2176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageClassify.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="346" column="22" selection-start-line="346" selection-start-column="22" selection-end-line="346" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/dashboard-admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -2237,14 +2192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/navList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -2252,14 +2199,6 @@
           <folding>
             <marker date="1493968631000" expanded="true" signature="7007:7039" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageRate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2262">
-          <caret line="106" column="9" selection-start-line="102" selection-start-column="0" selection-end-line="106" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2271,12 +2210,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/blankmiddle.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8873">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageClassify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="349" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageGoods.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="754" column="3" selection-start-line="754" selection-start-column="3" selection-end-line="754" selection-end-column="3" />
+        <state relative-caret-position="343">
+          <caret line="758" column="19" selection-start-line="758" selection-start-column="19" selection-end-line="758" selection-end-column="19" />
           <folding>
-            <marker date="1493968873000" expanded="true" signature="7280:7312" ph="..." />
+            <marker date="1493968977000" expanded="true" signature="7280:7312" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/manageRate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="103" column="18" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/navList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/shop/manageStore.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="84" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="640" column="4" selection-start-line="640" selection-start-column="4" selection-end-line="640" selection-end-column="4" />
+          <folding>
+            <marker date="1493969076000" expanded="true" signature="9473:9505" ph="..." />
           </folding>
         </state>
       </provider>

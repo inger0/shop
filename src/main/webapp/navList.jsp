@@ -56,8 +56,8 @@
 
 
 
-            <li class="" id="manageUser">
-                <a href="/admin/manageUser">
+            <li class="" id="manageRate">
+                <a href="/admin/manageRate">
                     <i class="menu-icon fa fa-caret-right"></i>
                     参数设置
                 </a>

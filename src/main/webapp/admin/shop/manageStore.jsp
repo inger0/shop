@@ -78,4 +78,9 @@
 
 
 <!--own scripts-->
+<script>
+    $("#manageStore").addClass("active");
+    $("#shop").addClass("active open");
+
+</script>
 

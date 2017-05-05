@@ -637,3 +637,9 @@
         }
     })
 </script>
+
+<script>
+    $("#uploadGood").addClass("active");
+    $("#shop").addClass("active open");
+
+</script>

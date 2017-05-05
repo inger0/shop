@@ -754,3 +754,9 @@
     }
 
 </script>
+
+<script>
+    $("#manageGoods").addClass("active");
+    $("#manager").addClass("active open");
+
+</script>
