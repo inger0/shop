@@ -7,6 +7,7 @@ import com.common.model.po.GoodPO;
 import com.common.model.po.OrderPO;
 import com.app.service.GoodService;
 import com.common.model.po.UserPO;
+import com.common.utils.Constants;
 import com.common.utils.MapperPO2DTO;
 import com.common.utils.enums.OrderStatus;
 
@@ -68,8 +69,8 @@ public class GoodServiceImpl implements GoodService {
             orderDao.saveOrder(order4save);
             return order4save.getGoodCount();
         } else {
-            orderDao.updateOrderCountById(orderPO.getId(),orderPO.getGoodCount()+1);
-            return orderPO.getGoodCount()+1;
+            orderDao.updateOrderCountById(orderPO.getId(), orderPO.getGoodCount() + 1);
+            return orderPO.getGoodCount() + 1;
 
         }
     }
@@ -89,7 +90,7 @@ public class GoodServiceImpl implements GoodService {
             throw new Exception();
         }
         //TODO 注意库存
-        orderDao.updateOrderCountById(orderPO.getId(),count);
+        orderDao.updateOrderCountById(orderPO.getId(), count);
         return count;
     }
 
@@ -116,15 +117,15 @@ public class GoodServiceImpl implements GoodService {
         List<OrderPO> orderPOs = orderDao.queryOrderByUserId(userId);
         List<OrderAndGoodDTO> results = new ArrayList();
 
-        MapperPO2DTO<OrderAndGoodDTO , OrderPO, GoodPO> mapper = new MapperPO2DTO();
+        MapperPO2DTO<OrderAndGoodDTO, OrderPO, GoodPO> mapper = new MapperPO2DTO();
 
-        for(OrderPO orderPO : orderPOs){
-            if(orderPO.getStatus() == status){
+        for (OrderPO orderPO : orderPOs) {
+            if (orderPO.getStatus() == status || status == -5) {
                 GoodPO goodPO = goodDao.queryGoodById(orderPO.getGoodId());
-                OrderAndGoodDTO orderAndGoodDTO = mapper.mapper(new OrderAndGoodDTO(),orderPO,goodPO);
+                OrderAndGoodDTO orderAndGoodDTO = mapper.mapper(new OrderAndGoodDTO(), orderPO, goodPO);
                 orderAndGoodDTO.setShopName(shopDao.queryShopById(goodPO.getShopId()).getName());
                 orderAndGoodDTO.setOrderId(orderPO.getId());
-                switch (orderPO.getStatus()){
+                switch (orderPO.getStatus()) {
                     case OrderStatus.GOOD_AFTER_RECIEVED:
                         orderAndGoodDTO.setDescribeStatus("交易成功");
                     default:
@@ -138,23 +139,23 @@ public class GoodServiceImpl implements GoodService {
     }
 
     @Override
-    public List<GoodPO> search(String goodName){
+    public List<GoodPO> search(String goodName) {
         char[] chars = goodName.toCharArray();
         String regexp = ".*";
-        for(char c : chars){
-            regexp = regexp+c+".*";
+        for (char c : chars) {
+            regexp = regexp + c + ".*";
         }
         List<GoodPO> goodPOs = goodDao.queryGoodRegexp(regexp);
         return goodPOs;
     }
 
     @Override
-    public List<GiftPO> getGifts(){
+    public List<GiftPO> getGifts() {
         return giftDao.queryGifts();
     }
 
     @Override
-    public GiftPO getGiftById(Integer giftId){
+    public GiftPO getGiftById(Integer giftId) {
         return giftDao.queryGiftById(giftId);
     }
 
@@ -163,11 +164,11 @@ public class GoodServiceImpl implements GoodService {
     public void exchangeGift(Integer giftId, Integer userId) throws Exception {
         UserPO userPO = userDao.queryUserById(userId);
         GiftPO giftPO = giftDao.queryGiftById(giftId);
-        if(userPO.getDiamond() - giftPO.getCost() <0)
+        if (userPO.getDiamond() - giftPO.getCost() < 0)
             throw new Exception();
-        userPO.setCoin(userPO.getCoin()+giftPO.getCoinValue());
-        userPO.setPoint(userPO.getPoint()+giftPO.getPointValue());
-        userPO.setDiamond(userPO.getDiamond()-giftPO.getCost());
+        userPO.setCoin(userPO.getCoin() + giftPO.getCoinValue());
+        userPO.setPoint(userPO.getPoint() + giftPO.getPointValue());
+        userPO.setDiamond(userPO.getDiamond() - giftPO.getCost());
         userDao.updatePO(userPO);
     }
 
@@ -192,17 +193,18 @@ public class GoodServiceImpl implements GoodService {
 
         String orderNo = buf.toString().substring(8, 24);
 
-        for(OrderAndGoodDTO orderPO : confirmOrders){
+        for (OrderAndGoodDTO orderPO : confirmOrders) {
             orderPO.setOrderNum(orderNo);
+            orderPO.setOrderStatus(OrderStatus.GOOD_WAITFOR_PAY);
             orderDao.updatePO(orderPO);
         }
         return orderNo;
     }
 
     @Override
-    public void paySucceed(String orderNum){
+    public void paySucceed(String orderNum) {
         List<OrderPO> list = orderDao.queryOrderByOrderNum(orderNum);
-        for(OrderPO orderPO : list){
+        for (OrderPO orderPO : list) {
             orderPO.setStatus(OrderStatus.GOOD_AFTER_PAYED);
             orderDao.updatePO2(orderPO);
         }

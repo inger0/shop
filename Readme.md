@@ -1583,6 +1583,21 @@ response:
   "msg":""
 }
 ```
+-----
+##### 16.获取邀请码
+url: account/getInvitationCode
+
+method: get
+
+request: ``{}``
+
+response:
+```json
+{
+    "code" : 200,
+    "msg" : "590dcee1"
+}
+```
 
 -----
 礼包商城部分

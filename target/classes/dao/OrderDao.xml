@@ -72,7 +72,7 @@
 
         good_id=#{goodId},good_count=#{goodCount},user_id=#{userId},
         used_coin=#{usedCoin},used_point=#{usedPoint},transport_way=#{transportWay},
-        address_id=#{addressId},amount_price=#{amountPrice},order_num=#{orderNum}
+        address_id=#{addressId},amount_price=#{amountPrice},order_num=#{orderNum},status=#{orderStatus}
         where id = #{orderId}
     </update>
 

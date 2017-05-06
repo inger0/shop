@@ -128,6 +128,8 @@ public class AccountServiceImpl implements AccountService {
         savePO.setUserName("唐僧用户" + telephone.substring(telephone.length() - 4));
         savePO.setUUID(UUIDUtil.generateUUID());
         savePO.setHeadImg("/imgs/user.jpg");
+        String code = Long.toHexString(System.currentTimeMillis()/1000);
+        savePO.setInvitationCode(code);
         userDao.savePO(savePO);
         return savePO.getUUID();
     }
@@ -260,6 +262,12 @@ public class AccountServiceImpl implements AccountService {
         UserPO userPO = userDao.queryUserById(userId);
         userPO.setUserName(userName);
         userDao.updatePO(userPO);
+    }
+
+    @Override
+    public String getInvitationCode(Integer userId){
+        UserPO userPO = userDao.queryUserById(userId);
+        return userPO.getInvitationCode();
     }
 
 }

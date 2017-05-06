@@ -53,4 +53,6 @@ public interface AccountService {
     String getUUID(Integer userId);
 
     void changeUserName(Integer userId, String userName);
+
+    String getInvitationCode(Integer userId);
 }

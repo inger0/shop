@@ -12,7 +12,7 @@
 <!--page content-->
 <form class="form-horizontal" role="form">
     <div class="form-group">
-        <label class="col-sm-3 control-label no-padding-right" for="name"> Text Field </label>
+        <label class="col-sm-3 control-label no-padding-right" for="name"> 商品名称 </label>
 
         <div class="col-sm-9">
             <input type="text" id="name" placeholder="name" class="col-xs-10 col-sm-5"/>

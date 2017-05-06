@@ -9,8 +9,7 @@ import java.security.NoSuchAlgorithmException;
  */
 public class Test {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
-        MessageDigest messageDigest = MessageDigest.getInstance("md5");
-        String orderNo =messageDigest.digest(String.valueOf(System.currentTimeMillis() / 1000).getBytes())+"";
-        System.out.println(orderNo);
+        String code = Long.toHexString(System.currentTimeMillis()/1000);
+        System.out.println(code);
     }
 }

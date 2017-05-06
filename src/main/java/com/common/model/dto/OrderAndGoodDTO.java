@@ -33,5 +33,6 @@ public class OrderAndGoodDTO {
     Integer maxCoin;
     Integer minCoin;
     String orderNum;
+    Integer orderStatus;
     String describeStatus;
 }

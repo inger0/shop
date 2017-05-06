@@ -165,7 +165,7 @@ public class GoodAndOrderController {
         }
         switch (status) {
             case "All":
-                queryStatus = -1;
+                queryStatus = -5;
                 break;
             case "wait4pay":
                 queryStatus = OrderStatus.GOOD_WAITFOR_PAY;
@@ -224,7 +224,7 @@ public class GoodAndOrderController {
             return WebUtil.error("请先登录");
         try {
             goodService.exchangeGift(giftId, userId);
-            return WebUtil.result("");
+            return WebUtil.result("getOrderInfo");
         } catch (Exception e) {
             e.printStackTrace();
             return WebUtil.error("兑换失败");

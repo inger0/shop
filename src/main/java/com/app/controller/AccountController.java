@@ -3,6 +3,7 @@ package com.app.controller;
 import com.app.service.GoodService;
 import com.common.model.po.AddressPO;
 import com.app.service.AccountService;
+import com.common.model.po.UserPO;
 import com.common.utils.Constants;
 import com.common.utils.UUIDUtil;
 import com.common.utils.WebUtil;
@@ -49,9 +50,9 @@ public class AccountController {
             String invitationCode = params.get("invitationCode");
             String checkCodeInSession = (String) session.getAttribute("checkCode");
             session.setAttribute("checkCode", null);//使用后立刻销毁
-//            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
-//                return WebUtil.error("failure register");
-//            }
+            if (checkCodeInSession == null || !checkCodeInSession.equals(checkCode)) {
+                return WebUtil.error("failure register");
+            }
             String UUID = accountService.register(invitationCode, telephone);
             return WebUtil.result(UUID);
         } catch (Exception e) {
@@ -333,5 +334,13 @@ public class AccountController {
         }
     }
 
+    @RequestMapping(value = "getInvitationCode",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getInvitationCode(HttpSession session){
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId == null){
+            return WebUtil.error("请登录");
+        }
+        return WebUtil.result(accountService.getInvitationCode(userId));
+    }
 
 }
