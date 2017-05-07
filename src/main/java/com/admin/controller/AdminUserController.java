@@ -5,6 +5,7 @@ import com.app.service.MainPageService;
 import com.common.dao.UserDao;
 import com.common.model.po.GoodPO;
 import com.common.model.po.UserPO;
+import com.common.utils.Constants;
 import com.common.utils.UUIDUtil;
 import com.common.utils.WebUtil;
 import com.common.utils.enums.GoodStatus;
@@ -129,8 +130,8 @@ public class AdminUserController {
 
     @RequestMapping(value = "getRate", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> getRate() throws IOException {
-        File file = new File("/Users/yujingyang/codes/shop/target/com.app.shop/WEB-INF/classes/config/app.properties");
-        System.out.println(file.getAbsolutePath());
+        File file = new File(Constants.PROPERTIES_DIR+"app.properties");
+
         Properties prop = new Properties();
         prop.load(new FileInputStream(file));
         Map<String, String> result = new HashMap<>();
@@ -143,8 +144,7 @@ public class AdminUserController {
 
     @RequestMapping(value = "setRate", method = RequestMethod.POST)
     public String setRate(@RequestParam("coinRate") Double coinRate, @RequestParam("pointRate") Double pointRate, @RequestParam("coinGet") Integer coinGet, @RequestParam("pointGet") Integer pointGet) throws IOException {
-        File file = new File("/Users/yujingyang/codes/shop/target/com.app.shop/WEB-INF/classes/config/app.properties");
-        System.out.println(file.getAbsolutePath());
+        File file = new File(Constants.PROPERTIES_DIR+"app.properties");
         Properties prop = new Properties();
         prop.load(new FileInputStream(file));
         Map<String, String> result = new HashMap<>();

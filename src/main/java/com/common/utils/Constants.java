@@ -21,5 +21,6 @@ public  interface Constants {
 
     String APP_SECRET = "dd0e38b8b94dfd25e7d6aa5767342883";
 
+    String PROPERTIES_DIR = "/usr/local/apache-tomcat-7.0.77/webapps/ROOT/WEB-INF/classes/config/";
 
 }

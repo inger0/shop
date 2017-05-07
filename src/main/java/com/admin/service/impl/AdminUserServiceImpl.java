@@ -60,7 +60,7 @@ public class AdminUserServiceImpl implements AdminUserService {
 
     @Override
     public List<Map<String, Object>> getGoodByName(String goodName) throws IllegalAccessException {
-        System.out.println(goodName);
+
         List<GoodPO> goodPOs = goodDao.queryGoodsByShopName(goodName);
         List<Map<String, Object>> result = new ArrayList<>();
         for (GoodPO po : goodPOs) {

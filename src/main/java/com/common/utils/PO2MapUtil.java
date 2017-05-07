@@ -14,7 +14,7 @@ public class PO2MapUtil<T> {
         for(Field field : fields){
             field.setAccessible(true);
             map.put(field.getName(),field.get(object));
-            System.out.println(field.getName());
+
         }
         return map;
     }

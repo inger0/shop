@@ -1,6 +1,7 @@
 package com.app.controller;
 
 import com.app.service.MainPageService;
+import com.common.utils.Constants;
 import com.common.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Map;
+import java.util.Properties;
 
 /**
  * Created by yujingyang on 2017/3/30.
@@ -51,6 +56,15 @@ public class MainPageController {
             e.printStackTrace();
             return WebUtil.error("获取用户信息错误");
         }
+    }
+
+    @RequestMapping(value = "getAdvertisingShop",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> getAdvertisingShop() throws IOException {
+        File file = new File(Constants.PROPERTIES_DIR+"app.properties");
+        Properties prop = new Properties();
+        prop.load(new FileInputStream(file));
+        Integer shopId = (Integer) prop.get("advertisingShopId");
+        return WebUtil.result(shopId);
     }
 
 

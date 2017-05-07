@@ -9,19 +9,18 @@
     <list default="true" id="fbba1b99-93c5-493c-a2bb-b679eda2363b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Test/test/Test.java" afterPath="$PROJECT_DIR$/src/main/Test/test/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/common/model/dto/OrderAndGoodDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/model/dto/OrderAndGoodDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/OrderDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/OrderDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/shop/uploadGood.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/ace-ie.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/ace-ie.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/ace.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/ace.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-colorpicker.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-colorpicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/colorbox.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/colorbox.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/common/utils/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperPO2DTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/MapperPO2DTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/common/utils/PO2MapUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/common/utils/PO2MapUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/app.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/app.properties" />
     </list>
     <ignored path="com.app.shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,147 +50,190 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java">
+      <file leaf-file-name="AdminUserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="336" column="46" selection-start-line="336" selection-start-column="29" selection-end-line="336" selection-end-column="46" />
+            <state relative-caret-position="153">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminUserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-505">
+              <caret line="122" column="24" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+              <folding>
+                <element signature="e#6354#6370#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPageController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="379">
-                <caret line="1597" column="10" selection-start-line="1597" selection-start-column="10" selection-end-line="1597" selection-end-column="10" />
+              <first_editor relative-caret-position="358">
+                <caret line="584" column="13" selection-start-line="584" selection-start-column="13" selection-end-line="585" selection-end-column="9" />
                 <folding>
-                  <marker date="1494077571000" expanded="true" signature="273:490" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="299:488" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="305:391" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="397:484" ph="{&quot;id&quot;: 2...}" />
-                  <marker date="1494077571000" expanded="true" signature="592:17561" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="618:17559" ph="{...}" />
-                  <marker date="1494077571000" expanded="true" signature="629:3543" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="637:1356" ph="{&quot;id&quot;: 4...}" />
-                  <marker date="1494077571000" expanded="true" signature="1364:2083" ph="{&quot;id&quot;: 5...}" />
-                  <marker date="1494077571000" expanded="true" signature="2091:2810" ph="{&quot;id&quot;: 6...}" />
-                  <marker date="1494077571000" expanded="true" signature="2818:3537" ph="{&quot;id&quot;: 7...}" />
-                  <marker date="1494077571000" expanded="true" signature="3554:7924" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="3562:4280" ph="{&quot;id&quot;: 8...}" />
-                  <marker date="1494077571000" expanded="true" signature="4288:5006" ph="{&quot;id&quot;: 9...}" />
-                  <marker date="1494077571000" expanded="true" signature="5014:5734" ph="{&quot;id&quot;: 10...}" />
-                  <marker date="1494077571000" expanded="true" signature="5742:6462" ph="{&quot;id&quot;: 11...}" />
-                  <marker date="1494077571000" expanded="true" signature="6470:7190" ph="{&quot;id&quot;: 12...}" />
-                  <marker date="1494077571000" expanded="true" signature="7198:7918" ph="{&quot;id&quot;: 13...}" />
-                  <marker date="1494077571000" expanded="true" signature="7955:8035" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="8067:15345" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="8075:8794" ph="{&quot;id&quot;: 4...}" />
-                  <marker date="1494077571000" expanded="true" signature="8802:9521" ph="{&quot;id&quot;: 5...}" />
-                  <marker date="1494077571000" expanded="true" signature="9529:10248" ph="{&quot;id&quot;: 6...}" />
-                  <marker date="1494077571000" expanded="true" signature="10256:10975" ph="{&quot;id&quot;: 7...}" />
-                  <marker date="1494077571000" expanded="true" signature="10983:11701" ph="{&quot;id&quot;: 8...}" />
-                  <marker date="1494077571000" expanded="true" signature="11709:12427" ph="{&quot;id&quot;: 9...}" />
-                  <marker date="1494077571000" expanded="true" signature="12435:13155" ph="{&quot;id&quot;: 10...}" />
-                  <marker date="1494077571000" expanded="true" signature="13163:13883" ph="{&quot;id&quot;: 11...}" />
-                  <marker date="1494077571000" expanded="true" signature="13891:14611" ph="{&quot;id&quot;: 12...}" />
-                  <marker date="1494077571000" expanded="true" signature="14619:15339" ph="{&quot;id&quot;: 13...}" />
-                  <marker date="1494077571000" expanded="true" signature="15368:17555" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="15376:16095" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="16103:16822" ph="{&quot;id&quot;: 2...}" />
-                  <marker date="1494077571000" expanded="true" signature="16830:17549" ph="{&quot;id&quot;: 3...}" />
-                  <marker date="1494077571000" expanded="true" signature="17666:17851" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="17692:17849" ph="{&quot;headImg&quot;: &quot;/img/1492605839775_[B@4b3a50f7.png&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="17871:17903" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="17997:18026" ph="{&quot;classifyId&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="18050:18988" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="18076:18986" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="18082:18529" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="18535:18982" ph="{&quot;id&quot;: 2...}" />
-                  <marker date="1494077571000" expanded="true" signature="19108:20046" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="19134:20044" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="19140:19587" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="19593:20040" ph="{&quot;id&quot;: 2...}" />
-                  <marker date="1494077571000" expanded="true" signature="20268:20870" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="20294:20868" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="20336:20835" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="20344:20829" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="20989:21024" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="21138:21172" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="21327:21794" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="21353:21792" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="21880:21896" ph="{&quot;goodId&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="21920:21965" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="21945:21963" ph="{&quot;count&quot;: 3...}" />
-                  <marker date="1494077571000" expanded="true" signature="22060:22704" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="22086:22702" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="22092:22698" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="22794:22811" ph="{&quot;orderId&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="22835:22864" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="22961:22976" ph="{&quot;count&quot;: 5...}" />
-                  <marker date="1494077571000" expanded="true" signature="23000:23045" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="23024:23043" ph="{&quot;count&quot;: 5...}" />
-                  <marker date="1494077571000" expanded="true" signature="23127:23159" ph="{...}" />
-                  <marker date="1494077571000" expanded="true" signature="23183:23211" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="23290:23383" ph="{&quot;addressId&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="23407:23435" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="23533:23608" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="23559:23606" ph="{&quot;pointRate&quot;: 0.3...}" />
-                  <marker date="1494077571000" expanded="true" signature="23754:27067" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="23780:27065" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="23786:24436" ph="{&quot;name&quot;: &quot;测试商品1&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="24442:25092" ph="{&quot;name&quot;: &quot;测试商品2&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="25098:25748" ph="{&quot;name&quot;: &quot;测试商品3&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="25754:26404" ph="{&quot;name&quot;: &quot;测试商品4&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="26410:27061" ph="{&quot;name&quot;: &quot;测试商品10&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="27145:27166" ph="{&quot;goodName&quot;: &quot;测试&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="27190:28128" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="27216:28126" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="27222:27669" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="27675:28122" ph="{&quot;id&quot;: 2...}" />
-                  <marker date="1494077571000" expanded="true" signature="28246:28494" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="28272:28492" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="28278:28488" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="28570:28737" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="28761:28789" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="28910:29132" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="28936:29130" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="29265:29361" ph="..." />
-                  <marker date="1494077571000" expanded="true" signature="29406:29843" ph="{...}" />
-                  <marker date="1494077571000" expanded="true" signature="29434:29442" ph="{...}" />
-                  <marker date="1494077571000" expanded="true" signature="29457:29841" ph="{...}" />
-                  <marker date="1494077571000" expanded="true" signature="29483:29596" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
-                  <marker date="1494077571000" expanded="true" signature="29656:29824" ph="&lt;xml/&gt;" />
-                  <marker date="1494077571000" expanded="true" signature="29867:29899" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="29991:30052" ph="{&quot;originalPassword&quot;: &quot;123456&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="30076:30104" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="30181:30222" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="30312:30342" ph="{&quot;telephone&quot;: &quot;1234567890&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="30366:30396" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="30478:30509" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="30533:30565" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="30684:30723" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="30812:30846" ph="{&quot;newTelephone&quot;: &quot;17621181235&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="30938:31023" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="31047:31079" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="31168:31224" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="31248:31280" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="31388:31424" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="31531:31779" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="31557:31777" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="31563:31773" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="31866:31888" ph="{&quot;userName&quot;: &quot;于景洋&quot;...}" />
-                  <marker date="1494077571000" expanded="true" signature="31912:31940" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="32046:32090" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="32213:32731" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="32239:32729" ph="[...]" />
-                  <marker date="1494077571000" expanded="true" signature="32245:32483" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="32489:32725" ph="{&quot;id&quot;: 2...}" />
-                  <marker date="1494077571000" expanded="true" signature="32838:33080" ph="{&quot;code&quot;: 200...}" />
-                  <marker date="1494077571000" expanded="true" signature="32864:33078" ph="{&quot;id&quot;: 1...}" />
-                  <marker date="1494077571000" expanded="true" signature="33185:33213" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="273:490" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="299:488" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="305:391" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="397:484" ph="{&quot;id&quot;: 2...}" />
+                  <marker date="1494140336000" expanded="true" signature="592:17561" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="618:17559" ph="{...}" />
+                  <marker date="1494140336000" expanded="true" signature="629:3543" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="637:1356" ph="{&quot;id&quot;: 4...}" />
+                  <marker date="1494140336000" expanded="true" signature="1364:2083" ph="{&quot;id&quot;: 5...}" />
+                  <marker date="1494140336000" expanded="true" signature="2091:2810" ph="{&quot;id&quot;: 6...}" />
+                  <marker date="1494140336000" expanded="true" signature="2818:3537" ph="{&quot;id&quot;: 7...}" />
+                  <marker date="1494140336000" expanded="true" signature="3554:7924" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="3562:4280" ph="{&quot;id&quot;: 8...}" />
+                  <marker date="1494140336000" expanded="true" signature="4288:5006" ph="{&quot;id&quot;: 9...}" />
+                  <marker date="1494140336000" expanded="true" signature="5014:5734" ph="{&quot;id&quot;: 10...}" />
+                  <marker date="1494140336000" expanded="true" signature="5742:6462" ph="{&quot;id&quot;: 11...}" />
+                  <marker date="1494140336000" expanded="true" signature="6470:7190" ph="{&quot;id&quot;: 12...}" />
+                  <marker date="1494140336000" expanded="true" signature="7198:7918" ph="{&quot;id&quot;: 13...}" />
+                  <marker date="1494140336000" expanded="true" signature="7955:8035" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="8067:15345" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="8075:8794" ph="{&quot;id&quot;: 4...}" />
+                  <marker date="1494140336000" expanded="true" signature="8802:9521" ph="{&quot;id&quot;: 5...}" />
+                  <marker date="1494140336000" expanded="true" signature="9529:10248" ph="{&quot;id&quot;: 6...}" />
+                  <marker date="1494140336000" expanded="true" signature="10256:10975" ph="{&quot;id&quot;: 7...}" />
+                  <marker date="1494140336000" expanded="true" signature="10983:11701" ph="{&quot;id&quot;: 8...}" />
+                  <marker date="1494140336000" expanded="true" signature="11709:12427" ph="{&quot;id&quot;: 9...}" />
+                  <marker date="1494140336000" expanded="true" signature="12435:13155" ph="{&quot;id&quot;: 10...}" />
+                  <marker date="1494140336000" expanded="true" signature="13163:13883" ph="{&quot;id&quot;: 11...}" />
+                  <marker date="1494140336000" expanded="true" signature="13891:14611" ph="{&quot;id&quot;: 12...}" />
+                  <marker date="1494140336000" expanded="true" signature="14619:15339" ph="{&quot;id&quot;: 13...}" />
+                  <marker date="1494140336000" expanded="true" signature="15368:17555" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="15376:16095" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="16103:16822" ph="{&quot;id&quot;: 2...}" />
+                  <marker date="1494140336000" expanded="true" signature="16830:17549" ph="{&quot;id&quot;: 3...}" />
+                  <marker date="1494140336000" expanded="true" signature="17666:17851" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="17692:17849" ph="{&quot;headImg&quot;: &quot;/img/1492605839775_[B@4b3a50f7.png&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="17871:17903" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="18014:18041" ph="{...}" />
+                  <marker date="1494140336000" expanded="true" signature="18134:18163" ph="{&quot;classifyId&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="18187:19125" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="18213:19123" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="18219:18666" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="18672:19119" ph="{&quot;id&quot;: 2...}" />
+                  <marker date="1494140336000" expanded="true" signature="19245:20183" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="19271:20181" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="19277:19724" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="19730:20177" ph="{&quot;id&quot;: 2...}" />
+                  <marker date="1494140336000" expanded="true" signature="20405:21007" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="20431:21005" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="20473:20972" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="20481:20966" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="21126:21161" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="21275:21309" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="21464:21931" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="21490:21929" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="22017:22033" ph="{&quot;goodId&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="22057:22102" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="22082:22100" ph="{&quot;count&quot;: 3...}" />
+                  <marker date="1494140336000" expanded="true" signature="22197:22841" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="22223:22839" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="22229:22835" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="22931:22948" ph="{&quot;orderId&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="22972:23001" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="23098:23113" ph="{&quot;count&quot;: 5...}" />
+                  <marker date="1494140336000" expanded="true" signature="23137:23182" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="23161:23180" ph="{&quot;count&quot;: 5...}" />
+                  <marker date="1494140336000" expanded="true" signature="23264:23296" ph="{...}" />
+                  <marker date="1494140336000" expanded="true" signature="23320:23348" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="23427:23520" ph="{&quot;addressId&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="23544:23572" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="23670:23745" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="23696:23743" ph="{&quot;pointRate&quot;: 0.3...}" />
+                  <marker date="1494140336000" expanded="true" signature="23891:27204" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="23917:27202" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="23923:24573" ph="{&quot;name&quot;: &quot;测试商品1&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="24579:25229" ph="{&quot;name&quot;: &quot;测试商品2&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="25235:25885" ph="{&quot;name&quot;: &quot;测试商品3&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="25891:26541" ph="{&quot;name&quot;: &quot;测试商品4&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="26547:27198" ph="{&quot;name&quot;: &quot;测试商品10&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="27282:27303" ph="{&quot;goodName&quot;: &quot;测试&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="27327:28265" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="27353:28263" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="27359:27806" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="27812:28259" ph="{&quot;id&quot;: 2...}" />
+                  <marker date="1494140336000" expanded="true" signature="28383:28631" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="28409:28629" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="28415:28625" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="28707:28874" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="28898:28926" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="29047:29269" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="29073:29267" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="29402:29498" ph="..." />
+                  <marker date="1494140336000" expanded="true" signature="29543:29980" ph="{...}" />
+                  <marker date="1494140336000" expanded="true" signature="29571:29579" ph="{...}" />
+                  <marker date="1494140336000" expanded="true" signature="29594:29978" ph="{...}" />
+                  <marker date="1494140336000" expanded="true" signature="29620:29733" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
+                  <marker date="1494140336000" expanded="true" signature="29793:29961" ph="&lt;xml/&gt;" />
+                  <marker date="1494140336000" expanded="true" signature="30004:30036" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="30128:30189" ph="{&quot;originalPassword&quot;: &quot;123456&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="30213:30241" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="30318:30359" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="30449:30479" ph="{&quot;telephone&quot;: &quot;1234567890&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="30503:30533" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="30615:30646" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="30670:30702" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="30821:30860" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="30949:30983" ph="{&quot;newTelephone&quot;: &quot;17621181235&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="31075:31160" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="31184:31216" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="31305:31361" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="31385:31417" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="31525:31561" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="31668:31916" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="31694:31914" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="31700:31910" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="32003:32025" ph="{&quot;userName&quot;: &quot;于景洋&quot;...}" />
+                  <marker date="1494140336000" expanded="true" signature="32049:32077" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="32183:32227" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="32350:32868" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="32376:32866" ph="[...]" />
+                  <marker date="1494140336000" expanded="true" signature="32382:32620" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="32626:32862" ph="{&quot;id&quot;: 2...}" />
+                  <marker date="1494140336000" expanded="true" signature="32975:33217" ph="{&quot;code&quot;: 200...}" />
+                  <marker date="1494140336000" expanded="true" signature="33001:33215" ph="{&quot;id&quot;: 1...}" />
+                  <marker date="1494140336000" expanded="true" signature="33322:33350" ph="{&quot;code&quot;: 200...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -199,96 +241,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            <state relative-caret-position="343">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java">
+      <file leaf-file-name="app.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/classes/config/app.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Test/test/Test.java">
+      <file leaf-file-name="app.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/app.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="24">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodAndOrderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java">
+      <file leaf-file-name="app.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/app.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="236" column="52" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
+            <state relative-caret-position="96">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="196" column="41" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
-              <folding>
-                <element signature="e#5169#5170#0" expanded="true" />
-                <element signature="e#5275#5276#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderAndGoodDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/common/model/dto/OrderAndGoodDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dao/OrderDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="73" column="80" selection-start-line="73" selection-start-column="80" selection-end-line="73" selection-end-column="80" />
-              <folding>
-                <marker date="1494076513000" expanded="true" signature="612:780" ph="select from order" />
-                <marker date="1494076513000" expanded="true" signature="879:1012" ph="select from order" />
-                <marker date="1494076513000" expanded="true" signature="1115:1220" ph="select from order" />
-                <marker date="1494076513000" expanded="true" signature="1325:1434" ph="select from order" />
-                <marker date="1494076513000" expanded="true" signature="1575:1788" ph="insert into `order`... " />
-                <marker date="1494076513000" expanded="true" signature="1851:1913" ph="update `orde... " />
-                <marker date="1494076513000" expanded="true" signature="1971:2036" ph="delete from " />
-                <marker date="1494076513000" expanded="true" signature="2095:2383" ph="update `orde... " />
-                <marker date="1494076513000" expanded="true" signature="2487:2794" ph="update `orde... " />
-                <marker date="1494076513000" expanded="true" signature="2890:3196" ph="update `orde... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -316,26 +304,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/common/model/po/OrderPO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/OrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/uploadsuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/uploadSuccess.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/app.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/ClassifyDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/ClassifyDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/ShopDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/ShopDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/GoodDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/GoodDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/admin/service/AdminUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/dashboard-admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/blankdown.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/blankup.jsp" />
@@ -344,7 +324,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/admin/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/Test/test/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/interceptor/AdminInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/manageUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/manageRate.jsp" />
@@ -359,14 +338,23 @@
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/ace-ie.min.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/ace.min.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/colorbox.min.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao/OrderDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/common/model/dto/OrderAndGoodDTO.java" />
         <option value="$PROJECT_DIR$/src/main/Test/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/app.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/utils/MapperPO2DTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/utils/PO2MapUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/common/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java" />
       </list>
     </option>
   </component>
@@ -561,6 +549,102 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -694,6 +778,78 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -759,6 +915,142 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.app.shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -774,7 +1066,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="userdao&#9;PSI&#9;JAVA://com.common.dao.UserDao&#10;userDAo&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;adminser&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java&#10;gooddao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/GoodDao.java&#10;admin&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java&#10;shop&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/ShopDao.java&#10;shopdao&#9;PSI&#9;JAVA://com.common.dao.ShopDao&#10;admi&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java&#10;class&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/ClassifyDao.java&#10;classifydao&#9;PSI&#9;JAVA://com.common.dao.ClassifyDao&#10;account&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;order&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;queryOrderByOrderNum&#9;PSI&#9;JAVA://com.common.dao.OrderDao#queryOrderByOrderNum&#10;orderda&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;orderP&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/model/po/OrderPO.java&#10;orderand&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/model/dto/OrderAndGoodDTO.java&#10;orderPO&#9;PSI&#9;JAVA://com.common.model.po.OrderPO&#10;orderdao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;user&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;good&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/GoodServiceImpl.java&#10;register&#9;PSI&#9;JAVA://sun.jvm.hotspot.asm.Register&#10;wechat&#9;PSI&#9;JAVA://com.app.service.AccountService#wechatLogin&#10;accouns&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;userda&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/UserDao.java&#10;userdap&#9;PSI&#9;JAVA://javax.security.jacc.WebUserDataPermission&#10;goodsta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/enums/GoodStatus.java&#10;constan&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/Constants.java&#10;userD&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;use&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;consta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/Constants.java&#10;Consta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/Constants.java&#10;a&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;goodSta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/enums/GoodStatus.java&#10;AccountServiceImpl&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;addre&#9;PSI&#9;JAVA://com.common.dao.AddressDao&#10;g&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/GoodDao.java&#10;goodDao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/GoodDao.java&#10;userDao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;classi&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/ClassifyDao.java&#10;classifyDao&#9;PSI&#9;JAVA://com.common.dao.ClassifyDao&#10;shopPO&#9;PSI&#9;JAVA://com.common.model.po.ShopPO&#10;ordersta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/enums/OrderStatus.java&#10;address&#9;PSI&#9;JAVA://com.common.dao.AddressDao&#10;dispa&#9;FILE&#9;jar:///Users/yujingyang/.m2/repository/org/springframework/spring-webmvc/4.3.3.RELEASE/spring-webmvc-4.3.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;orderDa&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;goodser&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/GoodService.java&#10;classifyPO&#9;PSI&#9;JAVA://com.common.model.po.ClassifyPO&#10;requestmapping&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping&#10;requestmappingha&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter&#10;hand&#9;FILE&#9;jar:///Users/yujingyang/.m2/repository/org/springframework/spring-webmvc/4.3.3.RELEASE/spring-webmvc-4.3.3.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerMapping.java" />
+    <property name="SearchEverywhereHistoryKey" value="cons&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/Constants.java&#10;constan&#9;PSI&#9;JAVA://com.common.utils.Constants&#10;acc&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;userdao&#9;PSI&#9;JAVA://com.common.dao.UserDao&#10;userDAo&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;adminser&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java&#10;gooddao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/GoodDao.java&#10;admin&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java&#10;shop&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/ShopDao.java&#10;shopdao&#9;PSI&#9;JAVA://com.common.dao.ShopDao&#10;admi&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java&#10;class&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/ClassifyDao.java&#10;classifydao&#9;PSI&#9;JAVA://com.common.dao.ClassifyDao&#10;account&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;order&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;queryOrderByOrderNum&#9;PSI&#9;JAVA://com.common.dao.OrderDao#queryOrderByOrderNum&#10;orderda&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;orderP&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/model/po/OrderPO.java&#10;orderand&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/model/dto/OrderAndGoodDTO.java&#10;orderPO&#9;PSI&#9;JAVA://com.common.model.po.OrderPO&#10;orderdao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;user&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;good&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/GoodServiceImpl.java&#10;register&#9;PSI&#9;JAVA://sun.jvm.hotspot.asm.Register&#10;wechat&#9;PSI&#9;JAVA://com.app.service.AccountService#wechatLogin&#10;accouns&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;userda&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/UserDao.java&#10;userdap&#9;PSI&#9;JAVA://javax.security.jacc.WebUserDataPermission&#10;goodsta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/enums/GoodStatus.java&#10;userD&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;use&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;consta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/Constants.java&#10;Consta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/Constants.java&#10;a&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;goodSta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/enums/GoodStatus.java&#10;AccountServiceImpl&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/impl/AccountServiceImpl.java&#10;addre&#9;PSI&#9;JAVA://com.common.dao.AddressDao&#10;g&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/GoodDao.java&#10;goodDao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/GoodDao.java&#10;userDao&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/resources/dao/UserDao.xml&#10;classi&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/ClassifyDao.java&#10;classifyDao&#9;PSI&#9;JAVA://com.common.dao.ClassifyDao&#10;shopPO&#9;PSI&#9;JAVA://com.common.model.po.ShopPO&#10;ordersta&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/utils/enums/OrderStatus.java&#10;address&#9;PSI&#9;JAVA://com.common.dao.AddressDao&#10;dispa&#9;FILE&#9;jar:///Users/yujingyang/.m2/repository/org/springframework/spring-webmvc/4.3.3.RELEASE/spring-webmvc-4.3.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;orderDa&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/common/dao/OrderDao.java&#10;goodser&#9;FILE&#9;file:///Users/yujingyang/codes/shop/src/main/java/com/app/service/GoodService.java&#10;classifyPO&#9;PSI&#9;JAVA://com.common.model.po.ClassifyPO&#10;requestmapping&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
@@ -1482,7 +1774,7 @@
       <workItem from="1493225278226" duration="73538000" />
       <workItem from="1493570398857" duration="42162000" />
       <workItem from="1493908169957" duration="31409000" />
-      <workItem from="1494073340898" duration="3834000" />
+      <workItem from="1494073340898" duration="6558000" />
     </task>
     <servers />
   </component>
@@ -1507,7 +1799,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379994000" />
+    <option name="totallyTimeSpent" value="382718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1543,20 +1835,20 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31285715" sideWeight="0.45422032" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31285715" sideWeight="0.45422032" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2642857" sideWeight="0.42203146" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642857" sideWeight="0.42203146" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30686694" sideWeight="0.81838566" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30686694" sideWeight="0.18161435" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31616595" sideWeight="0.44885176" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257143" sideWeight="0.49427754" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31616595" sideWeight="0.24538259" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997195" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.49427754" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1652,137 +1944,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/ClassifyDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="24" column="68" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="68" />
-          <folding>
-            <marker date="1493951141000" expanded="true" signature="364:439" ph="select from classify" />
-            <marker date="1493951141000" expanded="true" signature="542:648" ph="select from classify" />
-            <marker date="1493951141000" expanded="true" signature="705:750" ph="delete from " />
-            <marker date="1493951141000" expanded="true" signature="891:983" ph="insert into `classify`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/GoodDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="82" column="22" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="22" />
-          <folding>
-            <marker date="1493957662000" expanded="true" signature="496:587" ph="select from good" />
-            <marker date="1493957662000" expanded="true" signature="685:791" ph="SELECT from good" />
-            <marker date="1493957662000" expanded="true" signature="892:1009" ph="select from good" />
-            <marker date="1493957662000" expanded="true" signature="1123:1280" ph="select from good" />
-            <marker date="1493957662000" expanded="true" signature="1384:1494" ph="select from good" />
-            <marker date="1493957662000" expanded="true" signature="1595:1697" ph="select from good" />
-            <marker date="1493957662000" expanded="true" signature="1800:1904" ph="select from good" />
-            <marker date="1493957662000" expanded="true" signature="2014:2163" ph="select from good" />
-            <marker date="1493957662000" expanded="true" signature="2257:2693" ph="update good " />
-            <marker date="1493957662000" expanded="true" signature="2779:2815" ph="delete from " />
-            <marker date="1493957662000" expanded="true" signature="3069:3527" ph="insert into good... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/dao/GoodDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <marker date="1493960218000" expanded="true" signature="433:510" ph="insert into `user`... " />
-            <marker date="1493960218000" expanded="true" signature="606:705" ph="select from user" />
-            <marker date="1493960218000" expanded="true" signature="810:920" ph="select from user" />
-            <marker date="1493960218000" expanded="true" signature="1054:1368" ph="insert into user... " />
-            <marker date="1493960218000" expanded="true" signature="1472:1582" ph="select from user" />
-            <marker date="1493960218000" expanded="true" signature="1680:1779" ph="select from user" />
-            <marker date="1493960218000" expanded="true" signature="1879:1982" ph="select from user" />
-            <marker date="1493960218000" expanded="true" signature="2089:2209" ph="select from user" />
-            <marker date="1493960218000" expanded="true" signature="2312:2421" ph="select from user" />
-            <marker date="1493960218000" expanded="true" signature="2524:2600" ph="update `user... " />
-            <marker date="1493960218000" expanded="true" signature="2660:2744" ph="update `user... " />
-            <marker date="1493960218000" expanded="true" signature="2802:2881" ph="update `user... " />
-            <marker date="1493960218000" expanded="true" signature="2975:3302" ph="update user " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="161" column="116" selection-start-line="161" selection-start-column="116" selection-end-line="161" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/blankdown.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/blank.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/interceptor/SessionSecurityInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="173" column="31" selection-start-line="173" selection-start-column="31" selection-end-line="173" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.3.RELEASE/spring-webmvc-4.3.3.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerExecutionChain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/service/AdminUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1871,21 +2036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-          <folding>
-            <element signature="e#6671#6672#0" expanded="false" />
-            <element signature="e#6727#6728#0" expanded="false" />
-            <marker date="1493957603000" expanded="true" signature="2837:2924" ph="select COLUM... COLUMNS" />
-            <marker date="1493957603000" expanded="true" signature="2837:2950" ph="select COLUM... COLUMNS" />
-            <marker date="1493957603000" expanded="true" signature="4068:4184" ph="select COLUM... COLUMNS" />
-            <marker date="1493957603000" expanded="true" signature="5665:5762" ph="select COLUM... COLUMNS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/WebUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276">
@@ -1913,14 +2063,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5544">
-          <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1996,22 +2141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="236" column="52" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dao/OrderDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -2039,17 +2168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="196" column="41" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
-          <folding>
-            <element signature="e#5169#5170#0" expanded="true" />
-            <element signature="e#5275#5276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -2066,18 +2184,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/GoodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/GoodServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="207" column="60" selection-start-line="207" selection-start-column="60" selection-end-line="207" selection-end-column="60" />
+          <folding>
+            <element signature="e#5169#5170#0" expanded="true" />
+            <element signature="e#5275#5276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/MapperCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding>
+            <element signature="e#6671#6672#0" expanded="false" />
+            <element signature="e#6678#6679#0" expanded="false" />
+            <marker date="1494139154000" expanded="true" signature="2837:2924" ph="select COLUM... COLUMNS" />
+            <marker date="1494139154000" expanded="true" signature="2837:2950" ph="select COLUM... COLUMNS" />
+            <marker date="1494139154000" expanded="true" signature="4068:4184" ph="select COLUM... COLUMNS" />
+            <marker date="1494139154000" expanded="true" signature="5665:5762" ph="select COLUM... COLUMNS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/MapperPO2DTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/PO2MapUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/GoodAndOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/ClassifyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/app/service/impl/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
+        <state relative-caret-position="-543">
+          <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/service/AdminUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/service/impl/AdminUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="122" column="24" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+          <folding>
+            <element signature="e#6354#6370#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="336" column="46" selection-start-line="336" selection-start-column="29" selection-end-line="336" selection-end-column="46" />
+        <state relative-caret-position="153">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2085,136 +2311,185 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="379">
-            <caret line="1597" column="10" selection-start-line="1597" selection-start-column="10" selection-end-line="1597" selection-end-column="10" />
+          <first_editor relative-caret-position="358">
+            <caret line="584" column="13" selection-start-line="584" selection-start-column="13" selection-end-line="585" selection-end-column="9" />
             <folding>
-              <marker date="1494077571000" expanded="true" signature="273:490" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="299:488" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="305:391" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="397:484" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1494077571000" expanded="true" signature="592:17561" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="618:17559" ph="{...}" />
-              <marker date="1494077571000" expanded="true" signature="629:3543" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="637:1356" ph="{&quot;id&quot;: 4...}" />
-              <marker date="1494077571000" expanded="true" signature="1364:2083" ph="{&quot;id&quot;: 5...}" />
-              <marker date="1494077571000" expanded="true" signature="2091:2810" ph="{&quot;id&quot;: 6...}" />
-              <marker date="1494077571000" expanded="true" signature="2818:3537" ph="{&quot;id&quot;: 7...}" />
-              <marker date="1494077571000" expanded="true" signature="3554:7924" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="3562:4280" ph="{&quot;id&quot;: 8...}" />
-              <marker date="1494077571000" expanded="true" signature="4288:5006" ph="{&quot;id&quot;: 9...}" />
-              <marker date="1494077571000" expanded="true" signature="5014:5734" ph="{&quot;id&quot;: 10...}" />
-              <marker date="1494077571000" expanded="true" signature="5742:6462" ph="{&quot;id&quot;: 11...}" />
-              <marker date="1494077571000" expanded="true" signature="6470:7190" ph="{&quot;id&quot;: 12...}" />
-              <marker date="1494077571000" expanded="true" signature="7198:7918" ph="{&quot;id&quot;: 13...}" />
-              <marker date="1494077571000" expanded="true" signature="7955:8035" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="8067:15345" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="8075:8794" ph="{&quot;id&quot;: 4...}" />
-              <marker date="1494077571000" expanded="true" signature="8802:9521" ph="{&quot;id&quot;: 5...}" />
-              <marker date="1494077571000" expanded="true" signature="9529:10248" ph="{&quot;id&quot;: 6...}" />
-              <marker date="1494077571000" expanded="true" signature="10256:10975" ph="{&quot;id&quot;: 7...}" />
-              <marker date="1494077571000" expanded="true" signature="10983:11701" ph="{&quot;id&quot;: 8...}" />
-              <marker date="1494077571000" expanded="true" signature="11709:12427" ph="{&quot;id&quot;: 9...}" />
-              <marker date="1494077571000" expanded="true" signature="12435:13155" ph="{&quot;id&quot;: 10...}" />
-              <marker date="1494077571000" expanded="true" signature="13163:13883" ph="{&quot;id&quot;: 11...}" />
-              <marker date="1494077571000" expanded="true" signature="13891:14611" ph="{&quot;id&quot;: 12...}" />
-              <marker date="1494077571000" expanded="true" signature="14619:15339" ph="{&quot;id&quot;: 13...}" />
-              <marker date="1494077571000" expanded="true" signature="15368:17555" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="15376:16095" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="16103:16822" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1494077571000" expanded="true" signature="16830:17549" ph="{&quot;id&quot;: 3...}" />
-              <marker date="1494077571000" expanded="true" signature="17666:17851" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="17692:17849" ph="{&quot;headImg&quot;: &quot;/img/1492605839775_[B@4b3a50f7.png&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="17871:17903" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="17997:18026" ph="{&quot;classifyId&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="18050:18988" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="18076:18986" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="18082:18529" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="18535:18982" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1494077571000" expanded="true" signature="19108:20046" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="19134:20044" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="19140:19587" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="19593:20040" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1494077571000" expanded="true" signature="20268:20870" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="20294:20868" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="20336:20835" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="20344:20829" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="20989:21024" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="21138:21172" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="21327:21794" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="21353:21792" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="21880:21896" ph="{&quot;goodId&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="21920:21965" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="21945:21963" ph="{&quot;count&quot;: 3...}" />
-              <marker date="1494077571000" expanded="true" signature="22060:22704" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="22086:22702" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="22092:22698" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="22794:22811" ph="{&quot;orderId&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="22835:22864" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="22961:22976" ph="{&quot;count&quot;: 5...}" />
-              <marker date="1494077571000" expanded="true" signature="23000:23045" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="23024:23043" ph="{&quot;count&quot;: 5...}" />
-              <marker date="1494077571000" expanded="true" signature="23127:23159" ph="{...}" />
-              <marker date="1494077571000" expanded="true" signature="23183:23211" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="23290:23383" ph="{&quot;addressId&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="23407:23435" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="23533:23608" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="23559:23606" ph="{&quot;pointRate&quot;: 0.3...}" />
-              <marker date="1494077571000" expanded="true" signature="23754:27067" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="23780:27065" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="23786:24436" ph="{&quot;name&quot;: &quot;测试商品1&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="24442:25092" ph="{&quot;name&quot;: &quot;测试商品2&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="25098:25748" ph="{&quot;name&quot;: &quot;测试商品3&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="25754:26404" ph="{&quot;name&quot;: &quot;测试商品4&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="26410:27061" ph="{&quot;name&quot;: &quot;测试商品10&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="27145:27166" ph="{&quot;goodName&quot;: &quot;测试&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="27190:28128" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="27216:28126" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="27222:27669" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="27675:28122" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1494077571000" expanded="true" signature="28246:28494" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="28272:28492" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="28278:28488" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="28570:28737" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="28761:28789" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="28910:29132" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="28936:29130" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="29265:29361" ph="..." />
-              <marker date="1494077571000" expanded="true" signature="29406:29843" ph="{...}" />
-              <marker date="1494077571000" expanded="true" signature="29434:29442" ph="{...}" />
-              <marker date="1494077571000" expanded="true" signature="29457:29841" ph="{...}" />
-              <marker date="1494077571000" expanded="true" signature="29483:29596" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
-              <marker date="1494077571000" expanded="true" signature="29656:29824" ph="&lt;xml/&gt;" />
-              <marker date="1494077571000" expanded="true" signature="29867:29899" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="29991:30052" ph="{&quot;originalPassword&quot;: &quot;123456&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="30076:30104" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="30181:30222" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="30312:30342" ph="{&quot;telephone&quot;: &quot;1234567890&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="30366:30396" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="30478:30509" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="30533:30565" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="30684:30723" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="30812:30846" ph="{&quot;newTelephone&quot;: &quot;17621181235&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="30938:31023" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="31047:31079" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="31168:31224" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="31248:31280" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="31388:31424" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="31531:31779" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="31557:31777" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="31563:31773" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="31866:31888" ph="{&quot;userName&quot;: &quot;于景洋&quot;...}" />
-              <marker date="1494077571000" expanded="true" signature="31912:31940" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="32046:32090" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="32213:32731" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="32239:32729" ph="[...]" />
-              <marker date="1494077571000" expanded="true" signature="32245:32483" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="32489:32725" ph="{&quot;id&quot;: 2...}" />
-              <marker date="1494077571000" expanded="true" signature="32838:33080" ph="{&quot;code&quot;: 200...}" />
-              <marker date="1494077571000" expanded="true" signature="32864:33078" ph="{&quot;id&quot;: 1...}" />
-              <marker date="1494077571000" expanded="true" signature="33185:33213" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="273:490" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="299:488" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="305:391" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="397:484" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1494140336000" expanded="true" signature="592:17561" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="618:17559" ph="{...}" />
+              <marker date="1494140336000" expanded="true" signature="629:3543" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="637:1356" ph="{&quot;id&quot;: 4...}" />
+              <marker date="1494140336000" expanded="true" signature="1364:2083" ph="{&quot;id&quot;: 5...}" />
+              <marker date="1494140336000" expanded="true" signature="2091:2810" ph="{&quot;id&quot;: 6...}" />
+              <marker date="1494140336000" expanded="true" signature="2818:3537" ph="{&quot;id&quot;: 7...}" />
+              <marker date="1494140336000" expanded="true" signature="3554:7924" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="3562:4280" ph="{&quot;id&quot;: 8...}" />
+              <marker date="1494140336000" expanded="true" signature="4288:5006" ph="{&quot;id&quot;: 9...}" />
+              <marker date="1494140336000" expanded="true" signature="5014:5734" ph="{&quot;id&quot;: 10...}" />
+              <marker date="1494140336000" expanded="true" signature="5742:6462" ph="{&quot;id&quot;: 11...}" />
+              <marker date="1494140336000" expanded="true" signature="6470:7190" ph="{&quot;id&quot;: 12...}" />
+              <marker date="1494140336000" expanded="true" signature="7198:7918" ph="{&quot;id&quot;: 13...}" />
+              <marker date="1494140336000" expanded="true" signature="7955:8035" ph="{&quot;outstanding_shop_id&quot;: &quot;1&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="8067:15345" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="8075:8794" ph="{&quot;id&quot;: 4...}" />
+              <marker date="1494140336000" expanded="true" signature="8802:9521" ph="{&quot;id&quot;: 5...}" />
+              <marker date="1494140336000" expanded="true" signature="9529:10248" ph="{&quot;id&quot;: 6...}" />
+              <marker date="1494140336000" expanded="true" signature="10256:10975" ph="{&quot;id&quot;: 7...}" />
+              <marker date="1494140336000" expanded="true" signature="10983:11701" ph="{&quot;id&quot;: 8...}" />
+              <marker date="1494140336000" expanded="true" signature="11709:12427" ph="{&quot;id&quot;: 9...}" />
+              <marker date="1494140336000" expanded="true" signature="12435:13155" ph="{&quot;id&quot;: 10...}" />
+              <marker date="1494140336000" expanded="true" signature="13163:13883" ph="{&quot;id&quot;: 11...}" />
+              <marker date="1494140336000" expanded="true" signature="13891:14611" ph="{&quot;id&quot;: 12...}" />
+              <marker date="1494140336000" expanded="true" signature="14619:15339" ph="{&quot;id&quot;: 13...}" />
+              <marker date="1494140336000" expanded="true" signature="15368:17555" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="15376:16095" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="16103:16822" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1494140336000" expanded="true" signature="16830:17549" ph="{&quot;id&quot;: 3...}" />
+              <marker date="1494140336000" expanded="true" signature="17666:17851" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="17692:17849" ph="{&quot;headImg&quot;: &quot;/img/1492605839775_[B@4b3a50f7.png&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="17871:17903" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="18014:18041" ph="{...}" />
+              <marker date="1494140336000" expanded="true" signature="18134:18163" ph="{&quot;classifyId&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="18187:19125" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="18213:19123" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="18219:18666" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="18672:19119" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1494140336000" expanded="true" signature="19245:20183" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="19271:20181" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="19277:19724" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="19730:20177" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1494140336000" expanded="true" signature="20405:21007" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="20431:21005" ph="{&quot;headImgUrl&quot;: &quot;头图地址1&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="20473:20972" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="20481:20966" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="21126:21161" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="21275:21309" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="21464:21931" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="21490:21929" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="22017:22033" ph="{&quot;goodId&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="22057:22102" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="22082:22100" ph="{&quot;count&quot;: 3...}" />
+              <marker date="1494140336000" expanded="true" signature="22197:22841" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="22223:22839" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="22229:22835" ph="{&quot;name&quot;: &quot;test1&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="22931:22948" ph="{&quot;orderId&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="22972:23001" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="23098:23113" ph="{&quot;count&quot;: 5...}" />
+              <marker date="1494140336000" expanded="true" signature="23137:23182" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="23161:23180" ph="{&quot;count&quot;: 5...}" />
+              <marker date="1494140336000" expanded="true" signature="23264:23296" ph="{...}" />
+              <marker date="1494140336000" expanded="true" signature="23320:23348" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="23427:23520" ph="{&quot;addressId&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="23544:23572" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="23670:23745" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="23696:23743" ph="{&quot;pointRate&quot;: 0.3...}" />
+              <marker date="1494140336000" expanded="true" signature="23891:27204" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="23917:27202" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="23923:24573" ph="{&quot;name&quot;: &quot;测试商品1&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="24579:25229" ph="{&quot;name&quot;: &quot;测试商品2&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="25235:25885" ph="{&quot;name&quot;: &quot;测试商品3&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="25891:26541" ph="{&quot;name&quot;: &quot;测试商品4&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="26547:27198" ph="{&quot;name&quot;: &quot;测试商品10&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="27282:27303" ph="{&quot;goodName&quot;: &quot;测试&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="27327:28265" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="27353:28263" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="27359:27806" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="27812:28259" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1494140336000" expanded="true" signature="28383:28631" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="28409:28629" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="28415:28625" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="28707:28874" ph="{&quot;reciever&quot;: &quot;于景洋&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="28898:28926" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="29047:29269" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="29073:29267" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="29402:29498" ph="..." />
+              <marker date="1494140336000" expanded="true" signature="29543:29980" ph="{...}" />
+              <marker date="1494140336000" expanded="true" signature="29571:29579" ph="{...}" />
+              <marker date="1494140336000" expanded="true" signature="29594:29978" ph="{...}" />
+              <marker date="1494140336000" expanded="true" signature="29620:29733" ph="{&quot;baseUrl&quot;: 'http://localhost:8080/account/uploadHeadImg'...}" />
+              <marker date="1494140336000" expanded="true" signature="29793:29961" ph="&lt;xml/&gt;" />
+              <marker date="1494140336000" expanded="true" signature="30004:30036" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="30128:30189" ph="{&quot;originalPassword&quot;: &quot;123456&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="30213:30241" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="30318:30359" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="30449:30479" ph="{&quot;telephone&quot;: &quot;1234567890&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="30503:30533" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="30615:30646" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="30670:30702" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="30821:30860" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="30949:30983" ph="{&quot;newTelephone&quot;: &quot;17621181235&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="31075:31160" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="31184:31216" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="31305:31361" ph="{&quot;telephone&quot;: &quot;17621181235&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="31385:31417" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="31525:31561" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="31668:31916" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="31694:31914" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="31700:31910" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="32003:32025" ph="{&quot;userName&quot;: &quot;于景洋&quot;...}" />
+              <marker date="1494140336000" expanded="true" signature="32049:32077" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="32183:32227" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="32350:32868" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="32376:32866" ph="[...]" />
+              <marker date="1494140336000" expanded="true" signature="32382:32620" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="32626:32862" ph="{&quot;id&quot;: 2...}" />
+              <marker date="1494140336000" expanded="true" signature="32975:33217" ph="{&quot;code&quot;: 200...}" />
+              <marker date="1494140336000" expanded="true" signature="33001:33215" ph="{&quot;id&quot;: 1...}" />
+              <marker date="1494140336000" expanded="true" signature="33322:33350" ph="{&quot;code&quot;: 200...}" />
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/config/app.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/com.app.shop/WEB-INF/classes/config/app.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/app.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/common/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/admin/controller/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/app/controller/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

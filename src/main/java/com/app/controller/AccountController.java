@@ -174,12 +174,12 @@ public class AccountController {
             byte[] b = new byte[16];
             fileInputStream.read(b, 0, b.length);
             String fileTypeHex = String.valueOf(bytesToHexString(b));
-            System.out.println(fileTypeHex);
+
             if (!(fileTypeHex.toUpperCase().startsWith("FFD8FF") || fileTypeHex.toUpperCase().startsWith("89504E47") || fileTypeHex.toUpperCase().startsWith("47494638") || fileTypeHex.toUpperCase().startsWith("424D"))) {
                 return WebUtil.error("file type error");
             }
             String newFileName = System.currentTimeMillis() + "_" + UUIDUtil.generateUUID() + type;
-            System.out.println(newFileName);
+
 
 
             Integer userId = (Integer) session.getAttribute("userId");
@@ -282,7 +282,7 @@ public class AccountController {
         try {
 
             String result = accountService.getCharge(userId, channel, orderNum, price);
-            System.out.println(result);
+
             if (result.equals("error")) {
                 return WebUtil.result("auth");
             } else {

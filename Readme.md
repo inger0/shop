@@ -571,7 +571,23 @@ response:
 ```
 
 ---
+##### 4.获取广告位链接到商店的id
 
+url: main/getAdvertisingShop
+
+method: get
+
+request: ``{}``
+
+response:
+```json
+{
+  "code":200,
+  "msg":1
+}
+```
+
+---
 分类部分
 
 ---

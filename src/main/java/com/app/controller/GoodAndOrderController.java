@@ -54,7 +54,7 @@ public class GoodAndOrderController {
             Integer userId = (Integer) session.getAttribute("userId");
             if(userId == null)
                 return WebUtil.error("请登录");
-            System.out.println(goodService);
+
             int count = goodService.addGoodToCast(goodId, userId);
             Map<String,Object> map = new HashMap<>();
             map.put("count",count);

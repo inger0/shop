@@ -48,6 +48,6 @@ public class MapperPO2DTO<T, E, M> {
         goodPO.setMaxPoint(500);
         MapperPO2DTO<OrderAndGoodDTO,OrderPO,GoodPO> mapper =  new MapperPO2DTO();
         mapper.mapper(orderAndGoodDTO,orderPO,goodPO);
-        System.out.println("123");
+
     }
 }

@@ -112,7 +112,7 @@ public class AccountServiceImpl implements AccountService {
         req.setRecNum(telephone);
         req.setSmsTemplateCode("SMS_62700067");
         AlibabaAliqinFcSmsNumSendResponse rsp = client.execute(req);
-        System.out.println(rsp.getBody());
+        System.out.println(rsp);
     }
 
     @Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
@@ -244,7 +244,7 @@ public class AccountServiceImpl implements AccountService {
 //            charge = Charge.create(chargeMap);
 //            // 传到客户端请先转成字符串 .toString(), 调该方法，会自动转成正确的 JSON 字符串
 //            String chargeString = charge.toString();
-//            System.out.println(chargeString);
+//
 //        } catch (PingppException e) {
 //            e.printStackTrace();
 //        }
