@@ -35,4 +35,10 @@ public interface AdminUserService {
     void  saveGood(GoodPO goodPO, Integer userId);
 
     Map<String, Object> getUserTreeMiddle(Integer userId);
+
+    List<Map<String, Object>> queryShopGoodByName(String goodName, Integer userId) throws IllegalAccessException;
+
+    List<Map<String, Object>> queryShopGoodByStatus(Integer userId, Integer status) throws IllegalAccessException;
+
+    String getTestContent();
 }

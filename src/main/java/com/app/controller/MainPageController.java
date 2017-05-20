@@ -63,7 +63,7 @@ public class MainPageController {
         File file = new File(Constants.PROPERTIES_DIR+"app.properties");
         Properties prop = new Properties();
         prop.load(new FileInputStream(file));
-        Integer shopId = (Integer) prop.get("advertisingShopId");
+        Integer shopId = Integer.parseInt((String)prop.get("advertisingShopId"));
         return WebUtil.result(shopId);
     }
 

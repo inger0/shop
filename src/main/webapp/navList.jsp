@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <ul class="nav nav-list">
     <li class="">
-        <a href="/admin/dashboard-admin">
+        <a href="/admin/dashboard">
             <i class="menu-icon fa fa-tachometer"></i>
             <span class="menu-text"> 报表 </span>
         </a>
@@ -107,7 +107,7 @@
             </li>
 
             <li class="" id="manageShopGood">
-                <a href="#">
+                <a href="/admin/shop/manageShopGood">
                     <i class="menu-icon fa fa-caret-right"></i>
                     管理商品
                 </a>

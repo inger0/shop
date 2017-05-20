@@ -4,6 +4,7 @@ import com.admin.service.AdminUserService;
 import com.app.service.MainPageService;
 import com.common.dao.UserDao;
 import com.common.model.po.GoodPO;
+import com.common.model.po.TestPO;
 import com.common.model.po.UserPO;
 import com.common.utils.Constants;
 import com.common.utils.UUIDUtil;
@@ -89,6 +90,12 @@ public class AdminUserController {
                 break;
             case "advertise":
                 statusCode = GoodStatus.IS_ADDVER;
+                break;
+            case "shopMainPage":
+                statusCode = GoodStatus.SHOP_MAIN_PAGE_GOOD;
+                break;
+            case "hotSale":
+                statusCode = GoodStatus.SHOP_HOT_SALE;
                 break;
         }
         if (statusCode == null)
@@ -252,4 +259,42 @@ public class AdminUserController {
 
     }
 
+
+    @RequestMapping(value = "queryShopGoodByName",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> queryShopGoodByName(String goodName,HttpSession session) throws IllegalAccessException {
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId == null){
+            return WebUtil.error("请登录");
+        }
+        return WebUtil.result(adminUserService.queryShopGoodByName(goodName,userId));
+    }
+
+    @RequestMapping(value = "queryShopGoodByStatus",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> queryShopGoodByStatus(String status, HttpSession session) throws IllegalAccessException {
+        Integer userId = (Integer) session.getAttribute("userId");
+        if(userId == null){
+            return WebUtil.error("请登录");
+        }
+        Integer statusInteger = null;
+        switch (status){
+            case "店铺首页":
+                statusInteger = GoodStatus.SHOP_MAIN_PAGE_GOOD;
+                break;
+            case "热销商品":
+                statusInteger = GoodStatus.SHOP_HOT_SALE;
+                break;
+
+        }
+        if(statusInteger == null)
+            return WebUtil.error("状态错误");
+        return WebUtil.result(adminUserService.queryShopGoodByStatus(userId,statusInteger));
+    }
+
+
+    @RequestMapping(value = "test",method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> test(@RequestBody TestPO testPO){
+        System.out.println(testPO);
+        return WebUtil.result("1");
+    }
 }

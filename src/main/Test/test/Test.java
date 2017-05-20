@@ -9,7 +9,6 @@ import java.security.NoSuchAlgorithmException;
  */
 public class Test {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
-        String code = Long.toHexString(System.currentTimeMillis()/1000);
-        System.out.println(code);
+
     }
 }

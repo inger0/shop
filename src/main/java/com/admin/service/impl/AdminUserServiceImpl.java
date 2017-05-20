@@ -186,4 +186,61 @@ public class AdminUserServiceImpl implements AdminUserService {
 
         return params;
     }
+
+    @Override
+    public List<Map<String, Object>> queryShopGoodByName(String goodName, Integer userId) throws IllegalAccessException {
+        ShopPO shopPO = shopDao.queryShopByUserId(userId);
+        List<Map<String, Object>> result = new ArrayList<>();
+
+        List<GoodPO> goodPOList = goodDao.queryGoodsByShopId(shopPO.getId());
+        for(GoodPO goodPO : goodPOList){
+            if(goodPO.getName().contains(goodName)){
+                PO2MapUtil<GoodPO> po2MapUtil = new PO2MapUtil<>();
+                Map<String, Object> tmp = po2MapUtil.mapper(goodPO);
+                tmp.put("shopName", shopDao.queryShopById(goodPO.getShopId()).getName());
+                String statusString = "";
+                if ((goodPO.getStatus() & GoodStatus.SHOP_MAIN_PAGE_GOOD) > 0) {
+                    statusString += "店铺首页 ";
+                }
+                if ((goodPO.getStatus() & GoodStatus.SHOP_HOT_SALE) > 0) {
+                    statusString += "热销商品 ";
+                }
+                tmp.put("statusString", statusString);
+                result.add(tmp);
+            }
+        }
+        return result;
+    }
+
+    @Override
+    public List<Map<String, Object>> queryShopGoodByStatus(Integer userId, Integer status) throws IllegalAccessException {
+        ShopPO shopPO = shopDao.queryShopByUserId(userId);
+        List<Map<String, Object>> result = new ArrayList<>();
+        List<GoodPO> goodPOList = goodDao.queryGoodsByShopId(shopPO.getId());
+        for(GoodPO goodPO : goodPOList){
+            if(goodPO.getStatus() == status){
+                PO2MapUtil<GoodPO> po2MapUtil = new PO2MapUtil<>();
+                Map<String, Object> tmp = po2MapUtil.mapper(goodPO);
+                tmp.put("shopName", shopDao.queryShopById(goodPO.getShopId()).getName());
+                String statusString = "";
+                if ((goodPO.getStatus() & GoodStatus.SHOP_MAIN_PAGE_GOOD) > 0) {
+                    statusString += "店铺首页 ";
+                }
+                if ((goodPO.getStatus() & GoodStatus.SHOP_HOT_SALE) > 0) {
+                    statusString += "热销商品 ";
+                }
+                tmp.put("statusString", statusString);
+                result.add(tmp);
+            }
+        }
+        return result;
+    }
+
+    @Override
+    public String getTestContent(){
+        return "this is a test content";
+    }
+
+
+
 }
